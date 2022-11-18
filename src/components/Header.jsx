@@ -1,5 +1,5 @@
 import {useState,useEffect} from 'react'
-import logoImg from "../media/logo.jpg";
+import logoImg from "../media/logoB.png";
 import { BiMenu } from "react-icons/bi";
 import { IoCloseOutline } from "react-icons/io5";
 
