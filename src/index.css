@@ -45,8 +45,12 @@
   font-size: 1rem;
   color: var(--white-color);
 }
+.purchase-button-link {
+  width: 100%;
+  text-decoration: none;
+}
 .primary-color-accent {
-  color: var(--primary-color);
+  color: var(--white-color);
 }
 .subtitle-bottom {
   position: absolute;
@@ -61,10 +65,10 @@
 }
 
 .heading-text {
-  text-align: center;
+  text-align: left;
   color: var(--white-color);
   text-transform: uppercase;
-  font-size: clamp(2rem, 13vw, 5rem);
+  font-size: clamp(1.6rem, 10vw, 5rem);
   line-height: auto;
 }
 
@@ -112,10 +116,11 @@
 .hero-section .button {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   align-self: flex-start;
-  background-color: rgba(0, 0, 0, 0);
-  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+
   transition: var(--transition);
   font-size: 1.1rem;
+  border-radius: 0.5rem;
 }
 .hero-section .button:hover {
   border: 2px solid transparent;
@@ -138,7 +143,7 @@
   } */
 .heroImg {
   width: 100%;
-  height: 100%;
+  height: 120%;
   object-position: center;
   object-fit: cover;
 }
@@ -149,6 +154,7 @@
   bottom: 0;
   right: 0;
   z-index: 2;
+  transform: translate(30%, 0);
 }
 .maskImg {
   position: absolute;
@@ -181,8 +187,7 @@
   align-items: center;
 }
 .logo-container {
-  width: 2.5rem;
-  height: 2.5rem;
+  height: 3rem;
   border-radius: 50%;
 
   display: flex;
@@ -402,7 +407,9 @@
   flex-direction: column;
   position: relative;
 }
-
+.pricing-container:nth-of-type(2) {
+  background-color: var(--primary-color) !important;
+}
 .pricing-container .big-text {
   position: relative;
   text-align: center;
@@ -412,6 +419,7 @@
   margin-bottom: 2rem;
   color: var(--white-color);
 }
+
 .pricing-container .big-text:nth-of-type(2) {
   margin-top: 1rem;
   font-size: 2rem;
@@ -437,7 +445,7 @@
 .pricing-container .paragraph-text {
   color: var(--white-color);
 
-  text-align: center;
+  text-align: left;
 }
 .card-wrapper {
   margin-top: 1rem;
@@ -560,26 +568,29 @@ option {
 .plan-type-container:hover {
   background-color: var(--primary-color);
 }
-.pricing-container:nth-of-type(2) {
-  background-color: var(--white-color);
-}
+
 .pricing-container:nth-of-type(2) .big-text,
-.pricing-container:nth-of-type(2) .paragraph-text {
+.pricing-container:nth-of-type(2) .medium-text {
   color: var(--background-color);
-  text-align: center;
+}
+.pricing-container:nth-of-type(2) .paragraph-text {
+  text-align: left;
 }
 .pricing-container:nth-of-type(2) .card-container {
-  background-color: var(--primary-color);
+  background-color: var(--white-color);
 }
 
 .pricing-container:nth-of-type(2) .button {
-  background-color: var(--white-color);
-  color: var(--black-color);
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 
+.pricing-container:nth-of-type(2) .card-list {
+  color: var(--background-color);
+}
 .pricing-container:nth-of-type(2) .card-text-price,
 .pricing-container:nth-of-type(2) {
-  color: var(--white-color);
+  color: var(--primary-color);
 }
 
 .presentation-container {
@@ -635,7 +646,13 @@ option {
     overflow: hidden;
     height: 90vh;
   }
-
+  .hero-section .button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid var(--primary-color);
+  }
+  .john-crop {
+    transform: translate(0, 0);
+  }
   .presentation-item {
     width: 50%;
   }
@@ -726,5 +743,9 @@ option {
   .hero-paragraph {
     margin: 0 auto;
     width: 70%;
+  }
+  .pricing-container:nth-of-type(2) .paragraph-text,
+  .pricing-container .paragraph-text {
+    text-align: center;
   }
 }

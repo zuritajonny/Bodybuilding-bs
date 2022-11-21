@@ -26,6 +26,8 @@ function App() {
   Solo un hero y los planes debajo de el
   Alrededor del hero (imagen de el) 
 
+  CAMBIAR LOS MESES MONTH
+  
 
   */
 
@@ -50,7 +52,7 @@ function App() {
           <div className="hero-text">
             <h1 className="heading-text">
               A srs <br />
-              transformation
+              <span>transformation</span>
               <br /> awaits {/* Ready to get buffed up? */}
             </h1>
             <button onClick={handleCTA} className="button">
@@ -67,10 +69,9 @@ function App() {
           Plans
         </h2>
         <p className="paragraph-text hero-paragraph">
-          With <span className="primary-color-accent">EFFER</span> coaching
-          plans offer you a fully customized plan, workout regimen, and direct
-          support from John during weekly check-ins with updates on your
-          progress.
+          <span className="primary-color-accent">EFFER</span> coaching plans
+          offer you a fully customized plan, workout regimen, and direct support
+          from John during weekly check-ins with updates on your progress.
           <br />
           <br />
           Additionally, our higher tier plans allow you to connect with John
@@ -147,9 +148,18 @@ function App() {
               <li className="card-list">Bi-weekly programming tweaks</li>
               <li className="card-list">E-mail and text me directly</li>
             </ul>
-            <button className="button">
-              <AiOutlineShoppingCart className="icon" /> Purchase
-            </button>
+            <a
+              target="_blank"
+              className="purchase-button-link"
+              href={
+                TypeOfPlan === "a" &&
+                "https://app.businessoperatingsystem.ca/v2/preview/GJHNN317do8Z1x7XCUjR"
+              }
+            >
+              <button className="button">
+                <AiOutlineShoppingCart className="icon" /> Purchase
+              </button>
+            </a>
           </div>
 
           <div
@@ -181,9 +191,18 @@ function App() {
               <li className="card-list">Weekly programming tweaks</li>
               <li className="card-list">E-mail and text me directly</li>
             </ul>
-            <button className="button">
-              <AiOutlineShoppingCart className="icon" /> Purchase
-            </button>
+            <a
+              target="_blank"
+              className="purchase-button-link"
+              href={
+                TypeOfPlan === "a" &&
+                "https://app.businessoperatingsystem.ca/v2/preview/89tP85PAcJdSfG0Oct4i"
+              }
+            >
+              <button className="button">
+                <AiOutlineShoppingCart className="icon" /> Purchase
+              </button>
+            </a>
           </div>
 
           {TypeOfPlan === "a" && "c" ? (
@@ -214,9 +233,18 @@ function App() {
                 <li className="card-list">Unlimited programming tweaks</li>
                 <li className="card-list">Posing lessons and prep tips</li>
               </ul>
-              <button className="button">
-                <AiOutlineShoppingCart className="icon" /> Purchase
-              </button>
+              <a
+                target="_blank"
+                className="purchase-button-link"
+                href={
+                  TypeOfPlan === "a" &&
+                  "https://app.businessoperatingsystem.ca/v2/preview/RJOfQ9VNwRD2b4rGG25G"
+                }
+              >
+                <button className="button">
+                  <AiOutlineShoppingCart className="icon" /> Purchase
+                </button>
+              </a>
             </div>
           ) : (
             ""
@@ -245,9 +273,9 @@ function App() {
           )}
         </div>
 
-        <span className="subtitle-bottom">
+        {/*        <span className="subtitle-bottom">
           <p className="description-text">Top in the US</p>
-        </span>
+        </span> */}
       </section>
 
       <section className="pricing-container">
