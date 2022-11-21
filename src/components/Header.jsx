@@ -69,7 +69,7 @@ const Header = () => {
         <ul className={animateMenu ? 'menu-container menu-active' : 'menu-container'}>
           <li className='menu-item' onClick={() => handleScrollLock(false)} ><IoCloseOutline onClick={menuAnimation} className='icon'/></li>
           
-          <h4 className='medium-text'> Stop wasting your time, join the program</h4>
+          <h4 className='medium-text'> Stop wasting your time, join the program!</h4>
           <div className='social-media-container'>
             <div className='icon-sm-container'><img src={instragramIcon} alt="" className='icon-svg'/></div>
             <div className='icon-sm-container'><img src={gmaiIcon} alt="" className='icon-svg'/></div>

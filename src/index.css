@@ -25,7 +25,8 @@
 /* Global styles */
 
     .App{
-        overflow-x: hidden;
+        overflow: hidden;
+        background-color: var(--background-color);
     }
     .button{
         display: flex;
@@ -63,8 +64,8 @@
         text-align: center;
         color: var(--white-color);
         text-transform: uppercase;
-        font-size: clamp(69px, 0.5vh,  20rem);
-        line-height: 5rem;
+        font-size: clamp(1rem, 10vw,  5rem);
+        line-height: 4rem;
    
     }
 
@@ -107,15 +108,23 @@
 
 
 .hero-section{
-    
+    background-color: var(--background-color);
     height: 90vh;
     overflow: hidden;
     position: relative;
+    -webkit-clip-path: polygon(50% 100%, 100% 96%, 100% 0, 0 0, 0 95%);
+    clip-path: polygon(50% 100%, 100% 96%, 100% 0, 0 0, 0 95%);
 }
+
 .hero-section .button{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    text-transform: uppercase;
     align-self: flex-start;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid var(--primary-color);
+    transition: var(--transition);
+}
+.hero-section .button:hover{
+    border: 2px solid transparent;
 }
 /* }
 .hero-section::after{
@@ -139,7 +148,25 @@
     object-fit: cover;
    
 }
-
+.john-crop{
+    height: 100%;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+.maskImg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
 .header-container{
     background-color: rgba(23, 32, 40,0.9);
     position: fixed;
@@ -174,8 +201,8 @@
     color: white;
 }
 .logo-img{
-    height: 4rem;
-    margin-top: 1rem;
+    height: 100%;
+    
 }
 
 .menu-logo-container{
@@ -293,15 +320,15 @@
     transform: translate(-50%,-50%);
     width: 100%;
     height: 100%;
-    
+    z-index: 3;
 }
 .hero-text{
     padding: 0 1rem;
 /*     position: absolute;
     top: 55%;
     left: 50%; */
-    width: 100%;
-    z-index: 1;
+  width: 100%;
+
 
 }
 
@@ -429,7 +456,7 @@
 .pricing-container .paragraph-text{
     color: var(--white-color);
    
-    
+    text-align: center;
     
 }
 .card-wrapper{
@@ -438,7 +465,7 @@
 .card-container{
     position: relative;
     align-self: center;
-    width: 100%;
+  
     overflow: hidden;
     padding: 2rem 1rem;
     display: flex;
@@ -468,11 +495,9 @@
 .card-container .medium-text{
     text-transform: uppercase;
     font-size: 2.2rem;
+    text-align: center;
 }
-.card-container  .medium-text, .card-container .paragraph-text{
-    
 
-}
 .card-container .paragraph-text{
     color: #777777;
     text-align: center;
@@ -538,8 +563,7 @@ option{
     display: flex;
     justify-content: center;
     gap: 0.2rem;
-    width: 60%;
-    margin: 0 auto;
+    width: 100%;
     margin-bottom: 1rem;
 }
 .plan-type-container{
@@ -550,18 +574,124 @@ option{
     place-content: center;
     cursor: pointer;
     text-align: center;
+    transition: var(--transition);
+}
+.plan-type-container:hover{
+    background-color: var(--primary-color);
+}
+.pricing-container:nth-of-type(2){
+    background-color: var(--white-color);
+}
+.pricing-container:nth-of-type(2) .big-text, .pricing-container:nth-of-type(2) .paragraph-text {
+    color: var(--background-color);
+    text-align: center;
+}
+.pricing-container:nth-of-type(2) .card-container{
+    background-color: var(--primary-color);
 }
 
+.pricing-container:nth-of-type(2) .button{
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+.pricing-container:nth-of-type(2) .card-text-price, .pricing-container:nth-of-type(2) {
+    color: var(--white-color);
+}
+
+
+.presentation-container{
+    position: relative;
+    background-color: var(--background-color);
+    
+}
+.presentation-background{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+.presentation-background img{
+    height: 100%;
+    transform: translateX(20rem);
+    opacity: 0.1;
+}
+.presentation-wrapper{
+    padding: 4rem 1rem 1rem 1rem;
+}
+.presentation-container .big-text{
+    margin-bottom: 0;
+    text-align: center;
+    margin: 0 auto !important;
+    position: relative;
+    
+    font-size: 3rem;
+    line-height: 2.5rem;
+    padding: 0 1rem;
+    
+    color: var(--white-color);
+}
+.presentation-container .paragraph-text{
+    color: var(--white-color);
+    margin-top: 1rem !important;
+}
+.presentation-item-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.john-collage{
+    height: auto;
+    width: 100%;
+}
 @media only screen and (min-width: 980px) {
+    .presentation-container{
+        overflow: hidden;
+        height: 90vh;
+    }
+    
+.presentation-item{
+    width: 50%;
+}
+.plan-toggle{
+    width: 70%;
+    margin: 0 auto;
+}
+    .presentation-wrapper{
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
+        
+    }
+    .presentation-container .big-text{
+        text-align: left;
+        padding: 0;
+    }
+.presentation-item-wrapper{
+    position: absolute;
+    right: -50px;
+    margin-bottom: 1rem;
+}
+.john-collage{
+    height: 40vw;
+}
     .hero-container{
-        width: 60%;
+        width: 70%;
         margin:  0 auto;
     }
     .heading-text{
         text-align: left;
+            align-self: baseline;
+
     }
     .header-wrapper{
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
     }
     .menu-logo-container{
@@ -572,6 +702,7 @@ option{
     }
     .social-media-container{
         margin-top: 0;
+        justify-content: flex-end;
     }
     .menu-container{
         height: inherit;
@@ -596,21 +727,24 @@ option{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 3vw;
+        
     }
     .hero-section .button{
-      /*   align-self: center; */
+      align-self: flex-start; 
         width: initial;
         padding: 1rem 2rem;
         height: inherit;
-        align-self: center;
+        
     }
     .card-wrapper{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        justify-content: center;
         column-gap: 4%;
         width: 70%;
         margin: 1rem auto;
+    }
+    .card-container{
+        width: min(20rem, 100%);
     }
     .hero-paragraph{
         margin: 0 auto;
