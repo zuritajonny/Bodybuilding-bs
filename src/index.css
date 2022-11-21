@@ -3,6 +3,7 @@
 :root{
     font-family: 'Agency FB', arial !important;
     scroll-behavior: smooth;
+    font-size: 18.5px;
     --black-color: #171D1C;
     --primary-color: #D33434;
     --secondary-color: #1F2732;
