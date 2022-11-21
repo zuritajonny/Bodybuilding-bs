@@ -75,7 +75,7 @@
 .big-text {
   color: var(--black-color);
   font-size: clamp(100px, 0.3vh, 20rem);
-  line-height: 6rem;
+
   text-align: right;
 }
 .medium-text {
@@ -414,7 +414,7 @@
   position: relative;
   text-align: center;
   font-size: 3rem;
-  line-height: 2.5rem;
+
   padding: 0 1rem;
   margin-bottom: 2rem;
   color: var(--white-color);
