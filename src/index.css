@@ -40,7 +40,7 @@
         border: none;
         margin-top: 1rem;
         background-color:var(--primary-color);
-        
+        font-size: 1.2rem !important;
         cursor: pointer;
         font-size: 1rem;
         color: var(--white-color);
@@ -65,8 +65,8 @@
         text-align: center;
         color: var(--white-color);
         text-transform: uppercase;
-        font-size: clamp(4rem, 10vw,  5rem);
-        line-height: 4rem;
+        font-size: clamp(2.5rem, 15vw,  5rem);
+        line-height: auto;
    
     }
 
@@ -91,7 +91,7 @@
     }
 
     .paragraph-text{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .subtitle-text{
@@ -123,9 +123,11 @@
     background-color: rgba(0, 0, 0, 0);
     border: 2px solid var(--primary-color);
     transition: var(--transition);
+    font-size: 1.1rem;
 }
 .hero-section .button:hover{
     border: 2px solid transparent;
+    background-color: var(--primary-color);
 }
 /* }
 .hero-section::after{
@@ -501,12 +503,14 @@
 
 .card-container .paragraph-text{
     color: #777777;
-    text-align: center;
+    text-align: justify;
+    min-height: 4rem;
+    padding: 0 2rem;
 }
 .card-list{
     font-size: 1rem;
     margin-top: 0.5rem;
-    margin-left: 1rem;
+    
     color: var(--white-color);
     padding: 0 1rem;
     list-style: none;
@@ -647,6 +651,9 @@ option{
     height: auto;
     width: 100%;
 }
+.card-hidden{
+        display: none; 
+}
 @media only screen and (min-width: 980px) {
     .presentation-container{
         overflow: hidden;
@@ -688,8 +695,8 @@ option{
     }
     .heading-text{
         text-align: left;
-            align-self: baseline;
-
+        align-self: baseline;
+        
     }
     .header-wrapper{
         width: 70%;

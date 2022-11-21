@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef,useState } from "react";
 import Header from "./components/Header";
 import { IoIosFitness } from "react-icons/io";
 import { AiOutlineShoppingCart } from "react-icons/ai";
@@ -34,6 +34,15 @@ function App() {
   */
 
 /* Hacer un justify content abajo del boton de CTA con lo que ofrece John */
+  const [TypeOfPlan,setTypeOfPlan] = useState('a')
+/*   const [ThreeMonths,setThreeMonths] = useState(false)
+  const [SixteenWeeks,setSixteenWeeks] = useState(false)
+  const [SixMonths,setSixMonths] = useState(false)
+  const [Annual,setAnnual] = useState(false) */
+  
+  console.log(TypeOfPlan)
+  
+
   return (
     <div className="App">
       <Header/>
@@ -45,18 +54,13 @@ function App() {
       <img src={maskGroup} className='maskImg' alt="" /> 
       <div className="hero-container">
         <div className="hero-text">
-       {/*    <p className="description-text">Start the journey</p> */}
+      
           <h1 className="heading-text">A srs <br/>transformation<br/> awaits {/* Ready to get buffed up? */}</h1>
           <button onClick={handleCTA} className="button" >
             <IoIosFitness className="icon"/>Get started
           </button>
         </div>
-          {/* <div className="hero-text">
-              <img src={johnImg} alt="" />
-        <button onClick={handleCTA} className="button" >
-              <IoIosFitness className="icon"/>Become a super-human
-            </button> 
-          </div> */}
+         
       </div>
       
     </main>
@@ -70,44 +74,59 @@ function App() {
   <br />
   Additionally, our higher tier plans allow you to connect with John anytime you want. Text him, call him, let him critique your form or adjust your diet on the fly. We are committed to keeping our prices low—getting in shape shouldn't cost a fortune!
   </p>
-{/* <p className='description-text'>Starting at just $100</p> */}
+
 
   <h2 className="big-text">
     Payment plans
   </h2>
-
+  
   <div className="plan-toggle">
-      <div className="plan-type-container">
+      <div className="plan-type-container" onClick={() => setTypeOfPlan('a')}>
         <h4 className="medium-text">Monthly</h4>
       </div>
-      <div className="plan-type-container">
-        <h4 className="medium-text">3 months</h4>
+      <div className="plan-type-container" onClick={() => setTypeOfPlan('b')}>
+        <h4 className="medium-text">3 Months</h4>
       </div>
-      <div className="plan-type-container">
-        <h4 className="medium-text">6 months</h4>
+      <div className="plan-type-container" onClick={() => setTypeOfPlan('c')}>
+        <h4 className="medium-text">16-weeks </h4>
       </div>
-      <div className="plan-type-container">
+      <div className="plan-type-container" onClick={() => setTypeOfPlan('d')}>
+        <h4 className="medium-text">6 Months</h4>
+      </div>
+      <div className="plan-type-container" onClick={() => setTypeOfPlan('e')}>
         <h4 className="medium-text">Annual</h4>
       </div>
 
   </div>
 
 <div className="card-wrapper">
-<div className='card-container'>
-   {/*  <div className='item-price'>Starting at $100 </div>
-   */}
+
+
+
+<div className={TypeOfPlan === 'c' ? 'card-hidden' : 'card-container'}>
+ 
     <h2 className='medium-text'>Normie</h2>
-   {/*  <div className="select-box-container">
-       <select name="" id="" className="select-box-wrapper">
-        <option value="">Choose your plan</option>
-        <option value="">Monthly</option>
-          <option value="">3 Months</option>
-          <option value="">6 Months</option>
-      </select> 
-    </div> */}
-    <p className='paragraph-text'>Custom programming in the most afforable way <br />possible</p>
-    <h4 className="card-text-price">$100 <span className="price-description">/month</span></h4>
-    <ul>{/* ‣ Custom diet and workout regimen ‣ Bi-weekly programming tweaks ‣ E-Mail John directly */}
+   
+    <p className='paragraph-text'>Custom programming in the most afforable way possible</p>
+    <h4 className="card-text-price">
+    {(() => {
+        switch (TypeOfPlan) {
+          case 'a':
+            return '$100 '
+          case 'b':
+            return '$300 '
+          case 'c':
+            return '$600 '
+          case 'd':
+            return '$600 ' 
+          case 'e':
+            return '$1200 ' 
+          default:
+            return '$100 '
+        }
+      })()}  
+    <span className="price-description">/month</span></h4>
+    <ul>
         <li className='card-list'>Custom workout regimen and diet</li>
         <li className='card-list'>Bi-weekly programming tweaks</li>
         <li className='card-list'>E-mail and text me directly
@@ -116,12 +135,31 @@ function App() {
     <button className='button'><AiOutlineShoppingCart className="icon"/> Purchase</button>
 </div>
 
-<div className='card-container'>
-{/*     <div className='item-price'>$200 monthly</div> */}
+
+
+
+<div className={TypeOfPlan === 'c' ? 'card-hidden' : 'card-container'}>
+
     <h2 className='medium-text'>Ascending</h2>
     <p className='paragraph-text'>Custom programming with constant feedback and more tweaks</p>
-    <h4 className="card-text-price">$200 <span className="price-description">/month</span></h4>
-    <ul>{/* ‣ Custom diet and workout regimen ‣ Bi-weekly programming tweaks ‣ E-Mail John directly */}
+    <h4 className="card-text-price">
+    {(() => {
+        switch (TypeOfPlan) {
+          case 'a':
+            return '$200 '
+          case 'b':
+            return '$550 '
+          case 'c':
+            return '$1000 '
+          case 'd':
+            return '$1000 ' 
+          case 'e':
+            return '$1950 ' 
+          
+        }
+      })()}  
+      <span className="price-description">/month</span></h4>
+    <ul>
         <li className='card-list'>Custom workout regimen and diet</li>
         <li className='card-list'>Weekly programming tweaks</li>
         <li className='card-list'>E-mail and text me directly</li>
@@ -129,18 +167,57 @@ function App() {
     <button className='button'><AiOutlineShoppingCart className="icon"/> Purchase</button>
 </div>
 
+
+
+
+
+      {TypeOfPlan === 'a' && 'c' ? 
 <div className='card-container'>
-  {/*   <div className='item-price'>$250 monthly</div> */}
+
     <h2 className='medium-text'>Srs - Bodybuild</h2>
     <p className='paragraph-text'>Custom programming with constant feedback and prep secrets</p>
-    <h4 className="card-text-price">$250 <span className="price-description">/month</span></h4>
-    <ul>{/* ‣ Custom diet and workout regimen ‣ Bi-weekly programming tweaks ‣ E-Mail John directly */}
+    <h4 className="card-text-price">
+    {(() => {
+        switch (TypeOfPlan) {
+          case 'a':
+            return '$250 '
+          case 'b':
+            return '$300 '
+          case 'c':
+            return '$600 '
+          case 'd':
+            return '$1200 ' 
+          default:
+            return '$250 '
+        }
+      })()}  
+      <span className="price-description">/month</span></h4>
+    <ul>
         <li className='card-list'>Custom workout regimen and diet</li>
         <li className='card-list'>Unlimited programming tweaks</li>
         <li className='card-list'>Posing lessons and prep tips</li>
     </ul>
     <button className='button'><AiOutlineShoppingCart className="icon"/> Purchase</button>
-</div>
+</div> : ''}
+
+      {TypeOfPlan === 'c' && 
+<div className='card-container'>
+
+    <h2 className='medium-text'>Srs - Bodybuild</h2>
+   
+    <p className='paragraph-text'>Custom programming in the most afforable way possible</p>
+    <h4 className="card-text-price">
+   $900
+    <span className="price-description">/month</span></h4>
+    <ul>
+        <li className='card-list'>Custom workout regimen and diet</li>
+        <li className='card-list'>Bi-weekly programming tweaks</li>
+        <li className='card-list'>E-mail and text me directly
+</li>
+    </ul>
+    <button className='button'><AiOutlineShoppingCart className="icon"/> Purchase</button>
+</div>}
+
 </div>
 
 <span className="subtitle-bottom"><p className="description-text">Top in the US</p></span>
@@ -157,45 +234,16 @@ function App() {
   
  
   </p>
-{/* <p className='description-text'>Starting at just $100</p> */}
-{/* 
-  <h2 className="big-text">
-    Payment plans
-  </h2>
 
-  <div className="plan-toggle">
-      <div className="plan-type-container">
-        <h4 className="medium-text">Monthly</h4>
-      </div>
-      <div className="plan-type-container">
-        <h4 className="medium-text">3-months</h4>
-      </div>
-      <div className="plan-type-container">
-        <h4 className="medium-text">6-months</h4>
-      </div>
-      <div className="plan-type-container">
-        <h4 className="medium-text">Annual</h4>
-      </div>
-
-  </div> */}
 
 <div className="card-wrapper">
 <div className='card-container'>
-   {/*  <div className='item-price'>Starting at $100 </div>
-   */}
+  
     <h2 className='medium-text'>20-minute
 posing session</h2>
-   {/*  <div className="select-box-container">
-       <select name="" id="" className="select-box-wrapper">
-        <option value="">Choose your plan</option>
-        <option value="">Monthly</option>
-          <option value="">3 Months</option>
-          <option value="">6 Months</option>
-      </select> 
-    </div> */}
-  {/*   <p className='paragraph-text'>Receive custom programming in the most afforable way possible, for you.</p> */}
+
     <h4 className="card-text-price">$50 <span className="price-description">/month</span></h4>
-    <ul>{/* ‣ Custom diet and workout regimen ‣ Bi-weekly programming tweaks ‣ E-Mail John directly */}
+    <ul>
         <li className='card-list'>One-on-one session</li>
         <li className='card-list'>Learn how to pose properly</li>
         <li className='card-list'>20-minutes session (Better for advanced athletes)
@@ -205,12 +253,12 @@ posing session</h2>
 </div>
 
 <div className='card-container'>
-{/*     <div className='item-price'>$200 monthly</div> */}
+
     <h2 className='medium-text'>40-minute
 posing session</h2>
-    {/* <p className='paragraph-text'>Custom programming with constant feedback and more tweaks</p> */}
+
     <h4 className="card-text-price">$90 <span className="price-description">/month</span></h4>
-    <ul>{/* ‣ Custom diet and workout regimen ‣ Bi-weekly programming tweaks ‣ E-Mail John directly */}
+    <ul>
         <li className='card-list'>One-on-one session</li>
         <li className='card-list'>Learn the principles of posing</li>
         <li className='card-list'>40-minutes session (Better for new athletes)</li>
@@ -221,7 +269,6 @@ posing session</h2>
 
 </div>
 
-{/* <span className="subtitle-bottom"><p className="description-text">Top in the US</p></span> */}
 </section>
 
 
