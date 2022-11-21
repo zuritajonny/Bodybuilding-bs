@@ -118,7 +118,7 @@ function App() {
 
 <div className='card-container'>
 {/*     <div className='item-price'>$200 monthly</div> */}
-    <h2 className='medium-text'>Serious</h2>
+    <h2 className='medium-text'>Ascending</h2>
     <p className='paragraph-text'>Custom programming with constant feedback and more tweaks</p>
     <h4 className="card-text-price">$200 <span className="price-description">/month</span></h4>
     <ul>{/* ‣ Custom diet and workout regimen ‣ Bi-weekly programming tweaks ‣ E-Mail John directly */}
@@ -131,7 +131,7 @@ function App() {
 
 <div className='card-container'>
   {/*   <div className='item-price'>$250 monthly</div> */}
-    <h2 className='medium-text'>Bodybuild</h2>
+    <h2 className='medium-text'>Srs - Bodybuild</h2>
     <p className='paragraph-text'>Custom programming with constant feedback and prep secrets</p>
     <h4 className="card-text-price">$250 <span className="price-description">/month</span></h4>
     <ul>{/* ‣ Custom diet and workout regimen ‣ Bi-weekly programming tweaks ‣ E-Mail John directly */}
