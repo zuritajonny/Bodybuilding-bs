@@ -11,7 +11,6 @@ import maskGroup from "./media/mask-group.png";
 
 function App() {
   const ref = useRef();
-
   const handleCTA = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
