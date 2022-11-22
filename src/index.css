@@ -91,7 +91,7 @@
 }
 
 .paragraph-text {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
 }
 
 .subtitle-text {
@@ -120,7 +120,9 @@
   background-color: var(--primary-color);
 
   transition: var(--transition);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
   border-radius: 0.5rem;
 }
 .hero-section .button:hover {
@@ -369,11 +371,16 @@
 
 .footer-container {
   padding: 2rem 1rem;
-  background-color: var(--black-color);
+  background-color: var(--background-color);
+}
+.footer-container .medium-text {
+  text-align: center;
+  font-size: 1.2rem;
 }
 .footer-container .paragraph-text {
   color: var(--white-color);
   margin-top: 0.5rem;
+  text-align: center;
 }
 .footer-container .paragraph-text:nth-of-type(2) {
   text-align: center;
@@ -385,25 +392,33 @@
   display: flex;
   gap: 1rem;
   justify-content: center;
+  align-items: center;
 }
 .icon-sm-container {
-  height: 2rem;
-  width: 2rem;
-  border-radius: 50%;
-  overflow: hidden;
+  height: 1.5rem;
+  width: 1.5rem;
+
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: var(--transition);
 }
-
+.icon-sm-container:first-child {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.icon-sm-container:hover {
+  transform: scale(1.1);
+}
 .icon-svg {
   height: 100%;
   width: 100%;
+  color: var(--white-color);
 }
 
 .pricing-container {
-  padding: 4rem 1rem 0 1rem;
+  padding: 3rem 1rem 2rem 1rem;
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
@@ -425,8 +440,11 @@
   color: var(--white-color);
 }
 
-.pricing-container .big-text:nth-of-type(2) {
+.pricing-container:nth-of-type(2) .card-container {
   margin-top: 1rem;
+}
+.pricing-container .big-text:nth-of-type(2) {
+  margin-top: 3rem;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -466,13 +484,13 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-
+  gap: 1rem;
   background-color: var(--secondary-color);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   margin-bottom: 2rem;
   /*   height: 25rem; */
-  min-height: 27rem;
+  /*  min-height: 27rem; */
   border-radius: 0.5rem;
 }
 .card-text-price {
@@ -564,13 +582,14 @@ option {
 .plan-type-container {
   padding: 0.8rem 0;
   flex: 1 1 6rem;
-
+  background-color: var(--secondary-color);
   display: grid;
   place-content: center;
   cursor: pointer;
   text-align: center;
   transition: var(--transition);
   border-radius: 0.5rem;
+  font-size: 1.15rem;
 }
 .plan-type-container:hover,
 .card-container .button:hover {
@@ -618,6 +637,7 @@ option {
   left: 0;
   bottom: 0;
   position: absolute;
+  pointer-events: none;
 }
 .presentation-background img {
   height: 100%;
@@ -642,6 +662,7 @@ option {
 .presentation-container .paragraph-text {
   color: var(--white-color);
   margin-top: 1rem !important;
+  width: 70%;
 }
 .presentation-item-wrapper {
   display: flex;
@@ -712,7 +733,7 @@ option {
   .menu-container .medium-text {
     display: none;
   }
-  .social-media-container {
+  .menu-container .social-media-container {
     margin-top: 0;
     justify-content: flex-end;
   }

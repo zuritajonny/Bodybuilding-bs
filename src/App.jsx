@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import { IoIosFitness } from "react-icons/io";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import heroImg from "./media/background-gradient.png";
-import johnImg from "./media/john-doe.png";
+import Footer from "./components/Footer";
 import background from "./media/presentation-background.png";
 import johnCollage from "./media/john-collage.png";
 import johnCrop from "./media/jonh-crop.png";
@@ -27,7 +27,7 @@ function App() {
   Alrededor del hero (imagen de el) 
 
   CAMBIAR LOS MESES MONTH
-  
+  Get started en mayusculas y subirle la fuente
 
   */
 
@@ -80,7 +80,7 @@ function App() {
           low—getting in shape shouldn't cost a fortune!
         </p>
 
-        <h2 className="big-text">Payment plans</h2>
+        <h2 className="big-text">Payment Plans</h2>
 
         <div className="plan-toggle">
           <div
@@ -395,6 +395,7 @@ function App() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

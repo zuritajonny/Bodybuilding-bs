@@ -2,10 +2,11 @@ import { useState, useEffect } from "react";
 import logoImg from "../media/logoB.png";
 import { BiMenu } from "react-icons/bi";
 import { IoCloseOutline } from "react-icons/io5";
+import { AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
 
 import { useScrollLock } from "../hooks/useScrollLock";
-import instragramIcon from "../media/Icons/instagram.svg";
-import gmaiIcon from "../media/Icons/gmail.svg";
+import instragramIcon from "../media/Icons/instagram.png";
+import gmaiIcon from "../media/Icons/gmail.png";
 
 const Header = () => {
   const { lockScroll, unlockScroll } = useScrollLock();
@@ -100,11 +101,11 @@ const Header = () => {
           <div className="social-media-container">
             <a href="https://www.instagram.com/effercoaching/" target="_blank">
               <div className="icon-sm-container">
-                <img src={instragramIcon} alt="" className="icon-svg" />
+                <AiOutlineInstagram className="icon-svg" />
               </div>
             </a>
             <div className="icon-sm-container">
-              <img src={gmaiIcon} alt="" className="icon-svg" />
+              <AiOutlineMail className="icon-svg" />
             </div>
           </div>
         </ul>
