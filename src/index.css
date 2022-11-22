@@ -44,6 +44,7 @@
   cursor: pointer;
   font-size: 1rem;
   color: var(--white-color);
+  transition: var(--transition);
 }
 .purchase-button-link {
   width: 100%;
@@ -68,7 +69,7 @@
   text-align: left;
   color: var(--white-color);
   text-transform: uppercase;
-  font-size: clamp(1.6rem, 10vw, 5rem);
+  font-size: clamp(3rem, 10vw, 5rem);
   line-height: auto;
 }
 
@@ -393,6 +394,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .icon-svg {
@@ -409,6 +411,9 @@
 }
 .pricing-container:nth-of-type(2) {
   background-color: var(--primary-color) !important;
+}
+.pricing-container:nth-of-type(2) .big-text::after {
+  background-color: var(--white-color);
 }
 .pricing-container .big-text {
   position: relative;
@@ -435,9 +440,10 @@
   height: 0.5rem;
   width: 5rem;
   position: absolute;
-  bottom: -1.2rem;
+  bottom: -0.8rem;
   transform: translate(-50%, 0);
   left: 50%;
+  border-radius: 1rem;
 }
 .pricing-container .description-text {
   padding: 0 1rem;
@@ -564,9 +570,16 @@ option {
   cursor: pointer;
   text-align: center;
   transition: var(--transition);
+  border-radius: 0.5rem;
 }
-.plan-type-container:hover {
+.plan-type-container:hover,
+.card-container .button:hover {
   background-color: var(--primary-color);
+  box-shadow: rgba(211, 52, 52, 0.6) 0px 5px 15px 0px;
+}
+.color-accent {
+  background-color: var(--primary-color);
+  box-shadow: rgba(211, 52, 52, 0.6) 0px 5px 15px 0px;
 }
 
 .pricing-container:nth-of-type(2) .big-text,

@@ -84,31 +84,51 @@ function App() {
 
         <div className="plan-toggle">
           <div
-            className="plan-type-container"
+            className={
+              TypeOfPlan === "a"
+                ? "plan-type-container color-accent"
+                : "plan-type-container "
+            }
             onClick={() => setTypeOfPlan("a")}
           >
             <h4 className="medium-text">Monthly</h4>
           </div>
           <div
-            className="plan-type-container"
+            className={
+              TypeOfPlan === "b"
+                ? "plan-type-container color-accent"
+                : "plan-type-container "
+            }
             onClick={() => setTypeOfPlan("b")}
           >
             <h4 className="medium-text">3 Months</h4>
           </div>
           <div
-            className="plan-type-container"
+            className={
+              TypeOfPlan === "c"
+                ? "plan-type-container color-accent"
+                : "plan-type-container "
+            }
             onClick={() => setTypeOfPlan("c")}
           >
             <h4 className="medium-text">16-weeks </h4>
           </div>
           <div
-            className="plan-type-container"
+            className={
+              TypeOfPlan === "d"
+                ? "plan-type-container color-accent"
+                : "plan-type-container "
+            }
             onClick={() => setTypeOfPlan("d")}
           >
             <h4 className="medium-text">6 Months</h4>
           </div>
           <div
-            className="plan-type-container"
+            className={
+              TypeOfPlan === "e"
+                ? "plan-type-container color-accent"
+                : "plan-type-container "
+            }
             onClick={() => setTypeOfPlan("e")}
           >
             <h4 className="medium-text">Annual</h4>
@@ -141,7 +161,20 @@ function App() {
                     return "$100 ";
                 }
               })()}
-              <span className="price-description">/month</span>
+              <span className="price-description">
+                {(() => {
+                  switch (TypeOfPlan) {
+                    case "a":
+                      return "/month";
+                    case "b":
+                      return "/3 months";
+                    case "d":
+                      return "/6 months";
+                    case "e":
+                      return "/year";
+                  }
+                })()}
+              </span>
             </h4>
             <ul>
               <li className="card-list">Custom workout regimen and diet</li>
@@ -184,7 +217,20 @@ function App() {
                     return "$1950 ";
                 }
               })()}
-              <span className="price-description">/month</span>
+              <span className="price-description">
+                {(() => {
+                  switch (TypeOfPlan) {
+                    case "a":
+                      return "/month";
+                    case "b":
+                      return "/3 months";
+                    case "d":
+                      return "/6 months";
+                    case "e":
+                      return "/year";
+                  }
+                })()}
+              </span>
             </h4>
             <ul>
               <li className="card-list">Custom workout regimen and diet</li>
@@ -255,11 +301,11 @@ function App() {
               <h2 className="medium-text">Srs - Bodybuild</h2>
 
               <p className="paragraph-text">
-                Custom programming in the most afforable way possible
+                Custom programming in the most affordable way possible
               </p>
               <h4 className="card-text-price">
                 $900
-                <span className="price-description">/month</span>
+                <span className="price-description"> /16-weeks</span>
               </h4>
               <ul>
                 <li className="card-list">Custom workout regimen and diet</li>
