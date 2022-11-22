@@ -662,7 +662,7 @@ option {
 .presentation-container .paragraph-text {
   color: var(--white-color);
   margin-top: 1rem !important;
-  width: 70%;
+  width: 100%;
 }
 .presentation-item-wrapper {
   display: flex;
@@ -706,6 +706,9 @@ option {
   .presentation-container .big-text {
     text-align: left;
     padding: 0;
+  }
+  .presentation-container .paragraph-text {
+    width: 70%;
   }
   .presentation-item-wrapper {
     position: absolute;
