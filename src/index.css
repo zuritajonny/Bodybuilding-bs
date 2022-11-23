@@ -4,7 +4,7 @@
   font-family: "Oswald", sans-serif;
   scroll-behavior: smooth;
   font-size: 18.5px;
-  --black-color: #171d1c;
+  --black-color: #0f0f0f;
   --primary-color: #d33434;
   --secondary-color: #1f2732;
   --background-color: #172028;
@@ -45,13 +45,15 @@
   font-size: 1rem;
   color: var(--white-color);
   transition: var(--transition);
+  font-family: "Oswald", sans-serif;
 }
 .purchase-button-link {
   width: 100%;
   text-decoration: none;
+  color: var(--white-color);
 }
 .primary-color-accent {
-  color: var(--white-color);
+  color: var(--primary-color);
 }
 .subtitle-bottom {
   position: absolute;
@@ -69,7 +71,7 @@
   text-align: left;
   color: var(--white-color);
   text-transform: uppercase;
-  font-size: clamp(3rem, 10vw, 5rem);
+  font-size: clamp(1.4rem, 10vw, 5rem);
   line-height: auto;
 }
 
@@ -106,7 +108,10 @@
 /*  */
 
 .hero-section {
-  background-color: var(--background-color);
+  background: url(media/background-gradient.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
   height: 90vh;
   overflow: hidden;
   position: relative;
@@ -146,9 +151,15 @@
   } */
 .heroImg {
   width: 100%;
-  height: 120%;
-  object-position: center;
+  height: 100%;
+  object-position: right;
   object-fit: cover;
+
+  background: linear-gradient(
+    0deg,
+    rgba(211, 52, 52, 0.5) 0%,
+    rgba(34, 34, 34, 0) 59%
+  );
 }
 .john-crop {
   height: 100%;
@@ -427,6 +438,9 @@
 .pricing-container:nth-of-type(2) {
   background-color: var(--primary-color) !important;
 }
+.pricing-container:nth-of-type(2) .primary-color-accent {
+  color: var(--white-color);
+}
 .pricing-container:nth-of-type(2) .big-text::after {
   background-color: var(--white-color);
 }
@@ -471,14 +485,11 @@
 
   text-align: left;
 }
-.card-wrapper {
-  margin-top: 1rem;
-}
+
 .card-container {
   position: relative;
   align-self: center;
-
-  overflow: hidden;
+  margin-top: 2rem;
   padding: 2rem 1rem;
   display: flex;
   align-items: center;
@@ -492,6 +503,80 @@
   /*   height: 25rem; */
   /*  min-height: 27rem; */
   border-radius: 0.5rem;
+  transition: var(--transition);
+}
+
+.black-friday-card {
+  background-color: #000000;
+  padding: 6rem 1rem 2rem !important;
+  z-index: 1;
+}
+.card-container:hover {
+  box-shadow: rgb(211 49 49 / 60%) 0px 5px 15px 0px;
+}
+.black-friday-card .button {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+.black-friday-card .paragraph-text {
+  color: var(--white-color) !important;
+}
+.BF-deal {
+  color: #777777;
+  padding: 0 40% 0 0;
+  font-size: 1.2rem;
+}
+.BF-deal span {
+  text-decoration: line-through;
+  font-size: 1.5rem;
+}
+.item-price {
+  position: absolute;
+  background-color: #f53131;
+  height: auto;
+  display: grid;
+  place-content: center;
+  right: -1rem;
+  width: 60%;
+  border-radius: 0 2rem 2rem 0;
+  top: 2rem;
+  color: var(--white-color);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 10% 50%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 10% 50%);
+  animation: priceAnimation 3s infinite;
+}
+@keyframes priceAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  30% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.item-price-tail {
+  height: 61px;
+  position: absolute;
+  width: 5rem;
+  z-index: 1;
+  top: 3rem;
+  right: -4rem;
+  background-color: #b62222;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%, 0 100%);
+}
+.item-price .medium-text {
+  padding: 0 0 0 1.5rem;
+  word-break: keep-all;
+  word-wrap: normal;
 }
 .card-text-price {
   color: var(--primary-color);
@@ -514,31 +599,21 @@
   color: #777777;
   text-align: justify;
   min-height: 4rem;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
 }
 .card-list {
   font-size: 1rem;
   margin-top: 0.5rem;
 
   color: var(--white-color);
-  padding: 0 1rem;
+
   list-style: none;
   text-align: center;
 }
 .card-list::marker {
   margin-left: 1rem;
 }
-.item-price {
-  width: 40%;
-  background-color: var(--primary-color);
-  position: absolute;
-  top: 0;
-  padding: 1rem;
-  border-radius: 0 0 0.5rem 0.5rem;
-  right: 1rem;
-  color: var(--white-color);
-  text-align: center;
-}
+
 .card-container .button {
   border-radius: 0.5rem;
   font-weight: 600;
@@ -684,6 +759,9 @@ option {
     background-color: rgba(0, 0, 0, 0);
     border: 2px solid var(--primary-color);
   }
+  /*   .item-price {
+    transform: translateX(121px);
+  } */
   .john-crop {
     transform: translate(0, 0);
   }
@@ -691,11 +769,11 @@ option {
     width: 50%;
   }
   .plan-toggle {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
   }
   .presentation-wrapper {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     position: relative;
@@ -708,7 +786,7 @@ option {
     padding: 0;
   }
   .presentation-container .paragraph-text {
-    width: 70%;
+    width: 75%;
   }
   .presentation-item-wrapper {
     position: absolute;
@@ -719,7 +797,7 @@ option {
     height: 40vw;
   }
   .hero-container {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
   }
   .heading-text {
@@ -727,7 +805,7 @@ option {
     align-self: baseline;
   }
   .header-wrapper {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
   }
   .menu-logo-container {
@@ -771,15 +849,15 @@ option {
     display: flex;
     justify-content: center;
     column-gap: 4%;
-    width: 70%;
-    margin: 1rem auto;
+    width: 80%;
+    margin: 0 auto;
   }
   .card-container {
-    width: min(20rem, 100%);
+    width: min(22rem, 100%);
   }
   .hero-paragraph {
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
   }
   .pricing-container:nth-of-type(2) .paragraph-text,
   .pricing-container .paragraph-text {

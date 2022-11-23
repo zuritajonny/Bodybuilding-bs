@@ -122,7 +122,7 @@ function App() {
           >
             <h4 className="medium-text">Annual</h4>
           </div>
-          {/*   <div
+          <div
             className={
               TypeOfPlan === "c"
                 ? "plan-type-container color-accent"
@@ -131,10 +131,10 @@ function App() {
             onClick={() => setTypeOfPlan("c")}
           >
             <h4 className="medium-text">Contest Prep </h4>
-          </div> */}
+          </div>
         </div>
-        <BlackFriday TypeOfPlan={TypeOfPlan} />
-        {/* <div className="card-wrapper">
+        {/*   <BlackFriday TypeOfPlan={TypeOfPlan} /> */}
+        <div className="card-wrapper">
           <div
             className={TypeOfPlan === "c" ? "card-hidden" : "card-container"}
           >
@@ -327,7 +327,7 @@ function App() {
               </button>
             </div>
           )}
-        </div> */}
+        </div>
 
         {/*        <span className="subtitle-bottom">
           <p className="description-text">Top in the US</p>
