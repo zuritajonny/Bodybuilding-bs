@@ -52,7 +52,7 @@ function App() {
             <h1 className="heading-text">
               A srs <br />
               <span>black</span>
-              <br /> friday {/* Ready to get buffed up? */}
+              <br /> <span>friday</span> {/* Ready to get buffed up? */}
             </h1>
             <button onClick={handleCTA} className="button">
               <IoIosFitness className="icon" />

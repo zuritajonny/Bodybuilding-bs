@@ -75,6 +75,23 @@
   font-size: clamp(1.4rem, 10vw, 5rem);
   line-height: auto;
 }
+.heading-text span:nth-of-type(1) {
+  position: relative;
+}
+.heading-text span:nth-of-type(1)::before {
+  position: absolute;
+  top: 0;
+  left: -1rem;
+  right: -1rem;
+  bottom: 0;
+  content: "";
+  z-index: -1;
+  height: 100%;
+  background-color: black;
+}
+.heading-text span:nth-of-type(2) {
+  color: var(--primary-color);
+}
 
 .big-text {
   color: var(--black-color);
