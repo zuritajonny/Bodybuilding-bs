@@ -51,8 +51,8 @@ function App() {
           <div className="hero-text">
             <h1 className="heading-text">
               A srs <br />
-              <span>transformation</span>
-              <br /> awaits {/* Ready to get buffed up? */}
+              <span>black</span>
+              <br /> friday {/* Ready to get buffed up? */}
             </h1>
             <button onClick={handleCTA} className="button">
               <IoIosFitness className="icon" />

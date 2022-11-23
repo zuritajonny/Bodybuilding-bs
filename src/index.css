@@ -525,7 +525,7 @@ black-friday-wrapper {
   flex-wrap: wrap;
 }
 .black-friday-card .button:hover {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
 }
 .card-container .button:hover {
   background-color: var(--white-color) !important;

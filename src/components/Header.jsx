@@ -3,9 +3,9 @@ import logoImg from "../media/logoB.png";
 import { BiMenu } from "react-icons/bi";
 import { IoCloseOutline } from "react-icons/io5";
 import { AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
-
+import { TbBrandTiktok } from "react-icons/tb";
 import { useScrollLock } from "../hooks/useScrollLock";
-import instragramIcon from "../media/Icons/instagram.png";
+import tiktokIcon from "../media/Icons/tiktok-icon.svg";
 import gmaiIcon from "../media/Icons/gmail.png";
 
 const Header = () => {
@@ -104,9 +104,15 @@ const Header = () => {
                 <AiOutlineInstagram className="icon-svg" />
               </div>
             </a>
-            <div className="icon-sm-container">
-              <AiOutlineMail className="icon-svg" />
-            </div>
+
+            <a
+              href="https://www.tiktok.com/@johneffer?_t=8XbYgUfs5cT&_r=1"
+              target="_blank"
+            >
+              <div className="icon-sm-container">
+                <TbBrandTiktok className="icon-svg" />
+              </div>
+            </a>
           </div>
         </ul>
       </div>

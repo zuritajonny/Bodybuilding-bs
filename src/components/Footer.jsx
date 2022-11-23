@@ -2,6 +2,7 @@ import React from "react";
 import instragramIcon from "../media/Icons/instagram.png";
 import gmaiIcon from "../media/Icons/gmail.png";
 import { AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
+import { TbBrandTiktok } from "react-icons/tb";
 
 const Footer = () => {
   return (
@@ -21,9 +22,14 @@ const Footer = () => {
               <AiOutlineInstagram className="icon-svg" />
             </div>
           </a>
-          <div className="icon-sm-container">
-            <AiOutlineMail className="icon-svg" />
-          </div>
+          <a
+            href="https://www.tiktok.com/@johneffer?_t=8XbYgUfs5cT&_r=1"
+            target="_blank"
+          >
+            <div className="icon-sm-container">
+              <TbBrandTiktok className="icon-svg" />
+            </div>
+          </a>
         </div>
       </div>
       <p className="paragraph-text">Effer Coaching - All rights reserved</p>
