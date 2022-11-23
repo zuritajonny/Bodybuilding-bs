@@ -81,7 +81,7 @@ function App() {
         <h2 className="big-text" ref={ref}>
           Payment Plans
         </h2>
-
+        <h2 className="big-text">Purchase now, start whenever you want!</h2>
         <div className="plan-toggle">
           <div
             className={
@@ -114,6 +114,7 @@ function App() {
           >
             <h4 className="medium-text">6 Months</h4>
           </div>
+
           <div
             className={
               TypeOfPlan === "e"
@@ -135,6 +136,7 @@ function App() {
             <h4 className="medium-text">Contest Prep </h4>
           </div> */}
         </div>
+
         <BlackFriday TypeOfPlan={TypeOfPlan} />
         {/* <div className="card-wrapper">
           <div

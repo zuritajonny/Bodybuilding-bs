@@ -460,7 +460,13 @@
 .pricing-container .big-text:nth-of-type(2) {
   margin-top: 3rem;
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+  position: static;
+}
+.pricing-container .big-text:nth-of-type(3) {
+  font-size: 1.3rem;
+  padding: 0;
+  position: static;
 }
 .pricing-container .big-text:nth-of-type(2)::after {
   display: none;
@@ -754,6 +760,9 @@ option {
   display: none;
 }
 @media only screen and (min-width: 980px) {
+  .plan-toggle {
+    width: min(22rem, 70%);
+  }
   .presentation-container {
     overflow: hidden;
     height: 90vh;
@@ -768,6 +777,7 @@ option {
   .john-crop {
     transform: translate(0, 0);
   }
+
   .presentation-item {
     width: 50%;
   }
