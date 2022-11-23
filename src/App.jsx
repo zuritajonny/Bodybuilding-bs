@@ -61,7 +61,7 @@ function App() {
         </div>
       </main>
 
-      <section ref={ref} className="pricing-container">
+      <section className="pricing-container">
         <h2 className="big-text">
           <span className="primary-color-accent">Affordable</span> Coaching
           Plans
@@ -78,7 +78,9 @@ function App() {
           low—getting in shape shouldn't cost a fortune!
         </p>
 
-        <h2 className="big-text">Payment Plans</h2>
+        <h2 className="big-text" ref={ref}>
+          Payment Plans
+        </h2>
 
         <div className="plan-toggle">
           <div

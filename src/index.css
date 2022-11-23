@@ -666,10 +666,13 @@ option {
   border-radius: 0.5rem;
   font-size: 1.15rem;
 }
-.plan-type-container:hover,
-.card-container .button:hover {
+.plan-type-container:hover {
   background-color: var(--primary-color);
   box-shadow: rgba(211, 52, 52, 0.6) 0px 5px 15px 0px;
+}
+.card-container .button:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 .color-accent {
   background-color: var(--primary-color);
