@@ -171,9 +171,7 @@ function App() {
             <h4 className="card-text-price">$50</h4>
             <ul>
               <li className="card-list">One-on-one session</li>
-              <li clas sName="card-list">
-                Learn how to pose properly
-              </li>
+              <li className="card-list">Learn how to pose properly</li>
               <li className="card-list">
                 20-minutes session (Better for advanced athletes)
               </li>
