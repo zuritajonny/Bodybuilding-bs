@@ -79,7 +79,7 @@ function App() {
         </p>
 
         <h2 className="big-text">Payment Plans</h2>
-
+        <h2 className="big-text">Purchase now, start whenever you want!</h2>
         <div className="plan-toggle">
           <div
             className={
@@ -348,9 +348,7 @@ function App() {
           <div className="card-container">
             <h2 className="medium-text">20-minute posing session</h2>
 
-            <h4 className="card-text-price">
-              $50 <span className="price-description">/month</span>
-            </h4>
+            <h4 className="card-text-price">$50</h4>
             <ul>
               <li className="card-list">One-on-one session</li>
               <li className="card-list">Learn how to pose properly</li>
@@ -366,9 +364,7 @@ function App() {
           <div className="card-container">
             <h2 className="medium-text">40-minute posing session</h2>
 
-            <h4 className="card-text-price">
-              $90 <span className="price-description">/month</span>
-            </h4>
+            <h4 className="card-text-price">$90</h4>
             <ul>
               <li className="card-list">One-on-one session</li>
               <li className="card-list">Learn the principles of posing</li>

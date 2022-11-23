@@ -2,13 +2,14 @@ import { useRef, useState } from "react";
 import Header from "./components/Header";
 import { IoIosFitness } from "react-icons/io";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import heroImg from "./media/background-gradient.jpg";
 import Footer from "./components/Footer";
 import background from "./media/presentation-background.png";
 import johnCollage from "./media/john-collage.png";
 import johnCrop from "./media/jonh-crop.png";
 import maskGroup from "./media/mask-group.png";
 import BlackFriday from "./components/BlackFriday";
+import NormalPlans from "./components/NormalPlans";
+import { BiPurchaseTag } from "react-icons/bi";
 
 function App() {
   const ref = useRef();
@@ -32,12 +33,12 @@ function App() {
   */
 
   /* Hacer un justify content abajo del boton de CTA con lo que ofrece John */
-  const [TypeOfPlan, setTypeOfPlan] = useState("a");
+  const [TypeOfPlan, setTypeOfPlan] = useState("bf");
   /*   const [ThreeMonths,setThreeMonths] = useState(false)
   const [SixteenWeeks,setSixteenWeeks] = useState(false)
   const [SixMonths,setSixMonths] = useState(false)
   const [Annual,setAnnual] = useState(false) */
-
+  console.log(TypeOfPlan);
   return (
     <div className="App">
       <Header />
@@ -85,6 +86,17 @@ function App() {
         <div className="plan-toggle">
           <div
             className={
+              TypeOfPlan === "bf"
+                ? "plan-type-container black-friday-button"
+                : "plan-type-container bf-hover"
+            }
+            onClick={() => setTypeOfPlan("bf")}
+          >
+            <BiPurchaseTag className="icon" />
+            <h4 className="medium-text">Black Friday</h4>
+          </div>
+          <div
+            className={
               TypeOfPlan === "a"
                 ? "plan-type-container color-accent"
                 : "plan-type-container "
@@ -125,7 +137,7 @@ function App() {
           >
             <h4 className="medium-text">Annual</h4>
           </div>
-          {/*   <div
+          <div
             className={
               TypeOfPlan === "c"
                 ? "plan-type-container color-accent"
@@ -134,208 +146,12 @@ function App() {
             onClick={() => setTypeOfPlan("c")}
           >
             <h4 className="medium-text">Contest Prep </h4>
-          </div> */}
+          </div>
         </div>
 
         <BlackFriday TypeOfPlan={TypeOfPlan} />
-        {/* <div className="card-wrapper">
-          <div
-            className={TypeOfPlan === "c" ? "card-hidden" : "card-container"}
-          >
-            <h2 className="medium-text">Normie</h2>
-
-            <p className="paragraph-text">
-              Custom programming in the most afforable way possible
-            </p>
-            <h4 className="card-text-price">
-              {(() => {
-                switch (TypeOfPlan) {
-                  case "a":
-                    return "$100 ";
-                  case "b":
-                    return "$300 ";
-                  case "c":
-                    return "$600 ";
-                  case "d":
-                    return "$600 ";
-                  case "e":
-                    return "$1200 ";
-                  default:
-                    return "$100 ";
-                }
-              })()}
-              <span className="price-description">
-                {(() => {
-                  switch (TypeOfPlan) {
-                    case "a":
-                      return "/month";
-                    case "b":
-                      return "/3 months";
-                    case "d":
-                      return "/6 months";
-                    case "e":
-                      return "/year";
-                  }
-                })()}
-              </span>
-            </h4>
-            <ul>
-              <li className="card-list">Custom workout regimen and diet</li>
-              <li className="card-list">Bi-weekly programming tweaks</li>
-              <li className="card-list">E-mail and text me directly</li>
-            </ul>
-            <a
-              target="_blank"
-              className="purchase-button-link"
-              href={
-                TypeOfPlan === "a" &&
-                "https://app.businessoperatingsystem.ca/v2/preview/GJHNN317do8Z1x7XCUjR"
-              }
-            >
-              <button className="button">
-                <AiOutlineShoppingCart className="icon" /> Purchase
-              </button>
-            </a>
-          </div>
-
-          <div
-            className={TypeOfPlan === "c" ? "card-hidden" : "card-container"}
-          >
-            <h2 className="medium-text">Ascending</h2>
-            <p className="paragraph-text">
-              Custom programming with constant feedback and more tweaks
-            </p>
-            <h4 className="card-text-price">
-              {(() => {
-                switch (TypeOfPlan) {
-                  case "a":
-                    return "$200 ";
-                  case "b":
-                    return "$550 ";
-                  case "c":
-                    return "$1000 ";
-                  case "d":
-                    return "$1000 ";
-                  case "e":
-                    return "$1950 ";
-                }
-              })()}
-              <span className="price-description">
-                {(() => {
-                  switch (TypeOfPlan) {
-                    case "a":
-                      return "/month";
-                    case "b":
-                      return "/3 months";
-                    case "d":
-                      return "/6 months";
-                    case "e":
-                      return "/year";
-                  }
-                })()}
-              </span>
-            </h4>
-            <ul>
-              <li className="card-list">Custom workout regimen and diet</li>
-              <li className="card-list">Weekly programming tweaks</li>
-              <li className="card-list">E-mail and text me directly</li>
-            </ul>
-            <a
-              target="_blank"
-              className="purchase-button-link"
-              href={
-                TypeOfPlan === "a" &&
-                "https://app.businessoperatingsystem.ca/v2/preview/89tP85PAcJdSfG0Oct4i"
-              }
-            >
-              <button className="button">
-                <AiOutlineShoppingCart className="icon" /> Purchase
-              </button>
-            </a>
-          </div>
-
-          <div
-            className={TypeOfPlan === "c" ? "card-hidden" : "card-container"}
-          >
-            <h2 className="medium-text">Srs - Bodybuild</h2>
-            <p className="paragraph-text">
-              Custom programming with constant feedback and prep secrets
-            </p>
-            <h4 className="card-text-price">
-              {(() => {
-                switch (TypeOfPlan) {
-                  case "a":
-                    return "$250 ";
-                  case "b":
-                    return "$680 ";
-                  case "d":
-                    return "$1300 ";
-                  case "e":
-                    return "$2250 ";
-                }
-              })()}
-              <span className="price-description">
-                {(() => {
-                  switch (TypeOfPlan) {
-                    case "a":
-                      return "/month";
-                    case "b":
-                      return "/3 months";
-                    case "d":
-                      return "/6 months";
-                    case "e":
-                      return "/year";
-                  }
-                })()}
-              </span>
-            </h4>
-            <ul>
-              <li className="card-list">Custom workout regimen and diet</li>
-              <li className="card-list">Unlimited programming tweaks</li>
-              <li className="card-list">Posing lessons and prep tips</li>
-            </ul>
-            <a
-              target="_blank"
-              className="purchase-button-link"
-              href={
-                TypeOfPlan === "a" &&
-                "https://app.businessoperatingsystem.ca/v2/preview/RJOfQ9VNwRD2b4rGG25G"
-              }
-            >
-              <button className="button">
-                <AiOutlineShoppingCart className="icon" /> Purchase
-              </button>
-            </a>
-          </div>
-
-          {TypeOfPlan === "c" && (
-            <div className="card-container">
-              <h2 className="medium-text">
-                16-week <br /> Contest Prep
-              </h2>
-
-              <p className="paragraph-text">
-                Custom programming in the most affordable way possible
-              </p>
-              <h4 className="card-text-price">
-                $900
-                <span className="price-description"> /16-weeks</span>
-              </h4>
-              <ul>
-                <li className="card-list">Custom workout regimen and diet</li>
-                <li className="card-list">Bi-weekly programming tweaks</li>
-                <li className="card-list">E-mail and text me directly</li>
-              </ul>
-              <button className="button">
-                <AiOutlineShoppingCart className="icon" /> Purchase
-              </button>
-            </div>
-          )}
-        </div> */}
-
-        {/*        <span className="subtitle-bottom">
-          <p className="description-text">Top in the US</p>
-        </span> */}
+        <NormalPlans TypeOfPlan={TypeOfPlan} />
+        {/* */}
       </section>
 
       <section className="pricing-container">
@@ -352,12 +168,12 @@ function App() {
           <div className="card-container">
             <h2 className="medium-text">20-minute posing session</h2>
 
-            <h4 className="card-text-price">
-              $50 <span className="price-description">/month</span>
-            </h4>
+            <h4 className="card-text-price">$50</h4>
             <ul>
               <li className="card-list">One-on-one session</li>
-              <li className="card-list">Learn how to pose properly</li>
+              <li clas sName="card-list">
+                Learn how to pose properly
+              </li>
               <li className="card-list">
                 20-minutes session (Better for advanced athletes)
               </li>
@@ -370,9 +186,7 @@ function App() {
           <div className="card-container">
             <h2 className="medium-text">40-minute posing session</h2>
 
-            <h4 className="card-text-price">
-              $90 <span className="price-description">/month</span>
-            </h4>
+            <h4 className="card-text-price">$90</h4>
             <ul>
               <li className="card-list">One-on-one session</li>
               <li className="card-list">Learn the principles of posing</li>

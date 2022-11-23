@@ -3,7 +3,7 @@
 :root {
   font-family: "Oswald", sans-serif;
   scroll-behavior: smooth;
-  font-size: 18.5px;
+  font-size: 16px;
   --black-color: #0f0f0f;
   --primary-color: #d33434;
   --secondary-color: #1f2732;
@@ -29,6 +29,7 @@
   overflow: hidden;
   background-color: var(--background-color);
 }
+
 .button {
   display: flex;
   align-items: center;
@@ -520,6 +521,16 @@
 .card-container:hover {
   box-shadow: rgb(211 49 49 / 60%) 0px 5px 15px 0px;
 }
+black-friday-wrapper {
+  flex-wrap: wrap;
+}
+.black-friday-card .button:hover {
+  background-color: var(--primary-color);
+}
+.card-container .button:hover {
+  background-color: var(--white-color) !important;
+  color: var(--primary-color) !important;
+}
 .black-friday-card .button {
   background-color: var(--white-color);
   color: var(--black-color);
@@ -539,11 +550,11 @@
 .item-price {
   position: absolute;
   background-color: #f53131;
-  height: auto;
+  height: 61px;
   display: grid;
   place-content: center;
   right: -1rem;
-  width: 60%;
+  width: 80%;
   border-radius: 0 2rem 2rem 0;
   top: 2rem;
   color: var(--white-color);
@@ -568,19 +579,8 @@
     transform: rotate(0);
   }
 }
-.item-price-tail {
-  height: 61px;
-  position: absolute;
-  width: 5rem;
-  z-index: 1;
-  top: 3rem;
-  right: -4rem;
-  background-color: #b62222;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%, 0 100%);
-}
+
 .item-price .medium-text {
-  padding: 0 0 0 1.5rem;
   word-break: keep-all;
   word-wrap: normal;
 }
@@ -661,7 +661,7 @@ option {
   flex-wrap: wrap;
 }
 .plan-type-container {
-  padding: 0.8rem 0;
+  padding: 0.8rem 1rem;
   flex: 1 1 6rem;
   background-color: var(--secondary-color);
   display: grid;
@@ -671,7 +671,38 @@ option {
   transition: var(--transition);
   border-radius: 0.5rem;
   font-size: 1.15rem;
+  min-height: 5rem;
 }
+.black-friday-button {
+  background-color: #000000 !important;
+  padding: 0.8rem 1rem;
+  flex: 1 1 6rem;
+
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  transition: var(--transition);
+  border-radius: 0.5rem;
+  font-size: 1.15rem;
+}
+.black-friday-button {
+  color: var(--white-color);
+}
+.bf-hover {
+  display: flex;
+  gap: 1rem;
+  color: var(--white-color);
+  align-items: center;
+}
+.bf-hover:hover {
+  background-color: #000000 !important;
+}
+.black-friday-button {
+  background-color: #000000;
+}
+
 .plan-type-container:hover {
   background-color: var(--primary-color);
   box-shadow: rgba(211, 52, 52, 0.6) 0px 5px 15px 0px;
@@ -864,9 +895,11 @@ option {
     column-gap: 4%;
     width: 80%;
     margin: 0 auto;
+    flex-wrap: wrap;
   }
   .card-container {
-    width: min(22rem, 100%);
+    /* width: min(22rem, 100%); */
+    flex: 0 1 19rem;
   }
   .hero-paragraph {
     margin: 0 auto;
