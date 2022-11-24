@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600;700&display=swap");
+@import url(https://allfont.net/allfont.css?fonts=agency-fb);
 
 :root {
-  font-family: "Oswald", sans-serif;
-  scroll-behavior: smooth;
+  font-family: "Agency FB", arial;
   font-size: 16px;
   --black-color: #0f0f0f;
   --primary-color: #d33434;
@@ -46,7 +45,7 @@
   font-size: 1rem;
   color: var(--white-color);
   transition: var(--transition);
-  font-family: "Oswald", sans-serif;
+  font-family: "Agency FB", arial;
 }
 .purchase-button-link {
   width: 100%;
@@ -72,11 +71,14 @@
   text-align: left;
   color: var(--white-color);
   text-transform: uppercase;
-  font-size: clamp(1.4rem, 10vw, 5rem);
-  line-height: auto;
+  font-size: clamp(1rem, 20vw, 5rem);
+  line-height: 5rem;
 }
 .heading-text span:nth-of-type(1) {
   position: relative;
+  color: transparent;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: white;
 }
 .heading-text span:nth-of-type(1)::before {
   position: absolute;
