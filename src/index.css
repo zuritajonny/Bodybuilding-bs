@@ -1,7 +1,7 @@
 @font-face {
   font-family: Agency FB;
-  src: url("media/fonts/AgencyFB-Bold.ttf") format("truetype"),
-    url("media/fonts/AgencyFB.ttf") format("truetype");
+  src: url("media/fonts/AgencyFB.ttf") format("truetype"),
+    url("media/fonts/AgencyFB-Bold.ttf") format("truetype");
 }
 
 :root {
