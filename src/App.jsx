@@ -180,9 +180,15 @@ function App() {
                 20-minutes session (Better for advanced athletes)
               </li>
             </ul>
-            <button className="button">
-              <AiOutlineShoppingCart className="icon" /> Purchase
-            </button>
+            <a
+              target="_blank"
+              className="purchase-button-link"
+              href="https://app.businessoperatingsystem.ca/v2/preview/JnW8DVFzUl5tjWqPX8Wf"
+            >
+              <button className="button">
+                <AiOutlineShoppingCart className="icon" /> Purchase
+              </button>
+            </a>
           </div>
 
           <div className="card-container">
@@ -196,9 +202,15 @@ function App() {
                 40-minutes session (Better for new athletes)
               </li>
             </ul>
-            <button className="button">
-              <AiOutlineShoppingCart className="icon" /> Purchase
-            </button>
+            <a
+              target="_blank"
+              className="purchase-button-link"
+              href="https://app.businessoperatingsystem.ca/v2/preview/Q5H24FShAi2LeFW6EBQ3"
+            >
+              <button className="button">
+                <AiOutlineShoppingCart className="icon" /> Purchase
+              </button>
+            </a>
           </div>
         </div>
       </section>

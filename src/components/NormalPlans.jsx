@@ -50,10 +50,18 @@ const NormalPlans = ({ TypeOfPlan }) => {
         <a
           target="_blank"
           className="purchase-button-link"
-          href={
-            TypeOfPlan === "a" &&
-            "https://app.businessoperatingsystem.ca/v2/preview/GJHNN317do8Z1x7XCUjR"
-          }
+          href={(() => {
+            switch (TypeOfPlan) {
+              case "a":
+                return "https://app.businessoperatingsystem.ca/v2/preview/X9ZLVU1FRXZNK7FH8GGn";
+              case "b":
+                return "https://app.businessoperatingsystem.ca/v2/preview/asVQ33dec5iaVfLUnKhM";
+              case "d":
+                return "https://app.businessoperatingsystem.ca/v2/preview/HGYG5xOGQPcOeKJBiW0l";
+              case "e":
+                return "https://app.businessoperatingsystem.ca/v2/preview/oQP5pE1LB61RYKrO3d9l";
+            }
+          })()}
         >
           <button className="button">
             <AiOutlineShoppingCart className="icon" /> Purchase
@@ -104,10 +112,18 @@ const NormalPlans = ({ TypeOfPlan }) => {
         <a
           target="_blank"
           className="purchase-button-link"
-          href={
-            TypeOfPlan === "a" &&
-            "https://app.businessoperatingsystem.ca/v2/preview/89tP85PAcJdSfG0Oct4i"
-          }
+          href={(() => {
+            switch (TypeOfPlan) {
+              case "a":
+                return "https://app.businessoperatingsystem.ca/v2/preview/89tP85PAcJdSfG0Oct4i";
+              case "b":
+                return "https://app.businessoperatingsystem.ca/v2/preview/FdSKjc5tcObiIATJgVsx";
+              case "d":
+                return "https://app.businessoperatingsystem.ca/v2/preview/Jouhb29CVrXG9B3w3QEj";
+              case "e":
+                return "https://app.businessoperatingsystem.ca/v2/preview/6nzXnQFWwZIGf6SpP6KJ";
+            }
+          })()}
         >
           <button className="button">
             <AiOutlineShoppingCart className="icon" /> Purchase
@@ -156,10 +172,18 @@ const NormalPlans = ({ TypeOfPlan }) => {
         <a
           target="_blank"
           className="purchase-button-link"
-          href={
-            TypeOfPlan === "a" &&
-            "https://app.businessoperatingsystem.ca/v2/preview/RJOfQ9VNwRD2b4rGG25G"
-          }
+          href={(() => {
+            switch (TypeOfPlan) {
+              case "a":
+                return "https://app.businessoperatingsystem.ca/v2/preview/q1diXk9BOTbwJ8ik5aWO";
+              case "b":
+                return "https://app.businessoperatingsystem.ca/v2/preview/PhTic0aJ2lkvfk5ub4lg";
+              case "d":
+                return "https://app.businessoperatingsystem.ca/v2/preview/k9iIAXhiboqacalzEJJx";
+              case "e":
+                return "https://app.businessoperatingsystem.ca/v2/preview/AwattiekYrHwMasaFmm5";
+            }
+          })()}
         >
           <button className="button">
             <AiOutlineShoppingCart className="icon" /> Purchase
@@ -185,9 +209,15 @@ const NormalPlans = ({ TypeOfPlan }) => {
             <li className="card-list">Bi-weekly programming tweaks</li>
             <li className="card-list">E-mail and text me directly</li>
           </ul>
-          <button className="button">
-            <AiOutlineShoppingCart className="icon" /> Purchase
-          </button>
+          <a
+            target="_blank"
+            className="purchase-button-link"
+            href="https://app.businessoperatingsystem.ca/v2/preview/WQ1Vpn5Roj5FnyyOmc94"
+          >
+            <button className="button">
+              <AiOutlineShoppingCart className="icon" /> Purchase
+            </button>
+          </a>
         </div>
       )}
     </div>
