@@ -94,10 +94,6 @@ const Header = () => {
             <IoCloseOutline onClick={menuAnimation} className="icon" />
           </li>
 
-          <h4 className="medium-text">
-            {" "}
-            Stop wasting your time, join the program!
-          </h4>
           <div className="social-media-container">
             <a href="https://www.instagram.com/johneffer/" target="_blank">
               <div className="icon-sm-container">
@@ -114,6 +110,9 @@ const Header = () => {
               </div>
             </a>
           </div>
+          <h4 className="medium-text">
+            Stop wasting your time, join the program!
+          </h4>
         </ul>
       </div>
     </div>
