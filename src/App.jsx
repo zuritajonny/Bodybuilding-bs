@@ -183,7 +183,7 @@ function App() {
             <a
               target="_blank"
               className="purchase-button-link"
-              href="https://app.businessoperatingsystem.ca/v2/preview/JnW8DVFzUl5tjWqPX8Wf"
+              href="https://effercoaching.com/20-minute-posing-session"
             >
               <button className="button">
                 <AiOutlineShoppingCart className="icon" /> Purchase
@@ -205,7 +205,7 @@ function App() {
             <a
               target="_blank"
               className="purchase-button-link"
-              href="https://app.businessoperatingsystem.ca/v2/preview/Q5H24FShAi2LeFW6EBQ3"
+              href="https://effercoaching.com/40-minute-posing-session"
             >
               <button className="button">
                 <AiOutlineShoppingCart className="icon" /> Purchase

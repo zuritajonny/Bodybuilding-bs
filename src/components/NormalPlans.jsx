@@ -53,13 +53,13 @@ const NormalPlans = ({ TypeOfPlan }) => {
           href={(() => {
             switch (TypeOfPlan) {
               case "a":
-                return "https://app.businessoperatingsystem.ca/v2/preview/X9ZLVU1FRXZNK7FH8GGn";
+                return "https://effercoaching.com/normie-1-month";
               case "b":
-                return "https://app.businessoperatingsystem.ca/v2/preview/asVQ33dec5iaVfLUnKhM";
+                return "https://effercoaching.com/normie-3-months";
               case "d":
-                return "https://app.businessoperatingsystem.ca/v2/preview/HGYG5xOGQPcOeKJBiW0l";
+                return "https://effercoaching.com/normie-6-months";
               case "e":
-                return "https://app.businessoperatingsystem.ca/v2/preview/oQP5pE1LB61RYKrO3d9l";
+                return "https://effercoaching.com/normie-annual";
             }
           })()}
         >
@@ -115,13 +115,13 @@ const NormalPlans = ({ TypeOfPlan }) => {
           href={(() => {
             switch (TypeOfPlan) {
               case "a":
-                return "https://app.businessoperatingsystem.ca/v2/preview/89tP85PAcJdSfG0Oct4i";
+                return "https://effercoaching.com/ascending-1-month";
               case "b":
-                return "https://app.businessoperatingsystem.ca/v2/preview/FdSKjc5tcObiIATJgVsx";
+                return "https://effercoaching.com/ascending-3-month";
               case "d":
-                return "https://app.businessoperatingsystem.ca/v2/preview/Jouhb29CVrXG9B3w3QEj";
+                return "https://effercoaching.com/ascending-6-month";
               case "e":
-                return "https://app.businessoperatingsystem.ca/v2/preview/6nzXnQFWwZIGf6SpP6KJ";
+                return "https://effercoaching.com/ascending-annual";
             }
           })()}
         >
@@ -175,13 +175,13 @@ const NormalPlans = ({ TypeOfPlan }) => {
           href={(() => {
             switch (TypeOfPlan) {
               case "a":
-                return "https://app.businessoperatingsystem.ca/v2/preview/q1diXk9BOTbwJ8ik5aWO";
+                return "https://effercoaching.com/srs-bodybuild-1-month";
               case "b":
-                return "https://app.businessoperatingsystem.ca/v2/preview/PhTic0aJ2lkvfk5ub4lg";
+                return "https://effercoaching.com/srs-bodybuild-3-months";
               case "d":
-                return "https://app.businessoperatingsystem.ca/v2/preview/k9iIAXhiboqacalzEJJx";
+                return "https://effercoaching.com/srs-bodybuild-6-months";
               case "e":
-                return "https://app.businessoperatingsystem.ca/v2/preview/AwattiekYrHwMasaFmm5";
+                return "https://effercoaching.com/srs-bodybuild-annual";
             }
           })()}
         >
@@ -212,7 +212,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
           <a
             target="_blank"
             className="purchase-button-link"
-            href="https://app.businessoperatingsystem.ca/v2/preview/WQ1Vpn5Roj5FnyyOmc94"
+            href="https://effercoaching.com/16-week-contest-prep"
           >
             <button className="button">
               <AiOutlineShoppingCart className="icon" /> Purchase
