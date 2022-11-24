@@ -74,6 +74,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
           <li className="card-list">Bi-weekly programming tweaks</li>
           <li className="card-list">E-mail and text me directly</li>
         </ul>
+        <p className="second-cta">Start the programme when you want </p>
         <a
           target="_blank"
           className="purchase-button-link"
@@ -155,6 +156,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
           <li className="card-list">Bi-weekly programming tweaks</li>
           <li className="card-list">E-mail and text me directly</li>
         </ul>
+        <p className="second-cta">Start the programme when you want </p>
         <a
           target="_blank"
           className="purchase-button-link"
@@ -236,6 +238,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
           <li className="card-list">Bi-weekly programming tweaks</li>
           <li className="card-list">E-mail and text me directly</li>
         </ul>
+        <p className="second-cta">Start the programme when you want </p>
         <a
           target="_blank"
           className="purchase-button-link"
@@ -317,6 +320,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
           <li className="card-list">Bi-weekly programming tweaks</li>
           <li className="card-list">E-mail and text me directly</li>
         </ul>
+        <p className="second-cta">Start the programme when you want </p>
         <a
           target="_blank"
           className="purchase-button-link"
