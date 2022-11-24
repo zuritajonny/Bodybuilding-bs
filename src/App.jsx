@@ -80,7 +80,7 @@ function App() {
           Additionally, our higher tier plans allow you to connect with John
           anytime you want. Text him, call him, let him critique your form or
           adjust your diet on the fly. We are committed to keeping our prices
-          low—getting in shape shouldn't cost a fortune!
+          low because getting in shape shouldn't cost a fortune!
         </p>
 
         <h2 className="big-text" ref={ref}>

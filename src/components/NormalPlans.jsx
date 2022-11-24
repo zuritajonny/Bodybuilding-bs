@@ -194,7 +194,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
       {TypeOfPlan === "c" && (
         <div className="card-container">
           <h2 className="medium-text">
-            16-week <br /> Contest Prep
+            16-Week <br /> Contest Prep
           </h2>
 
           <p className="paragraph-text">
