@@ -72,8 +72,9 @@
   color: var(--white-color);
   text-transform: uppercase;
   font-size: clamp(1rem, 20vw, 5rem);
-  line-height: 5rem;
+  line-height: 5.5rem;
 }
+
 .heading-text span:nth-of-type(1) {
   position: relative;
   color: transparent;
