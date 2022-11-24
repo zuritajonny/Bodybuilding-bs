@@ -631,7 +631,7 @@ black-friday-wrapper {
 .card-container .paragraph-text {
   color: #777777;
   text-align: justify;
-  min-height: 4rem;
+
   /* padding: 0 2rem; */
 }
 .card-list {
