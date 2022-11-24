@@ -693,6 +693,10 @@ option {
   font-size: 1.15rem;
   min-height: 5rem;
 }
+.plan-type-container:active,
+.button:active {
+  transform: scale(1.05);
+}
 .black-friday-button {
   background-color: #000000 !important;
   padding: 0.8rem 1rem;
