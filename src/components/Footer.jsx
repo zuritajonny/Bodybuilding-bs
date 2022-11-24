@@ -16,7 +16,7 @@ const Footer = () => {
         </ul> */}
       <div>
         <div className="social-media-container">
-          <a href="https://www.instagram.com/effercoaching/" target="_blank">
+          <a href="https://www.instagram.com/johneffer/" target="_blank">
             <div className="icon-sm-container">
               <AiOutlineInstagram className="icon-svg" />
             </div>
