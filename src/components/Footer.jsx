@@ -7,7 +7,6 @@ import { TbBrandTiktok } from "react-icons/tb";
 const Footer = () => {
   return (
     <footer className="footer-container">
-      <h4 className="medium-text"> Stop wasting your time, join the program</h4>
       {/*   <ul>
           <li className=''>Home</li>
           <li className=''>Testimonials</li>
@@ -31,6 +30,10 @@ const Footer = () => {
             </div>
           </a>
         </div>
+        <h4 className="medium-text">
+          {" "}
+          Stop wasting your time, join the program
+        </h4>
       </div>
       <p className="paragraph-text">Effer Coaching - All rights reserved</p>
     </footer>

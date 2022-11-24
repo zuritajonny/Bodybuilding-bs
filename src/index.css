@@ -409,6 +409,7 @@
 .footer-container .medium-text {
   text-align: center;
   font-size: 1.2rem;
+  margin-top: 0.5rem;
 }
 .footer-container .paragraph-text {
   color: var(--white-color);
@@ -421,7 +422,7 @@
 .social-media-container {
   width: 100%;
   padding: 0 1rem;
-  margin-top: 0.5rem;
+
   display: flex;
   gap: 1rem;
   justify-content: center;
