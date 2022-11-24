@@ -15,7 +15,9 @@ const BlackFriday = ({ TypeOfPlan }) => {
           {/* <div className="item-price-tail"></div> */}
           <h2 className="medium-text">20% OFF!</h2>
         </div>
-        <h2 className="medium-text">Ascending</h2>
+        <h2 className="medium-text">
+          Ascending <br /> 1 month
+        </h2>
 
         <p className="paragraph-text">
           Custom programming in the most afforable way possible
@@ -74,7 +76,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
           <li className="card-list">Bi-weekly programming tweaks</li>
           <li className="card-list">E-mail and text me directly</li>
         </ul>
-        <p className="second-cta">Start the programme when you want </p>
+        <p className="second-cta">Start the program when you want </p>
         <a
           target="_blank"
           className="purchase-button-link"
@@ -97,7 +99,9 @@ const BlackFriday = ({ TypeOfPlan }) => {
           {/* <div className="item-price-tail"></div> */}
           <h2 className="medium-text">30% OFF!</h2>
         </div>
-        <h2 className="medium-text">Ascending</h2>
+        <h2 className="medium-text">
+          Ascending <br /> 3 months
+        </h2>
 
         <p className="paragraph-text">
           Custom programming in the most afforable way possible
@@ -156,7 +160,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
           <li className="card-list">Bi-weekly programming tweaks</li>
           <li className="card-list">E-mail and text me directly</li>
         </ul>
-        <p className="second-cta">Start the programme when you want </p>
+        <p className="second-cta">Start the program when you want </p>
         <a
           target="_blank"
           className="purchase-button-link"
@@ -179,7 +183,9 @@ const BlackFriday = ({ TypeOfPlan }) => {
           {/* <div className="item-price-tail"></div> */}
           <h2 className="medium-text">40% OFF!</h2>
         </div>
-        <h2 className="medium-text">Ascending</h2>
+        <h2 className="medium-text">
+          Ascending <br /> 6 months
+        </h2>
 
         <p className="paragraph-text">
           Custom programming in the most afforable way possible
@@ -238,7 +244,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
           <li className="card-list">Bi-weekly programming tweaks</li>
           <li className="card-list">E-mail and text me directly</li>
         </ul>
-        <p className="second-cta">Start the programme when you want </p>
+        <p className="second-cta">Start the program when you want </p>
         <a
           target="_blank"
           className="purchase-button-link"
@@ -261,7 +267,9 @@ const BlackFriday = ({ TypeOfPlan }) => {
           {/* <div className="item-price-tail"></div> */}
           <h2 className="medium-text">50% OFF!</h2>
         </div>
-        <h2 className="medium-text">Ascending</h2>
+        <h2 className="medium-text">
+          Ascending <br /> Annual
+        </h2>
 
         <p className="paragraph-text">
           Custom programming in the most afforable way possible
@@ -320,7 +328,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
           <li className="card-list">Bi-weekly programming tweaks</li>
           <li className="card-list">E-mail and text me directly</li>
         </ul>
-        <p className="second-cta">Start the programme when you want </p>
+        <p className="second-cta">Start the program when you want </p>
         <a
           target="_blank"
           className="purchase-button-link"
