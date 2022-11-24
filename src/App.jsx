@@ -72,7 +72,7 @@ function App() {
           Plans
         </h2>
         <p className="paragraph-text hero-paragraph">
-          <span className="primary-color-accent">EFFER</span> coaching plans
+          <span className="primary-color-accent">Effer Coaching </span>plans
           offer you a fully customized plan, workout regimen, and direct support
           from John during weekly check-ins with updates on your progress.
           <br />
