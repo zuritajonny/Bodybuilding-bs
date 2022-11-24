@@ -72,9 +72,9 @@ function App() {
           Plans
         </h2>
         <p className="paragraph-text hero-paragraph">
-          <span className="primary-color-accent">Effer Coaching </span>plans
-          offer you a fully customized plan, workout regimen, and direct support
-          from John during weekly check-ins with updates on your progress.
+          <span className="primary-color-accent">Effer Coaching</span> offers
+          you a fully customized plan, workout regiment, and direct support from
+          John during weekly check-ins with updates on your progress.
           <br />
           <br />
           Additionally, our higher tier plans allow you to connect with John
@@ -113,7 +113,7 @@ function App() {
             className={
               TypeOfPlan === "b"
                 ? "plan-type-container color-accent"
-                : "plan-type-container "
+                : "plan-type-container"
             }
             onClick={() => setTypeOfPlan("b")}
           >
@@ -221,13 +221,10 @@ function App() {
         </div>
         <div className="presentation-wrapper">
           <div className="presentation-item">
-            <h2 className="big-text">
-              Anyone can construct a diet plan and workout regimen
-            </h2>
+            <h2 className="big-text">Only The Objective Is What Matters</h2>
             <p className="paragraph-text">
-              I've been very fortunate to have people around me both on and
-              offline who push me and motivate me. I would like to be there for
-              you during your journey as well.
+              You are in control of your progress. You make the effort. I am
+              here to guide you in making the process as efficient as possible.
               <br />
               <br />– Giovanni “The Lad” DelBiondo
             </p>
