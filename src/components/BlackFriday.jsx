@@ -77,10 +77,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
         <a
           target="_blank"
           className="purchase-button-link"
-          href={
-            TypeOfPlan === "a" &&
-            "https://app.businessoperatingsystem.ca/v2/preview/GJHNN317do8Z1x7XCUjR"
-          }
+          href="https://app.businessoperatingsystem.ca/v2/preview/M3yutKOvSuckIgmDE4wZ"
         >
           <button className="button">
             <AiOutlineShoppingCart className="icon" /> Purchase
@@ -161,10 +158,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
         <a
           target="_blank"
           className="purchase-button-link"
-          href={
-            TypeOfPlan === "a" &&
-            "https://app.businessoperatingsystem.ca/v2/preview/GJHNN317do8Z1x7XCUjR"
-          }
+          href="https://app.businessoperatingsystem.ca/v2/preview/64fUqmQAKBfg7Mj5jaPA"
         >
           <button className="button">
             <AiOutlineShoppingCart className="icon" /> Purchase
@@ -245,10 +239,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
         <a
           target="_blank"
           className="purchase-button-link"
-          href={
-            TypeOfPlan === "a" &&
-            "https://app.businessoperatingsystem.ca/v2/preview/GJHNN317do8Z1x7XCUjR"
-          }
+          href="https://app.businessoperatingsystem.ca/v2/preview/m5ksqhpbQzjIQRzfljjN"
         >
           <button className="button">
             <AiOutlineShoppingCart className="icon" /> Purchase
@@ -329,10 +320,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
         <a
           target="_blank"
           className="purchase-button-link"
-          href={
-            TypeOfPlan === "a" &&
-            "https://app.businessoperatingsystem.ca/v2/preview/GJHNN317do8Z1x7XCUjR"
-          }
+          href="https://app.businessoperatingsystem.ca/v2/preview/FnUCSGnWoICqsi1xDUNT"
         >
           <button className="button">
             <AiOutlineShoppingCart className="icon" /> Purchase

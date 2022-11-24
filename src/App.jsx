@@ -10,6 +10,7 @@ import maskGroup from "./media/mask-group.png";
 import BlackFriday from "./components/BlackFriday";
 import NormalPlans from "./components/NormalPlans";
 import { BiPurchaseTag } from "react-icons/bi";
+import Timer from "./components/Timer";
 
 function App() {
   const ref = useRef();
@@ -38,7 +39,7 @@ function App() {
   const [SixteenWeeks,setSixteenWeeks] = useState(false)
   const [SixMonths,setSixMonths] = useState(false)
   const [Annual,setAnnual] = useState(false) */
-  console.log(TypeOfPlan);
+
   return (
     <div className="App">
       <Header />
@@ -63,6 +64,9 @@ function App() {
       </main>
 
       <section className="pricing-container">
+        <h4 className="black-friday-heading">Black Friday Sale Ends In:</h4>
+        <Timer />
+
         <h2 className="big-text">
           <span className="primary-color-accent">Affordable</span> Coaching
           Plans

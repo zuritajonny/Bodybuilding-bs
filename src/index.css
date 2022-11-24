@@ -150,6 +150,7 @@
   text-transform: uppercase;
   font-weight: 600;
   border-radius: 0.5rem;
+  width: 55%;
 }
 .hero-section .button:hover {
   border: 2px solid transparent;
@@ -681,7 +682,7 @@ option {
   flex-wrap: wrap;
 }
 .plan-type-container {
-  padding: 0.8rem 1rem;
+  padding: 0 1rem;
   flex: 1 1 6rem;
   background-color: var(--secondary-color);
   display: grid;
@@ -691,7 +692,7 @@ option {
   transition: var(--transition);
   border-radius: 0.5rem;
   font-size: 1.15rem;
-  min-height: 5rem;
+  min-height: 4rem;
 }
 .plan-type-container:active,
 .button:active {
@@ -699,11 +700,11 @@ option {
 }
 .black-friday-button {
   background-color: #000000 !important;
-  padding: 0.8rem 1rem;
+  padding: 0 1rem;
   flex: 1 1 6rem;
 
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   align-items: center;
   cursor: pointer;
   text-align: center;
@@ -716,7 +717,7 @@ option {
 }
 .bf-hover {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   color: var(--white-color);
   align-items: center;
 }
@@ -813,7 +814,42 @@ option {
 .card-hidden {
   display: none;
 }
+.black-friday-heading {
+  text-align: center;
+  font-size: 3rem;
+  padding: 0 1rem;
+  color: var(--white-color);
+}
+.timer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+  margin-bottom: 3.8rem;
+  flex-wrap: wrap;
+}
+.timer-wrapper {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: clamp(1rem, 20vw, 4rem);
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 380px) {
+  .hero-section .button {
+    width: initial;
+    padding: 1rem 2rem;
+    height: inherit;
+  }
+}
 @media only screen and (min-width: 980px) {
+  .hero-section .button {
+    width: initial;
+  }
+  .timer-container {
+    width: 80%;
+    margin: 0 auto 3.8rem auto;
+  }
   .plan-toggle {
     width: min(22rem, 70%);
   }
