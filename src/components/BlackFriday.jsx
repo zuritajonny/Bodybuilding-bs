@@ -32,7 +32,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
         </h4>
         <ul>
           <li className="card-list">Custom workout regimen and diet</li>
-          <li className="card-list">Bi-weekly programming tweaks</li>
+          <li className="card-list">Weekly programming tweaks</li>
           <li className="card-list">E-mail and text me directly</li>
         </ul>
         <p className="second-cta">Start the program when you want </p>
@@ -75,7 +75,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
         </h4>
         <ul>
           <li className="card-list">Custom workout regimen and diet</li>
-          <li className="card-list">Bi-weekly programming tweaks</li>
+          <li className="card-list">Weekly programming tweaks</li>
           <li className="card-list">E-mail and text me directly</li>
         </ul>
         <p className="second-cta">Start the program when you want </p>
@@ -118,7 +118,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
         </h4>
         <ul>
           <li className="card-list">Custom workout regimen and diet</li>
-          <li className="card-list">Bi-weekly programming tweaks</li>
+          <li className="card-list">Weekly programming tweaks</li>
           <li className="card-list">E-mail and text me directly</li>
         </ul>
         <p className="second-cta">Start the program when you want </p>
@@ -161,7 +161,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
         </h4>
         <ul>
           <li className="card-list">Custom workout regimen and diet</li>
-          <li className="card-list">Bi-weekly programming tweaks</li>
+          <li className="card-list">Weekly programming tweaks</li>
           <li className="card-list">E-mail and text me directly</li>
         </ul>
         <p className="second-cta">Start the program when you want </p>
