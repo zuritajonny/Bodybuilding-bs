@@ -590,10 +590,10 @@ black-friday-wrapper {
     transform: rotate(0);
   }
   30% {
-    transform: rotate(-5deg);
+    transform: rotate(-3deg);
   }
   60% {
-    transform: rotate(5deg);
+    transform: rotate(3deg);
   }
   100% {
     transform: rotate(0);
@@ -794,7 +794,6 @@ option {
 
   font-size: 3rem;
   line-height: 2.5rem;
-  padding: 0 1rem;
 
   color: var(--white-color);
 }
@@ -852,6 +851,7 @@ option {
   .presentation-container .big-text {
     text-align: left;
     padding: 0;
+    padding: 0 1rem;
   }
   .presentation-container .paragraph-text {
     width: 75%;
