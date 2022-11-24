@@ -20,7 +20,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
         </h2>
 
         <p className="paragraph-text">
-          Custom programming in the most afforable way possible
+          Custom programming in the most affordable way possible
         </p>
         <p className="BF-deal">
           Before <br />
@@ -104,7 +104,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
         </h2>
 
         <p className="paragraph-text">
-          Custom programming in the most afforable way possible
+          Custom programming in the most affordable way possible
         </p>
         <p className="BF-deal">
           Before <br />
@@ -188,7 +188,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
         </h2>
 
         <p className="paragraph-text">
-          Custom programming in the most afforable way possible
+          Custom programming in the most affordable way possible
         </p>
         <p className="BF-deal">
           Before <br />
@@ -272,7 +272,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
         </h2>
 
         <p className="paragraph-text">
-          Custom programming in the most afforable way possible
+          Custom programming in the most affordable way possible
         </p>
         <p className="BF-deal">
           Before <br />
