@@ -77,7 +77,7 @@
 .heading-text span:nth-of-type(1) {
   position: relative;
   color: transparent;
-  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
 .heading-text span:nth-of-type(1)::before {
