@@ -53,7 +53,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
           href={(() => {
             switch (TypeOfPlan) {
               case "a":
-                return "https://effercoaching.com/normie-1-month";
+                return "https://effercoaching.com/normie-monthly";
               case "b":
                 return "https://effercoaching.com/normie-3-months";
               case "d":
@@ -115,7 +115,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
           href={(() => {
             switch (TypeOfPlan) {
               case "a":
-                return "https://effercoaching.com/ascending-1-month";
+                return "https://effercoaching.com/ascending-monthly";
               case "b":
                 return "https://effercoaching.com/ascending-3-month";
               case "d":
@@ -175,7 +175,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
           href={(() => {
             switch (TypeOfPlan) {
               case "a":
-                return "https://effercoaching.com/srs-bodybuild-1-month";
+                return "https://effercoaching.com/srs-bodybuild-monthly";
               case "b":
                 return "https://effercoaching.com/srs-bodybuild-3-months";
               case "d":

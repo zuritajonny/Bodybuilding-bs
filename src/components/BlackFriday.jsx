@@ -39,7 +39,7 @@ const BlackFriday = ({ TypeOfPlan }) => {
         <a
           target="_blank"
           className="purchase-button-link"
-          href="https://effercoaching.com/ascending-1-month-bf"
+          href="https://effercoaching.com/ascending-monthly-bf"
         >
           <button className="button">
             <AiOutlineShoppingCart className="icon" /> Purchase
