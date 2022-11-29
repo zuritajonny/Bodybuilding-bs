@@ -214,12 +214,11 @@ function App() {
         </div>
       </section>
 
-      <DiscordSection />
-
       <section className="presentation-container">
         <div className="presentation-background">
           <img src={background} alt="" />
         </div>
+        <DiscordSection />
         <div className="presentation-wrapper">
           <div className="presentation-item">
             <h2 className="big-text">Only The Objective Is What Matters</h2>

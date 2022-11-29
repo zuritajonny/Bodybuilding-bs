@@ -806,7 +806,7 @@ option {
 }
 .presentation-container .paragraph-text {
   color: var(--white-color);
-  margin-top: 1rem !important;
+  margin-top: 1rem;
   width: 100%;
 }
 .presentation-item-wrapper {
@@ -850,18 +850,21 @@ option {
   color: var(--white-color);
   text-align: center;
 }
-
+.text-discord {
+  margin-top: 0 !important;
+}
 .big-text--subtitle {
   font-size: 1.7rem;
   color: var(--white-color);
   text-align: center;
-  margin: 0.5rem 1rem 1.5rem 1rem;
+  margin: 0.5rem 1rem 0.5rem 1rem;
 }
 .discord .big-text {
   color: var(--white-color);
   font-size: 3rem;
   text-align: center;
   padding: 0 1rem;
+  text-transform: uppercase;
 }
 .discord img {
   height: 5rem;
@@ -873,7 +876,7 @@ option {
 }
 .discord .button {
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: 1rem;
   border-radius: 0.5rem;
 }
 @media only screen and (min-width: 380px) {
@@ -884,6 +887,9 @@ option {
   }
 }
 @media only screen and (min-width: 980px) {
+  .discord {
+    margin-bottom: 7rem;
+  }
   .discord a {
     width: min(17rem, 100%);
   }
@@ -899,7 +905,6 @@ option {
   }
   .presentation-container {
     overflow: hidden;
-    height: 90vh;
   }
   .hero-section .button {
     background-color: rgba(0, 0, 0, 0);
