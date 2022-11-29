@@ -729,9 +729,14 @@ option {
   background-color: #000000;
 }
 
-.plan-type-container:hover {
+.plan-type-container:hover,
+.discord .button:hover {
   background-color: var(--primary-color);
   box-shadow: rgba(211, 52, 52, 0.6) 0px 5px 15px 0px;
+}
+.discord .button:hover,
+.card-container .button:hover {
+  gap: 1.5rem;
 }
 .card-container .button:hover {
   background-color: var(--primary-color);
@@ -839,7 +844,7 @@ option {
 .discord {
   display: flex;
   flex-direction: column;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
 }
 .discord .paragraph-text {
   color: var(--white-color);
@@ -858,7 +863,9 @@ option {
   text-align: center;
   padding: 0 1rem;
 }
-
+.discord img {
+  height: 5rem;
+}
 .discord a {
   align-self: center;
   text-decoration: none;
