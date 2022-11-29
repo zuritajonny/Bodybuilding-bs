@@ -34,7 +34,7 @@ function App() {
   */
 
   /* Hacer un justify content abajo del boton de CTA con lo que ofrece John */
-  const [TypeOfPlan, setTypeOfPlan] = useState("bf");
+  const [TypeOfPlan, setTypeOfPlan] = useState("a");
   /*   const [ThreeMonths,setThreeMonths] = useState(false)
   const [SixteenWeeks,setSixteenWeeks] = useState(false)
   const [SixMonths,setSixMonths] = useState(false)
