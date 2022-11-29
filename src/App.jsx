@@ -64,8 +64,8 @@ function App() {
       </main>
 
       <section className="pricing-container">
-        <h4 className="black-friday-heading">Black Friday Sale Ends In:</h4>
-        <Timer />
+        {/*         <h4 className="black-friday-heading">Black Friday Sale Ends In:</h4>
+        <Timer /> */}
 
         <h2 className="big-text">
           <span className="primary-color-accent">Affordable</span> Coaching
