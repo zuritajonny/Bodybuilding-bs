@@ -88,7 +88,7 @@ function App() {
         </h2>
         <h2 className="big-text">Purchase now, start whenever you want!</h2>
         <div className="plan-toggle">
-          <div
+          {/*     <div
             className={
               TypeOfPlan === "bf"
                 ? "plan-type-container black-friday-button"
@@ -98,7 +98,7 @@ function App() {
           >
             <BiPurchaseTag className="icon" />
             <h4 className="medium-text">Black Friday</h4>
-          </div>
+          </div> */}
           <div
             className={
               TypeOfPlan === "a"
@@ -153,7 +153,7 @@ function App() {
           </div>
         </div>
 
-        <BlackFriday TypeOfPlan={TypeOfPlan} />
+        {/* <BlackFriday TypeOfPlan={TypeOfPlan} /> */}
         <NormalPlans TypeOfPlan={TypeOfPlan} />
         {/* */}
       </section>
