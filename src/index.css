@@ -475,8 +475,9 @@
 }
 .pricing-container .big-text:nth-of-type(2) {
   margin-top: 3rem;
+  margin-bottom: 1rem;
   font-size: 2rem;
-  margin-bottom: 0;
+
   position: static;
 }
 .pricing-container .big-text:nth-of-type(3) {
@@ -734,7 +735,8 @@ option {
   box-shadow: rgba(211, 52, 52, 0.6) 0px 5px 15px 0px;
 }
 .discord .button:hover,
-.card-container .button:hover {
+.card-container .button:hover,
+.hero-section .button:hover {
   gap: 1.5rem;
 }
 .card-container .button:hover {
@@ -894,9 +896,6 @@ option {
   }
 }
 @media only screen and (min-width: 980px) {
-  .discord {
-    margin-bottom: 5rem;
-  }
   .discord a {
     width: min(17rem, 100%);
   }

@@ -85,7 +85,7 @@ function App() {
         <h2 className="big-text" ref={ref}>
           Payment Plans
         </h2>
-        <h2 className="big-text">Purchase now, start whenever you want!</h2>
+        {/*       <h2 className="big-text">Purchase now, start whenever you want!</h2> */}
         <div className="plan-toggle">
           {/*     <div
             className={
