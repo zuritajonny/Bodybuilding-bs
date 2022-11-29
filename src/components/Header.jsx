@@ -111,7 +111,7 @@ const Header = () => {
             </a>
           </div>
           <h4 className="medium-text">
-            Stop wasting your time, join the program!
+            Stop wasting your time. Join the program…
           </h4>
         </ul>
       </div>

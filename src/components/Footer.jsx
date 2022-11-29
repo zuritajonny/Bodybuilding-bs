@@ -31,8 +31,7 @@ const Footer = () => {
           </a>
         </div>
         <h4 className="medium-text">
-          {" "}
-          Stop wasting your time, join the program
+          Stop wasting your time. Join the program…
         </h4>
       </div>
       <p className="paragraph-text">Effer Coaching - All rights reserved</p>

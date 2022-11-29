@@ -7,10 +7,8 @@ import background from "./media/presentation-background.png";
 import johnCollage from "./media/john-collage.png";
 import johnCrop from "./media/jonh-crop.png";
 import maskGroup from "./media/mask-group.png";
-import BlackFriday from "./components/BlackFriday";
+
 import NormalPlans from "./components/NormalPlans";
-import { BiPurchaseTag } from "react-icons/bi";
-import Timer from "./components/Timer";
 
 function App() {
   const ref = useRef();
@@ -51,9 +49,9 @@ function App() {
         <div className="hero-container">
           <div className="hero-text">
             <h1 className="heading-text">
-              A srs <br />
-              <span>transformation</span>
-              <br /> <span>awaits</span> {/* Ready to get buffed up? */}
+              It’s Time <br />
+              <span>To Get</span>
+              <br /> <span>Srs</span> {/* Ready to get buffed up? */}
             </h1>
             <button onClick={handleCTA} className="button">
               <IoIosFitness className="icon" />
