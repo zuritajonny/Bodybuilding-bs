@@ -201,7 +201,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   transition: 400ms ease-in-out;
 }
 
@@ -783,6 +783,7 @@ option {
   bottom: 0;
   position: absolute;
   pointer-events: none;
+  z-index: 1;
 }
 .presentation-background img {
   height: 100%;
@@ -867,6 +868,8 @@ option {
 }
 .discord img {
   height: 5rem;
+  position: relative;
+  z-index: 2;
 }
 .discord .icon {
   transform: translateY(2px);
@@ -880,6 +883,8 @@ option {
   font-weight: 600;
   margin-top: 1rem;
   border-radius: 0.5rem;
+  position: relative;
+  z-index: 2;
 }
 @media only screen and (min-width: 380px) {
   .hero-section .button {
@@ -933,7 +938,7 @@ option {
     position: relative;
     align-items: center;
     justify-content: flex-start;
-    min-height: 60vh;
+    height: 80vh;
   }
   .presentation-container .big-text {
     text-align: left;
