@@ -836,6 +836,39 @@ option {
   font-weight: bold;
 }
 
+.discord {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1rem;
+}
+.discord .paragraph-text {
+  color: var(--white-color);
+  text-align: center;
+}
+
+.big-text--subtitle {
+  font-size: 1.7rem;
+  color: var(--white-color);
+  text-align: center;
+  margin: 0.5rem 1rem 1.5rem 1rem;
+}
+.discord .big-text {
+  color: var(--white-color);
+  font-size: 3rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.discord a {
+  align-self: center;
+  text-decoration: none;
+  width: 100%;
+}
+.discord .button {
+  font-weight: 600;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}
 @media only screen and (min-width: 380px) {
   .hero-section .button {
     width: initial;
@@ -844,6 +877,9 @@ option {
   }
 }
 @media only screen and (min-width: 980px) {
+  .discord a {
+    width: min(17rem, 100%);
+  }
   .hero-section .button {
     width: initial;
   }

@@ -9,6 +9,7 @@ import johnCrop from "./media/jonh-crop.png";
 import maskGroup from "./media/mask-group.png";
 
 import NormalPlans from "./components/NormalPlans";
+import DiscordSection from "./components/DiscordSection";
 
 function App() {
   const ref = useRef();
@@ -70,15 +71,15 @@ function App() {
           Plans
         </h2>
         <p className="paragraph-text hero-paragraph">
-          <span className="primary-color-accent">Effer Coaching</span> offers
-          you a fully customized plan, workout regiment, and direct support from
-          John during weekly check-ins with updates on your progress.
+          <span className="primary-color-accent">Effer Coaching</span> is a
+          fully customized plan, workout regiment, and direct support me during
+          weekly check-ins with updates on your progress.
           <br />
           <br />
-          Additionally, our higher tier plans allow you to connect with John
-          anytime you want. Text him, call him, let him critique your form or
-          adjust your diet on the fly. We are committed to keeping our prices
-          low because getting in shape shouldn't cost a fortune!
+          Additionally, the higher tier plans allow you to connect with me
+          anytime you want. Text, call... I'll critique your form or adjust your
+          diet on the fly. I'm committed to keeping my prices low because
+          getting in shape shouldn't cost a fortune!
         </p>
 
         <h2 className="big-text" ref={ref}>
@@ -212,6 +213,8 @@ function App() {
           </div>
         </div>
       </section>
+
+      <DiscordSection />
 
       <section className="presentation-container">
         <div className="presentation-background">
