@@ -729,8 +729,7 @@ option {
   background-color: #000000;
 }
 
-.plan-type-container:hover,
-.discord .button:hover {
+.plan-type-container:hover {
   background-color: var(--primary-color);
   box-shadow: rgba(211, 52, 52, 0.6) 0px 5px 15px 0px;
 }
@@ -869,6 +868,9 @@ option {
 .discord img {
   height: 5rem;
 }
+.discord .icon {
+  transform: translateY(2px);
+}
 .discord a {
   align-self: center;
   text-decoration: none;
@@ -888,7 +890,7 @@ option {
 }
 @media only screen and (min-width: 980px) {
   .discord {
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
   }
   .discord a {
     width: min(17rem, 100%);
@@ -931,7 +933,7 @@ option {
     position: relative;
     align-items: center;
     justify-content: flex-start;
-    height: 100%;
+    min-height: 60vh;
   }
   .presentation-container .big-text {
     text-align: left;
