@@ -109,7 +109,14 @@
 .paragraph-text {
   font-size: 1.15rem;
 }
-
+.txt-lnks {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+}
+.paragraph-text a {
+  color: inherit;
+}
 .subtitle-text {
   margin-top: 1.5rem;
   color: var(--white-color);

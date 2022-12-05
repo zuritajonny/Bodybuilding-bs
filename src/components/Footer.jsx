@@ -34,6 +34,12 @@ const Footer = () => {
           Stop wasting your time. Join the program…
         </h4>
       </div>
+      <p className="paragraph-text txt-lnks">
+        Website designed and developed by{" "}
+        <a href="https://www.borsosmedia.com" target="_blank">
+          Borsos Media
+        </a>
+      </p>
       <p className="paragraph-text">Effer Coaching - All rights reserved</p>
     </footer>
   );
