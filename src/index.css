@@ -480,6 +480,9 @@
 .pricing-container:nth-of-type(2) .card-container {
   margin-top: 1rem;
 }
+.pricing-container:nth-of-type(2) .card-container .BF-deal {
+  padding: 0 10% 0 0;
+}
 .pricing-container .big-text:nth-of-type(2) {
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -537,7 +540,7 @@
 }
 
 .black-friday-card {
-  background-color: #000000;
+  background-color: var(--secondary-color);
   padding: 6rem 1rem 2rem !important;
   z-index: 1;
 }
@@ -548,22 +551,22 @@ black-friday-wrapper {
   flex-wrap: wrap;
 }
 .black-friday-card .button:hover {
-  background-color: var(--primary-color) !important;
+  background-color: #0f8a5f !important;
 }
 .card-container .button:hover {
-  background-color: var(--white-color) !important;
-  color: var(--primary-color) !important;
+  background-color: var(--primary-color) !important;
+  color: var(--white-color) !important;
 }
 .black-friday-card .button {
-  background-color: var(--white-color);
-  color: var(--black-color);
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 .black-friday-card .paragraph-text {
   color: var(--white-color) !important;
 }
 .BF-deal {
   color: #777777;
-  padding: 0 25% 0 0;
+  padding: 0 38% 0 0;
   font-size: 1.2rem;
 }
 .BF-deal span {
@@ -572,7 +575,7 @@ black-friday-wrapper {
 }
 .item-price {
   position: absolute;
-  background-color: #f53131;
+  background-color: #0f8a5f;
   height: 61px;
   display: grid;
   place-content: center;
@@ -653,6 +656,7 @@ black-friday-wrapper {
 .card-container .button {
   border-radius: 0.5rem;
   font-weight: 600;
+  background-color: #0f8a5f;
 }
 .select-box-container {
   width: 100%;
@@ -708,7 +712,7 @@ option {
   transform: scale(1.05);
 }
 .black-friday-button {
-  background-color: #000000 !important;
+  background-color: #34a65f !important;
   padding: 0 1rem;
   flex: 1 1 6rem;
 
@@ -731,10 +735,10 @@ option {
   align-items: center;
 }
 .bf-hover:hover {
-  background-color: #000000 !important;
+  background-color: #cc231e !important;
 }
 .black-friday-button {
-  background-color: #000000;
+  background-color: #cc231e;
 }
 
 .plan-type-container:hover {

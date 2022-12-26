@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import Header from "./components/Header";
 import { IoIosFitness } from "react-icons/io";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { TbChristmasTree } from "react-icons/tb";
 import Footer from "./components/Footer";
 import background from "./media/presentation-background.png";
 import johnCollage from "./media/john-collage.png";
@@ -10,6 +11,8 @@ import maskGroup from "./media/mask-group.png";
 
 import NormalPlans from "./components/NormalPlans";
 import DiscordSection from "./components/DiscordSection";
+import BlackFriday from "./components/BlackFriday";
+import SpecialSale from "./components/SpecialSale";
 
 function App() {
   const ref = useRef();
@@ -34,10 +37,6 @@ function App() {
 
   /* Hacer un justify content abajo del boton de CTA con lo que ofrece John */
   const [TypeOfPlan, setTypeOfPlan] = useState("a");
-  /*   const [ThreeMonths,setThreeMonths] = useState(false)
-  const [SixteenWeeks,setSixteenWeeks] = useState(false)
-  const [SixMonths,setSixMonths] = useState(false)
-  const [Annual,setAnnual] = useState(false) */
 
   return (
     <div className="App">
@@ -83,11 +82,11 @@ function App() {
         </p>
 
         <h2 className="big-text" ref={ref}>
-          Payment Plans
+          New Year's Deal
         </h2>
         {/*       <h2 className="big-text">Purchase now, start whenever you want!</h2> */}
         <div className="plan-toggle">
-          {/*     <div
+          {/*  <div
             className={
               TypeOfPlan === "bf"
                 ? "plan-type-container black-friday-button"
@@ -95,8 +94,8 @@ function App() {
             }
             onClick={() => setTypeOfPlan("bf")}
           >
-            <BiPurchaseTag className="icon" />
-            <h4 className="medium-text">Black Friday</h4>
+            <TbChristmasTree className="icon" />
+            <h4 className="medium-text">New Year's Deal</h4>
           </div> */}
           <div
             className={
@@ -152,8 +151,9 @@ function App() {
           </div>
         </div>
 
-        {/* <BlackFriday TypeOfPlan={TypeOfPlan} /> */}
-        <NormalPlans TypeOfPlan={TypeOfPlan} />
+        {/*    <BlackFriday TypeOfPlan={TypeOfPlan} /> */}
+        {/*         <NormalPlans TypeOfPlan={TypeOfPlan} /> */}
+        <SpecialSale TypeOfPlan={TypeOfPlan} />
         {/* */}
       </section>
 
@@ -170,8 +170,11 @@ function App() {
         <div className="card-wrapper">
           <div className="card-container">
             <h2 className="medium-text">20-minute posing session</h2>
-
-            <h4 className="card-text-price">$50</h4>
+            <p className="BF-deal">
+              Before <br />
+              <span>$50</span>
+            </p>
+            <h4 className="card-text-price">$40</h4>
             <ul>
               <li className="card-list">One-on-one session</li>
               <li className="card-list">Learn how to pose properly</li>
@@ -182,7 +185,7 @@ function App() {
             <a
               target="_blank"
               className="purchase-button-link"
-              href="https://effercoaching.com/20-minute-posing-session"
+              href="https://effercoaching.com/20-minute-posing-session-ny"
             >
               <button className="button">
                 <AiOutlineShoppingCart className="icon" /> Purchase
@@ -192,8 +195,11 @@ function App() {
 
           <div className="card-container">
             <h2 className="medium-text">40-minute posing session</h2>
-
-            <h4 className="card-text-price">$90</h4>
+            <p className="BF-deal">
+              Before <br />
+              <span>$90</span>
+            </p>
+            <h4 className="card-text-price">$72</h4>
             <ul>
               <li className="card-list">One-on-one session</li>
               <li className="card-list">Learn the principles of posing</li>
@@ -204,7 +210,7 @@ function App() {
             <a
               target="_blank"
               className="purchase-button-link"
-              href="https://effercoaching.com/40-minute-posing-session"
+              href="https://effercoaching.com/40-minute-posing-session-ny"
             >
               <button className="button">
                 <AiOutlineShoppingCart className="icon" /> Purchase
@@ -212,6 +218,7 @@ function App() {
             </a>
           </div>
         </div>
+        <BlackFriday />
       </section>
 
       <section className="presentation-container">
