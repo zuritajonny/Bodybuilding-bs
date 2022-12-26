@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { TbChristmasTree } from "react-icons/tb";
+import { AiFillStar } from "react-icons/ai";
 const SpecialSale = ({ TypeOfPlan }) => {
   return (
     <div className="card-wrapper">
@@ -14,7 +14,7 @@ const SpecialSale = ({ TypeOfPlan }) => {
         <div className="item-price">
           {/* <div className="item-price-tail"></div> */}
           <h2 className="medium-text">
-            <TbChristmasTree className="icon" /> 20% OFF!
+            <AiFillStar className="icon" /> 20% OFF!
           </h2>
         </div>
         <h2 className="medium-text">Normie</h2>
@@ -113,7 +113,7 @@ const SpecialSale = ({ TypeOfPlan }) => {
         <div className="item-price">
           {/* <div className="item-price-tail"></div> */}
           <h2 className="medium-text">
-            <TbChristmasTree className="icon" /> 20% OFF!
+            <AiFillStar className="icon" /> 20% OFF!
           </h2>
         </div>
         <h2 className="medium-text">Ascending</h2>
@@ -212,7 +212,7 @@ const SpecialSale = ({ TypeOfPlan }) => {
         <div className="item-price">
           {/* <div className="item-price-tail"></div> */}
           <h2 className="medium-text">
-            <TbChristmasTree className="icon" /> 20% OFF!
+            <AiFillStar className="icon" /> 20% OFF!
           </h2>
         </div>
         <h2 className="medium-text">Srs - Bodybuild</h2>
@@ -284,7 +284,7 @@ const SpecialSale = ({ TypeOfPlan }) => {
               case "a":
                 return "https://effercoaching.com/srs-bodybuild-monthly-ny";
               case "b":
-                return "https://effercoaching.com/srs-bodybuild-3-months-6364";
+                return "https://effercoaching.com/srs-bodybuild-3-months-ny";
               case "d":
                 return "https://effercoaching.com/srs-bodybuild-6-months-ny";
               case "e":
@@ -489,7 +489,7 @@ const SpecialSale = ({ TypeOfPlan }) => {
           <div className="item-price">
             {/* <div className="item-price-tail"></div> */}
             <h2 className="medium-text">
-              <TbChristmasTree className="icon" /> 20% OFF!
+              <AiFillStar className="icon" /> 20% OFF!
             </h2>
           </div>
           <h2 className="medium-text">
