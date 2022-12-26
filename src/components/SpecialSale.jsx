@@ -60,7 +60,21 @@ const SpecialSale = ({ TypeOfPlan }) => {
                 return "$100 ";
             }
           })()}
-          <span className="price-description"> /month</span>
+          <span className="price-description">
+            {" "}
+            {(() => {
+              switch (TypeOfPlan) {
+                case "a":
+                  return "/month";
+                case "b":
+                  return "/3 months";
+                case "d":
+                  return "/6 months";
+                case "e":
+                  return "/year";
+              }
+            })()}
+          </span>
         </h4>
         <ul>
           <li className="card-list">Custom workout regimen and diet</li>
@@ -145,7 +159,21 @@ const SpecialSale = ({ TypeOfPlan }) => {
                 return "$100 ";
             }
           })()}
-          <span className="price-description"> /month</span>
+          <span className="price-description">
+            {" "}
+            {(() => {
+              switch (TypeOfPlan) {
+                case "a":
+                  return "/month";
+                case "b":
+                  return "/3 months";
+                case "d":
+                  return "/6 months";
+                case "e":
+                  return "/year";
+              }
+            })()}
+          </span>
         </h4>
         <ul>
           <li className="card-list">Custom workout regimen and diet</li>
@@ -226,7 +254,21 @@ const SpecialSale = ({ TypeOfPlan }) => {
                 return "$100 ";
             }
           })()}
-          <span className="price-description"> /month</span>
+          <span className="price-description">
+            {" "}
+            {(() => {
+              switch (TypeOfPlan) {
+                case "a":
+                  return "/month";
+                case "b":
+                  return "/3 months";
+                case "d":
+                  return "/6 months";
+                case "e":
+                  return "/year";
+              }
+            })()}
+          </span>
         </h4>
         <ul>
           <li className="card-list">Custom workout regimen and diet</li>
