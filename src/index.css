@@ -550,12 +550,12 @@
 black-friday-wrapper {
   flex-wrap: wrap;
 }
-.black-friday-card .button:hover {
+/* .black-friday-card .button:hover {
   background-color: #0f8a5f !important;
-}
+} */
 .card-container .button:hover {
-  background-color: var(--primary-color) !important;
-  color: var(--white-color) !important;
+  background-color: var(--white-color) !important;
+  color: var(--primary-color) !important;
 }
 .black-friday-card .button {
   background-color: var(--primary-color);
@@ -656,7 +656,6 @@ black-friday-wrapper {
 .card-container .button {
   border-radius: 0.5rem;
   font-weight: 600;
-  background-color: #0f8a5f;
 }
 .select-box-container {
   width: 100%;
@@ -771,8 +770,8 @@ option {
 }
 
 .pricing-container:nth-of-type(2) .button {
-  background-color: var(--primary-color);
-  color: var(--white-color);
+  background-color: var(--primary-color) !important;
+  color: var(--white-color) !important;
 }
 
 .pricing-container:nth-of-type(2) .card-list {

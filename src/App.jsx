@@ -82,7 +82,7 @@ function App() {
         </p>
 
         <h2 className="big-text" ref={ref}>
-          New Year's Deal
+          Payment Plans
         </h2>
         {/*       <h2 className="big-text">Purchase now, start whenever you want!</h2> */}
         <div className="plan-toggle">
@@ -152,8 +152,8 @@ function App() {
         </div>
 
         {/*    <BlackFriday TypeOfPlan={TypeOfPlan} /> */}
-        {/*         <NormalPlans TypeOfPlan={TypeOfPlan} /> */}
-        <SpecialSale TypeOfPlan={TypeOfPlan} />
+        <NormalPlans TypeOfPlan={TypeOfPlan} /> 
+    {/*     <SpecialSale TypeOfPlan={TypeOfPlan} /> */}
         {/* */}
       </section>
 
@@ -170,11 +170,11 @@ function App() {
         <div className="card-wrapper">
           <div className="card-container">
             <h2 className="medium-text">20-minute posing session</h2>
-            <p className="BF-deal">
-              Before <br />
+            {/*  <p className="BF-deal">
+              Before <br /> 
               <span>$50</span>
-            </p>
-            <h4 className="card-text-price">$40</h4>
+            </p> */}
+            <h4 className="card-text-price">$50</h4>
             <ul>
               <li className="card-list">One-on-one session</li>
               <li className="card-list">Learn how to pose properly</li>
@@ -185,7 +185,7 @@ function App() {
             <a
               target="_blank"
               className="purchase-button-link"
-              href="https://effercoaching.com/20-minute-posing-session-ny"
+              href="https://effercoaching.com/20-minute-posing-session"
             >
               <button className="button">
                 <AiOutlineShoppingCart className="icon" /> Purchase
@@ -195,11 +195,11 @@ function App() {
 
           <div className="card-container">
             <h2 className="medium-text">40-minute posing session</h2>
-            <p className="BF-deal">
+            {/*  <p className="BF-deal">
               Before <br />
               <span>$90</span>
-            </p>
-            <h4 className="card-text-price">$72</h4>
+            </p> */}
+            <h4 className="card-text-price">$90</h4>
             <ul>
               <li className="card-list">One-on-one session</li>
               <li className="card-list">Learn the principles of posing</li>
@@ -210,7 +210,7 @@ function App() {
             <a
               target="_blank"
               className="purchase-button-link"
-              href="https://effercoaching.com/40-minute-posing-session-ny"
+              href="https://effercoaching.com/40-minute-posing-session"
             >
               <button className="button">
                 <AiOutlineShoppingCart className="icon" /> Purchase
