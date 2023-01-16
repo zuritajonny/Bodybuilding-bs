@@ -8,7 +8,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
         <h2 className="medium-text">Normie</h2>
 
         <p className="paragraph-text">
-          Custom programming in the most afforable way possible
+          Custom programming in the most affordable way possible
         </p>
         <h4 className="card-text-price">
           {(() => {
