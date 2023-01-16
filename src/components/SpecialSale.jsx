@@ -12,7 +12,6 @@ const SpecialSale = ({ TypeOfPlan }) => {
         }
       >
         <div className="item-price">
-          {/* <div className="item-price-tail"></div> */}
           <h2 className="medium-text">
             <AiFillStar className="icon" /> 20% OFF!
           </h2>
