@@ -36,7 +36,7 @@ function App() {
   */
 
   /* Hacer un justify content abajo del boton de CTA con lo que ofrece John */
-  const [TypeOfPlan, setTypeOfPlan] = useState("a");
+  const [TypeOfPlan, setTypeOfPlan] = useState("b");
 
   return (
     <div className="App">
@@ -82,7 +82,9 @@ function App() {
         </p>
 
         <h2 className="big-text" ref={ref}>
-          Payment Plans
+          We have a limited{" "}
+          <span className="summer-offer-ttl">Srs Summer Shred</span> discount
+          for our 3 month plans!
         </h2>
         {/*       <h2 className="big-text">Purchase now, start whenever you want!</h2> */}
         <div className="plan-toggle">
@@ -115,7 +117,7 @@ function App() {
             }
             onClick={() => setTypeOfPlan("b")}
           >
-            <h4 className="medium-text">3 Months</h4>
+            <h4 className="medium-text">3 Months (20% OFF)</h4>
           </div>
 
           <div
@@ -152,8 +154,8 @@ function App() {
         </div>
 
         {/*    <BlackFriday TypeOfPlan={TypeOfPlan} /> */}
-        <NormalPlans TypeOfPlan={TypeOfPlan} /> 
-    {/*     <SpecialSale TypeOfPlan={TypeOfPlan} /> */}
+        <NormalPlans TypeOfPlan={TypeOfPlan} />
+        {/*     <SpecialSale TypeOfPlan={TypeOfPlan} /> */}
         {/* */}
       </section>
 

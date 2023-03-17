@@ -445,6 +445,19 @@
 .icon-sm-container:hover {
   transform: scale(1.1);
 }
+.summer-offer-ttl {
+  color: var(--primary-color);
+}
+.text-act {
+  margin-top: 3rem;
+}
+.summer-prg {
+  color: #946868;
+  font-size: 1.5rem;
+}
+.summer-offer {
+  text-decoration: line-through;
+}
 .icon-svg {
   height: 100%;
   width: 100%;
@@ -575,14 +588,14 @@ black-friday-wrapper {
 }
 .item-price {
   position: absolute;
-  background-color: #0f8a5f;
+  background-color: var(--primary-color-darkened);
   height: 61px;
   display: grid;
   place-content: center;
-  right: -1rem;
+  right: -0.5rem;
   width: 80%;
   border-radius: 0 2rem 2rem 0;
-  top: 2rem;
+  top: 0rem;
   color: var(--white-color);
   text-align: center;
   font-size: 1.5rem;
@@ -596,10 +609,10 @@ black-friday-wrapper {
     transform: rotate(0);
   }
   30% {
-    transform: rotate(-3deg);
+    transform: rotate(-1deg);
   }
   60% {
-    transform: rotate(3deg);
+    transform: rotate(1deg);
   }
   100% {
     transform: rotate(0);

@@ -1,39 +1,22 @@
-import { useEffect } from "react";
+import React from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const NormalPlans = ({ TypeOfPlan }) => {
   return (
     <div className={TypeOfPlan === "bf" ? "card-hidden" : "card-wrapper"}>
       <div className={TypeOfPlan === "c" ? "card-hidden" : "card-container"}>
-        {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>}
-        <h2
-          className={TypeOfPlan == "b" ? "medium-text text-act" : "medium-text"}
-        >
-          {(() => {
-            switch (TypeOfPlan) {
-              case "b":
-                return "Normie Shred";
-              default:
-                return "Normie";
-            }
-          })()}
-        </h2>
+        <h2 className="medium-text">Normie</h2>
 
         <p className="paragraph-text">
           Custom programming in the most affordable way possible
         </p>
-        {TypeOfPlan == "b" && (
-          <p className="summer-prg">
-            Before <span className="summer-offer">$300</span>
-          </p>
-        )}
         <h4 className="card-text-price">
           {(() => {
             switch (TypeOfPlan) {
               case "a":
                 return "$100 ";
               case "b":
-                return "$240 ";
+                return "$300 ";
               case "c":
                 return "$600 ";
               case "d":
@@ -72,7 +55,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
               case "a":
                 return "https://effercoaching.com/normie-monthly";
               case "b":
-                return "https://effercoaching.com/normie-3-months-ss";
+                return "https://effercoaching.com/normie-3-months";
               case "d":
                 return "https://effercoaching.com/normie-6-months";
               case "e":
@@ -87,34 +70,17 @@ const NormalPlans = ({ TypeOfPlan }) => {
       </div>
 
       <div className={TypeOfPlan === "c" ? "card-hidden" : "card-container"}>
-        {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>}
-        <h2
-          className={TypeOfPlan == "b" ? "medium-text text-act" : "medium-text"}
-        >
-          {(() => {
-            switch (TypeOfPlan) {
-              case "b":
-                return "Ascending Shred";
-              default:
-                return "Ascending";
-            }
-          })()}
-        </h2>
+        <h2 className="medium-text">Ascending</h2>
         <p className="paragraph-text">
           Custom programming with constant feedback and more tweaks
         </p>
-        {TypeOfPlan == "b" && (
-          <p className="summer-prg">
-            Before <span className="summer-offer">$550</span>
-          </p>
-        )}
         <h4 className="card-text-price">
           {(() => {
             switch (TypeOfPlan) {
               case "a":
                 return "$200 ";
               case "b":
-                return "$440 ";
+                return "$550 ";
               case "c":
                 return "$1000 ";
               case "d":
@@ -151,7 +117,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
               case "a":
                 return "https://effercoaching.com/ascending-monthly";
               case "b":
-                return "https://effercoaching.com/ascending-3-month-ss";
+                return "https://effercoaching.com/ascending-3-month";
               case "d":
                 return "https://effercoaching.com/ascending-6-month";
               case "e":
@@ -166,35 +132,17 @@ const NormalPlans = ({ TypeOfPlan }) => {
       </div>
 
       <div className={TypeOfPlan === "c" ? "card-hidden" : "card-container"}>
-        {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>}
-
-        <h2
-          className={TypeOfPlan == "b" ? "medium-text text-act" : "medium-text"}
-        >
-          {(() => {
-            switch (TypeOfPlan) {
-              case "b":
-                return "Srs - Bodybuild Shred";
-              default:
-                return "Srs - Bodybuild";
-            }
-          })()}
-        </h2>
+        <h2 className="medium-text">Srs - Bodybuild</h2>
         <p className="paragraph-text">
           Custom programming with constant feedback and prep secrets
         </p>
-        {TypeOfPlan == "b" && (
-          <p className="summer-prg">
-            Before <span className="summer-offer">$680</span>
-          </p>
-        )}
         <h4 className="card-text-price">
           {(() => {
             switch (TypeOfPlan) {
               case "a":
                 return "$250 ";
               case "b":
-                return "$544 ";
+                return "$680 ";
               case "d":
                 return "$1300 ";
               case "e":
@@ -229,7 +177,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
               case "a":
                 return "https://effercoaching.com/srs-bodybuild-monthly";
               case "b":
-                return "https://effercoaching.com/srs-bodybuild-3-months-ss";
+                return "https://effercoaching.com/srs-bodybuild-3-months";
               case "d":
                 return "https://effercoaching.com/srs-bodybuild-6-months";
               case "e":
