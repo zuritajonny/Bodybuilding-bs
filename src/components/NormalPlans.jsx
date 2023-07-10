@@ -5,28 +5,19 @@ const NormalPlans = ({ TypeOfPlan }) => {
   return (
     <div className={TypeOfPlan === "bf" ? "card-hidden" : "card-wrapper"}>
       <div className={TypeOfPlan === "c" ? "card-hidden" : "card-container"}>
-        {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>}
-        <h2
-          className={TypeOfPlan == "b" ? "medium-text text-act" : "medium-text"}
-        >
-          {(() => {
-            switch (TypeOfPlan) {
-              case "b":
-                return "Normie Shred";
-              default:
-                return "Normie";
-            }
-          })()}
+        <h2 className={TypeOfPlan == "b" ? "medium-text " : "medium-text"}>
+          Monthly <br />
+          Coaching Plan
         </h2>
 
         <p className="paragraph-text">
           Custom programming in the most affordable way possible
         </p>
-        {TypeOfPlan == "b" && (
+        {/* {TypeOfPlan == "b" && (
           <p className="summer-prg">
             Before <span className="summer-offer">$300</span>
           </p>
-        )}
+        )} */}
         <h4 className="card-text-price">
           {(() => {
             switch (TypeOfPlan) {
@@ -86,19 +77,17 @@ const NormalPlans = ({ TypeOfPlan }) => {
         </a>
       </div>
 
-      <div className={TypeOfPlan === "c" ? "card-hidden" : "card-container"}>
-        {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>}
-        <h2
-          className={TypeOfPlan == "b" ? "medium-text text-act" : "medium-text"}
-        >
-          {(() => {
-            switch (TypeOfPlan) {
-              case "b":
-                return "Ascending Shred";
-              default:
-                return "Ascending";
-            }
-          })()}
+      <div
+        className={
+          TypeOfPlan === "c"
+            ? "card-hidden"
+            : "card-container card-container-accent"
+        }
+      >
+        {/*  {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>} */}
+        <h2 className={TypeOfPlan == "b" ? "medium-text" : "medium-text"}>
+          6 Months <br />
+          Coaching Plan
         </h2>
         <p className="paragraph-text">
           Custom programming with constant feedback and more tweaks
@@ -166,28 +155,20 @@ const NormalPlans = ({ TypeOfPlan }) => {
       </div>
 
       <div className={TypeOfPlan === "c" ? "card-hidden" : "card-container"}>
-        {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>}
+        {/* {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>} */}
 
-        <h2
-          className={TypeOfPlan == "b" ? "medium-text text-act" : "medium-text"}
-        >
-          {(() => {
-            switch (TypeOfPlan) {
-              case "b":
-                return "Srs - Bodybuild Shred";
-              default:
-                return "Srs - Bodybuild";
-            }
-          })()}
+        <h2 className={TypeOfPlan == "b" ? "medium-text " : "medium-text"}>
+          12 Month <br />
+          Coaching Plan
         </h2>
         <p className="paragraph-text">
           Custom programming with constant feedback and prep secrets
         </p>
-        {TypeOfPlan == "b" && (
+        {/* {TypeOfPlan == "b" && (
           <p className="summer-prg">
             Before <span className="summer-offer">$680</span>
           </p>
-        )}
+        )} */}
         <h4 className="card-text-price">
           {(() => {
             switch (TypeOfPlan) {

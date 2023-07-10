@@ -36,7 +36,7 @@ function App() {
   */
 
   /* Hacer un justify content abajo del boton de CTA con lo que ofrece John */
-  const [TypeOfPlan, setTypeOfPlan] = useState("b");
+  const [TypeOfPlan, setTypeOfPlan] = useState("a");
 
   return (
     <div className="App">
@@ -44,14 +44,16 @@ function App() {
 
       <main className="hero-section">
         <div className="heroImg"></div>
-        <img src={johnCrop} className="john-crop" alt="" />
+        {/* <img src={johnCrop} className="john-crop" alt="" /> */}
         <img src={maskGroup} className="maskImg" alt="" />
         <div className="hero-container">
           <div className="hero-text">
             <h1 className="heading-text">
-              It’s Time <br />
+              {/*   It’s Time <br />
               <span>To Get</span>
-              <br /> <span>Srs</span> {/* Ready to get buffed up? */}
+              <br /> <span>Srs</span> {/ */}
+              Become The Best <br />
+              Version Of You
             </h1>
             <button onClick={handleCTA} className="button">
               <IoIosFitness className="icon" />
@@ -82,9 +84,7 @@ function App() {
         </p>
 
         <h2 className="big-text" ref={ref}>
-          We have a limited{" "}
-          <span className="summer-offer-ttl">Srs Summer Shred</span> discount
-          for our 3 month plans!
+          Payment Plans
         </h2>
         {/*       <h2 className="big-text">Purchase now, start whenever you want!</h2> */}
         <div className="plan-toggle">
@@ -117,7 +117,7 @@ function App() {
             }
             onClick={() => setTypeOfPlan("b")}
           >
-            <h4 className="medium-text">3 Months (20% OFF)</h4>
+            <h4 className="medium-text">3 Months</h4>
           </div>
 
           <div
@@ -141,7 +141,7 @@ function App() {
           >
             <h4 className="medium-text">Annual</h4>
           </div>
-          <div
+          {/*     <div
             className={
               TypeOfPlan === "c"
                 ? "plan-type-container color-accent"
@@ -150,7 +150,7 @@ function App() {
             onClick={() => setTypeOfPlan("c")}
           >
             <h4 className="medium-text">Contest Prep </h4>
-          </div>
+          </div> */}
         </div>
 
         {/*    <BlackFriday TypeOfPlan={TypeOfPlan} /> */}
@@ -227,7 +227,7 @@ function App() {
         <div className="presentation-background">
           <img src={background} alt="" />
         </div>
-        <DiscordSection />
+        {/*   <DiscordSection /> */}
         <div className="presentation-wrapper">
           <div className="presentation-item">
             <h2 className="big-text">Only The Objective Is What Matters</h2>

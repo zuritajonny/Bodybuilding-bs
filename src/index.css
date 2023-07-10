@@ -6,13 +6,13 @@
 
 :root {
   font-size: 16px;
-  --black-color: #0f0f0f;
-  --primary-color: #d33434;
+  --black-color: #000000;
+  --primary-color: #eded00;
   --secondary-color: #1f2732;
-  --background-color: #172028;
+  --background-color: #1d1d1d;
   --icon-height: 1.5rem;
   --icon-width: 1.5rem;
-  --transition: 200ms ease-in-out;
+  --transition: 200ms ease;
   --white-color: #ffffff;
   --min-height: 3rem;
   --radius: 2rem;
@@ -73,10 +73,10 @@
 
 .heading-text {
   text-align: left;
+  line-height: 1;
   color: var(--white-color);
-  text-transform: uppercase;
+  /*   text-transform: uppercase; */
   font-size: clamp(1rem, 16vw, 4rem);
-  line-height: 5.5rem;
   font-weight: 900;
 }
 
@@ -144,7 +144,7 @@
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   align-self: flex-start;
   background-color: var(--primary-color);
-
+  color: var(--black-color);
   transition: var(--transition);
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -176,12 +176,12 @@
   height: 100%;
   object-position: right;
   object-fit: cover;
-
+  /* 
   background: linear-gradient(
     0deg,
     rgba(211, 52, 52, 0.5) 0%,
     rgba(34, 34, 34, 0) 59%
-  );
+  ); */
 }
 .john-crop {
   height: 100%;
@@ -204,7 +204,7 @@
   pointer-events: none;
 }
 .header-container {
-  background-color: rgba(23, 32, 40, 0.9);
+  background-color: rgba(18, 18, 18, 0.9);
   position: fixed;
   top: 0;
   width: 100%;
@@ -332,6 +332,9 @@
 }
 .menu-container .medium-text {
   text-align: center;
+}
+.plan-type-container .medium-text {
+  color: #000000;
 }
 .icon {
   width: var(--icon-width);
@@ -472,7 +475,7 @@
   position: relative;
 }
 .pricing-container:nth-of-type(2) {
-  background-color: var(--primary-color) !important;
+  background-color: var(--white-color) !important;
 }
 .pricing-container:nth-of-type(2) .primary-color-accent {
   color: var(--white-color);
@@ -542,7 +545,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
-  background-color: var(--secondary-color);
+  background-color: #212121;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   margin-bottom: 2rem;
@@ -552,14 +555,29 @@
   transition: var(--transition);
 }
 
+.card-container .button {
+  color: var(--black-color);
+}
+.card-container-accent {
+  background-color: var(--black-color);
+}
+
+.card-container-accent.card-container .button:hover {
+  color: initial !important;
+  background-color: var(--primary-color) !important;
+}
+.card-container-accent.card-container .button {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
 .black-friday-card {
   background-color: var(--secondary-color);
   padding: 6rem 1rem 2rem !important;
   z-index: 1;
 }
-.card-container:hover {
+/* .card-container:hover {
   box-shadow: rgb(211 49 49 / 60%) 0px 5px 15px 0px;
-}
+} */
 black-friday-wrapper {
   flex-wrap: wrap;
 }
@@ -568,7 +586,7 @@ black-friday-wrapper {
 } */
 .card-container .button:hover {
   background-color: var(--white-color) !important;
-  color: var(--primary-color) !important;
+  color: var(--black-color) !important;
 }
 .black-friday-card .button {
   background-color: var(--primary-color);
@@ -709,7 +727,7 @@ option {
 .plan-type-container {
   padding: 0 1rem;
   flex: 1 1 6rem;
-  background-color: var(--secondary-color);
+  background-color: #bfbf00;
   display: grid;
   place-content: center;
   cursor: pointer;
@@ -755,7 +773,6 @@ option {
 
 .plan-type-container:hover {
   background-color: var(--primary-color);
-  box-shadow: rgba(211, 52, 52, 0.6) 0px 5px 15px 0px;
 }
 .discord .button:hover,
 .card-container .button:hover,
@@ -768,7 +785,6 @@ option {
 }
 .color-accent {
   background-color: var(--primary-color);
-  box-shadow: rgba(211, 52, 52, 0.6) 0px 5px 15px 0px;
 }
 
 .pricing-container:nth-of-type(2) .big-text,
@@ -924,6 +940,12 @@ option {
   }
   .hero-section .button {
     width: initial;
+    background-color: transparent;
+    color: var(--white-color);
+  }
+  .hero-section .button:hover {
+    color: var(--black-color);
+    background-color: var(--primary-color);
   }
   .timer-container {
     width: 80%;
