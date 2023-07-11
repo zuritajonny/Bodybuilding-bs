@@ -94,7 +94,8 @@ const NormalPlans = ({ TypeOfPlan }) => {
         </p>
         {TypeOfPlan == "b" && (
           <p className="summer-prg">
-            Before <span className="summer-offer">$550</span>
+            Before <br />
+            <span className="summer-offer">$550</span>
           </p>
         )}
         <h4 className="card-text-price">

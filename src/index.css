@@ -133,7 +133,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  height: 90vh;
+  height: min(800px, 90svh);
   overflow: hidden;
   position: relative;
   -webkit-clip-path: polygon(50% 100%, 100% 96%, 100% 0, 0 0, 0 95%);
@@ -202,6 +202,7 @@
   height: 100%;
   z-index: 1;
   pointer-events: none;
+  object-fit: cover;
 }
 .header-container {
   background-color: rgba(18, 18, 18, 0.9);
@@ -217,7 +218,7 @@
 }
 .header-wrapper {
   display: flex;
-  padding: 0.1rem 1rem;
+  padding: 0.6rem 1rem;
   position: relative;
   justify-content: space-between;
   align-items: center;
@@ -347,7 +348,7 @@
   justify-content: space-between;
   position: absolute;
   align-items: center;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -455,8 +456,12 @@
   margin-top: 3rem;
 }
 .summer-prg {
-  color: #946868;
   font-size: 1.5rem;
+  color: #8b8b8b;
+  font-size: 1.5rem;
+
+  text-align: left;
+  width: 155px;
 }
 .summer-offer {
   text-decoration: line-through;
@@ -535,7 +540,9 @@
 
   text-align: left;
 }
-
+.card-container.card-container-accent .paragraph-text {
+  color: var(--white-color);
+}
 .card-container {
   position: relative;
   align-self: center;
@@ -816,7 +823,7 @@ option {
 
 .presentation-container {
   position: relative;
-  background-color: var(--background-color);
+  background-color: #212121;
 }
 .presentation-background {
   height: 100%;
@@ -829,6 +836,7 @@ option {
   pointer-events: none;
   z-index: 1;
 }
+
 .presentation-background img {
   height: 100%;
   transform: translateX(20rem);
@@ -979,8 +987,6 @@ option {
     margin: 0 auto;
   }
   .presentation-wrapper {
-    width: 80%;
-    margin: 0 auto;
     display: flex;
     position: relative;
     align-items: center;
@@ -1000,22 +1006,24 @@ option {
     margin-bottom: 1rem;
   }
   .john-collage {
-    height: 40vw;
+    height: min(900px, 40vw);
   }
   .hero-container {
-    width: 80%;
-    margin: 0 auto;
     height: 100%;
     top: 50%;
+  }
+  .presentation-wrapper,
+  .hero-container,
+  .pricing-container:not(.pricing-container:nth-of-type(2)),
+  .header-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
   }
   .heading-text {
     text-align: left;
     align-self: baseline;
   }
-  .header-wrapper {
-    width: 80%;
-    margin: 0 auto;
-  }
+
   .menu-logo-container {
     display: none;
   }
