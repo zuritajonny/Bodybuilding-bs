@@ -166,7 +166,8 @@ function App() {
         </h2>
         <p className="paragraph-text hero-paragraph">
           What’s the point of having an outstanding physique if you can’t show
-          it properly? Presentation makes all the difference!
+          it properly? <br />
+          Presentation makes all the difference!
         </p>
 
         <div className="card-wrapper">
