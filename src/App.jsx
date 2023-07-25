@@ -1,76 +1,65 @@
 import { useRef, useState } from "react";
-import Header from "./components/Header";
-import { IoIosFitness } from "react-icons/io";
-import { AiOutlineShoppingCart } from "react-icons/ai";
-import { TbChristmasTree } from "react-icons/tb";
-import Footer from "./components/Footer";
-import background from "./media/presentation-background.png";
-import johnCollage from "./media/john-collage.png";
-import johnCrop from "./media/jonh-crop.png";
-import maskGroup from "./media/mask-group.png";
+import USflag from "./media/usflag.png";
+import IFBB from "./media/ifbb.png";
+import Lift from "./media/lift.svg";
+import Health from "./media/health.svg";
+import Protein from "./media/protein.svg";
 
+import PaintStroke from "./media/PaintStroke.png";
+import Footer from "./components/Footer";
+
+import BBLogo from "./media/BBLogo.png";
+import Nick from "./media/nick.png";
 import NormalPlans from "./components/NormalPlans";
+import CustomPlans from "./components/CustomPlans";
 import DiscordSection from "./components/DiscordSection";
-import BlackFriday from "./components/BlackFriday";
-import SpecialSale from "./components/SpecialSale";
+import Bloodwork from "./components/Bloodwork";
+import InquiryMessage from "./components/InquiryMessage";
+import Services from "./components/Services";
 
 function App() {
   const ref = useRef();
   const handleCTA = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
-  /* las personas que entren al website ya sabran de el, tendran informacion previa sobre lo 
-  que hace, 2 step order form
-  
-  Normie, bronze
-  Serious, silver
-  Bodybuild, gold
 
-  Foto de el en el medio
-  Solo un hero y los planes debajo de el
-  Alrededor del hero (imagen de el) 
-
-  CAMBIAR LOS MESES MONTH
-  Get started en mayusculas y subirle la fuente
-
-  */
-
-  /* Hacer un justify content abajo del boton de CTA con lo que ofrece John */
   const [TypeOfPlan, setTypeOfPlan] = useState("a");
 
   return (
     <div className="App">
-      <Header />
-
       <main className="hero-section">
         <div className="heroImg"></div>
-        {/* <img src={johnCrop} className="john-crop" alt="" /> */}
-        <img src={maskGroup} className="maskImg" alt="" />
+        <img src={Nick} className="nick-crop" alt="" />
+        {/*  <img src={maskGroup} className="maskImg" alt="" /> */}
         <div className="hero-container">
           <div className="hero-text">
+            <img src={BBLogo} className="bbs--logo" alt="" />
             <h1 className="heading-text">
-              {/*   It’s Time <br />
-              <span>To Get</span>
-              <br /> <span>Srs</span> {/ */}
               Become The Best <br />
               Version Of You
             </h1>
-            <button onClick={handleCTA} className="button">
-              <IoIosFitness className="icon" />
+            <button onClick={handleCTA} className="button button--robinson">
               Get started
             </button>
+          </div>
+        </div>
+        <div className="hero__bullet-points">
+          <div>
+            <img src={IFBB} alt="" />
+            <p>IFBB Pro</p>
+          </div>
+          <div className="">
+            <img src={USflag} alt="" />
+            <p>Former Mr. Usa</p>
           </div>
         </div>
       </main>
 
       <section className="pricing-container">
-        {/*         <h4 className="black-friday-heading">Black Friday Sale Ends In:</h4>
-        <Timer /> */}
-
-        <h2 className="big-text">
-          <span className="primary-color-accent">Affordable</span> Coaching
-          Plans
-        </h2>
+        <div className="bg__text--background">
+          <img src={PaintStroke} alt="" />
+          <h2 className="big-text">CONSISTENCY IS THE NAME OF THE GAME</h2>
+        </div>
         <p className="paragraph-text hero-paragraph">
           <span className="primary-color-accent">Effer Coaching</span> is a
           fully customized plan, workout regiment, and direct support me during
@@ -82,23 +71,38 @@ function App() {
           diet on the fly. I'm committed to keeping my prices low because
           getting in shape shouldn't cost a fortune!
         </p>
+        <div className="bullet--block_wrapper">
+          <div className="bullet--facts">
+            <img src={Lift} alt="" />
+            <h5>Hard Work</h5>
+            <p>
+              <span className="primary-color-accent">The real secret</span> of
+              success
+            </p>
+          </div>
+          <div className="bullet--facts">
+            <img src={Health} alt="" />
+            <h5>Healthy Nutrition</h5>
+            <p>
+              <span className="primary-color-accent">High powered</span> diets
+              to fuel your body
+            </p>
+          </div>
+          <div className="bullet--facts">
+            <img src={Protein} alt="" />
+            <h5>Accountability</h5>
+            <p>
+              <span className="primary-color-accent">Support and advice</span>{" "}
+              to keep you on track
+            </p>
+          </div>
+        </div>
 
-        <h2 className="big-text" ref={ref}>
-          Payment Plans
+        <h2 className="big-text big-text__white" ref={ref}>
+          FULL TIME <span className="primary-color-accent">COACHING PLANS</span>
         </h2>
         {/*       <h2 className="big-text">Purchase now, start whenever you want!</h2> */}
         <div className="plan-toggle">
-          {/*  <div
-            className={
-              TypeOfPlan === "bf"
-                ? "plan-type-container black-friday-button"
-                : "plan-type-container bf-hover"
-            }
-            onClick={() => setTypeOfPlan("bf")}
-          >
-            <TbChristmasTree className="icon" />
-            <h4 className="medium-text">New Year's Deal</h4>
-          </div> */}
           <div
             className={
               TypeOfPlan === "a"
@@ -107,7 +111,7 @@ function App() {
             }
             onClick={() => setTypeOfPlan("a")}
           >
-            <h4 className="medium-text">Monthly</h4>
+            <h6 className="medium-text">Monthly</h6>
           </div>
           <div
             className={
@@ -117,7 +121,7 @@ function App() {
             }
             onClick={() => setTypeOfPlan("b")}
           >
-            <h4 className="medium-text">3 Months</h4>
+            <h6 className="medium-text">3 Months</h6>
           </div>
 
           <div
@@ -128,7 +132,7 @@ function App() {
             }
             onClick={() => setTypeOfPlan("d")}
           >
-            <h4 className="medium-text">6 Months</h4>
+            <h6 className="medium-text">6 Months</h6>
           </div>
 
           <div
@@ -139,7 +143,7 @@ function App() {
             }
             onClick={() => setTypeOfPlan("e")}
           >
-            <h4 className="medium-text">Annual</h4>
+            <h6 className="medium-text">Annual</h6>
           </div>
           {/*     <div
             className={
@@ -153,97 +157,13 @@ function App() {
           </div> */}
         </div>
 
-        {/*    <BlackFriday TypeOfPlan={TypeOfPlan} /> */}
         <NormalPlans TypeOfPlan={TypeOfPlan} />
-        {/*     <SpecialSale TypeOfPlan={TypeOfPlan} /> */}
-        {/* */}
+        <CustomPlans />
+        <Bloodwork />
+        <Services />
       </section>
-
-      <section className="pricing-container">
-        <h2 className="big-text">
-          <span className="primary-color-accent">Single</span> Time, Posing
-          Session
-        </h2>
-        <p className="paragraph-text hero-paragraph">
-          What’s the point of having an outstanding physique if you can’t show
-          it properly? <br />
-          Presentation makes all the difference!
-        </p>
-
-        <div className="card-wrapper">
-          <div className="card-container">
-            <h2 className="medium-text">20-minute posing session</h2>
-            {/*  <p className="BF-deal">
-              Before <br /> 
-              <span>$50</span>
-            </p> */}
-            <h4 className="card-text-price">$50</h4>
-            <ul>
-              <li className="card-list">One-on-one session</li>
-              <li className="card-list">Learn how to pose properly</li>
-              <li className="card-list">
-                20-minutes session (Better for advanced athletes)
-              </li>
-            </ul>
-            <a
-              target="_blank"
-              className="purchase-button-link"
-              href="https://effercoaching.com/20-minute-posing-session"
-            >
-              <button className="button">
-                <AiOutlineShoppingCart className="icon" /> Purchase
-              </button>
-            </a>
-          </div>
-
-          <div className="card-container">
-            <h2 className="medium-text">40-minute posing session</h2>
-            {/*  <p className="BF-deal">
-              Before <br />
-              <span>$90</span>
-            </p> */}
-            <h4 className="card-text-price">$90</h4>
-            <ul>
-              <li className="card-list">One-on-one session</li>
-              <li className="card-list">Learn the principles of posing</li>
-              <li className="card-list">
-                40-minutes session (Better for new athletes)
-              </li>
-            </ul>
-            <a
-              target="_blank"
-              className="purchase-button-link"
-              href="https://effercoaching.com/40-minute-posing-session"
-            >
-              <button className="button">
-                <AiOutlineShoppingCart className="icon" /> Purchase
-              </button>
-            </a>
-          </div>
-        </div>
-        <BlackFriday />
-      </section>
-
-      <section className="presentation-container">
-        <div className="presentation-background">
-          <img src={background} alt="" />
-        </div>
-        {/*   <DiscordSection /> */}
-        <div className="presentation-wrapper">
-          <div className="presentation-item">
-            <h2 className="big-text">Only The Objective Is What Matters</h2>
-            <p className="paragraph-text">
-              You are in control of your progress. You make the effort. I am
-              here to guide you in making the process as efficient as possible.
-              <br />
-              <br />– Giovanni “The Lad” DelBiondo
-            </p>
-          </div>
-          <div className="presentation-item-wrapper">
-            <img src={johnCollage} alt="" className="john-collage" />
-          </div>
-        </div>
-      </section>
+      <DiscordSection />
+      <InquiryMessage />
       <Footer />
     </div>
   );

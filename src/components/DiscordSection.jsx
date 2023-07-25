@@ -1,25 +1,35 @@
-import React from "react";
-import { FiArrowRight } from "react-icons/fi";
-import discord from "../media/Icons/discordIcon.svg";
+import { FiArrowUpRight } from "react-icons/fi";
+import NickDiscord from "../media/NickDiscord.jpg";
 
 function DiscordSection() {
   return (
-    <section className="discord">
-      <img src={discord} alt="" />
-      <h2 className="big-text">Ready to join the Srs Discord?</h2>
-      <h5 className="big-text--subtitle">A very srs community...</h5>
-      <p className="hero-paragraph paragraph-text text-discord">
-        If you are looking to join an army of srs lads and chads you've found
-        the spot. Epic ments and legendary gents helping each other ascend to
-        unknown heights. You don't want to miss out... very srs,,,
-      </p>
-
-      <a href="https://discord.gg/srsbodybuild" target="_blank">
-        <button className="button">
-          Join now <FiArrowRight className="icon" />
-        </button>
-      </a>
-    </section>
+    <div className="discord--block mn">
+      <div className="discord--img">
+        <img src={NickDiscord} alt="Discord logo on top of Nick's Face" />
+      </div>
+      <div className="discord--text">
+        <h2>
+          Join our discord
+          <br />
+          server, <span className="primary-color-accent">hard workers</span>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+          molestie lectus mi. Proin cursus facilisis erat vitae accumsan.
+          Integer id lacus eget diam maximus lobortis et sit amet ante through:
+        </p>
+        <ul className="list">
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>Lorem ipsum dolor sit.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+        <a href="" className="button button--yellow button__robinson">
+          Join The Server
+          <FiArrowUpRight className="icon" />
+        </a>
+      </div>
+    </div>
   );
 }
 
