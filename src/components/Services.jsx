@@ -68,41 +68,33 @@ function Services() {
           </li>
         </ul>
         <ul className="services--img">
-          <li>
-            <img
-              src={LSCoaching}
-              alt=""
-              className={
-                ActiveImage === "a" ? "span--img" : "span--img span--img-active"
-              }
-            />
+          <li
+            className={
+              ActiveImage === "a" ? "span--img" : "span--img span--img-active"
+            }
+          >
+            <img src={LSCoaching} alt="" />
           </li>
-          <li>
-            <img
-              src={SProgram}
-              alt=""
-              className={
-                ActiveImage === "b" ? "span--img" : "span--img span--img-active"
-              }
-            />
+          <li
+            className={
+              ActiveImage === "b" ? "span--img" : "span--img span--img-active"
+            }
+          >
+            <img src={SProgram} alt="" />
           </li>
-          <li>
-            <img
-              src={CPrep}
-              alt=""
-              className={
-                ActiveImage === "c" ? "span--img" : "span--img span--img-active"
-              }
-            />
+          <li
+            className={
+              ActiveImage === "c" ? "span--img" : "span--img span--img-active"
+            }
+          >
+            <img src={CPrep} alt="" />
           </li>
-          <li>
-            <img
-              src={NPlans}
-              alt=""
-              className={
-                ActiveImage === "d" ? "span--img" : "span--img span--img-active"
-              }
-            />
+          <li
+            className={
+              ActiveImage === "d" ? "span--img" : "span--img span--img-active"
+            }
+          >
+            <img src={NPlans} alt="" />
           </li>
           <li>
             <img

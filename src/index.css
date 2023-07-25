@@ -1351,7 +1351,7 @@ option {
   }
   .services--grid li span {
     transition: var(--transition);
-    will-change: transform;
+    will-change: transform font-size;
   }
   .services--grid li:hover span {
     color: var(--primary-color);
@@ -1392,7 +1392,8 @@ option {
     height: 492px;
     position: relative;
   }
-
+  .services--img li {
+  }
   .services--img li img {
     height: 100%;
     width: 100%;
