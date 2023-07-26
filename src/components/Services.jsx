@@ -15,11 +15,13 @@ function Services() {
     <div className="mn services--block">
       <h2 className="mn--title">This is What I Do</h2>
       <p>
-        As a certified nutritionist with more than 20 years of professional
-        experience in bodybuilding, I began my career at age 16, winning Top
-        Teen at the Bodybuilding Team Nationals. I continued my award-winning
-        career moving on to become an IFBB Pro and winning the highly coveted
-        Mr. USA title in 2014.
+        As a certified nutritionist with more than{" "}
+        <span className="primary-color-accent">
+          20 years of professional experience in bodybuilding
+        </span>
+        , I began my career at age 16, winning Top Teen at the Bodybuilding Team
+        Nationals. I continued my award-winning career moving on to become an
+        IFBB Pro and winning the highly coveted Mr. USA title in 2014.
       </p>
 
       <div className="services--block__container">
@@ -68,42 +70,51 @@ function Services() {
           </li>
         </ul>
         <ul className="services--img">
-          <li
-            className={
-              ActiveImage === "a" ? "span--img" : "span--img span--img-active"
-            }
-          >
+          <li className={ActiveImage == "a" && "span--img-active"}>
             <img src={LSCoaching} alt="" />
+            <div>
+              <p>
+                Building the best version of ourselves is something we need to
+                work on every day. I will use my experience to help you succeed!
+              </p>
+            </div>
           </li>
-          <li
-            className={
-              ActiveImage === "b" ? "span--img" : "span--img span--img-active"
-            }
-          >
+          <li className={ActiveImage == "b" && "span--img-active"}>
             <img src={SProgram} alt="" />
+            <div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Fugiat, maxime!
+              </p>
+            </div>
           </li>
-          <li
-            className={
-              ActiveImage === "c" ? "span--img" : "span--img span--img-active"
-            }
-          >
+          <li className={ActiveImage == "c" && "span--img-active"}>
             <img src={CPrep} alt="" />
+            <div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Fugiat, maxime!
+              </p>
+            </div>
           </li>
-          <li
-            className={
-              ActiveImage === "d" ? "span--img" : "span--img span--img-active"
-            }
-          >
+          <li className={ActiveImage == "d" && "span--img-active"}>
             <img src={NPlans} alt="" />
+            <div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Fugiat, maxime!
+              </p>
+            </div>
           </li>
-          <li>
-            <img
-              src={MProgram}
-              alt=""
-              className={
-                ActiveImage === "e" ? "span--img" : "span--img span--img-active"
-              }
-            />
+          <li className={ActiveImage == "e" && "span--img-active"}>
+            <img src={MProgram} alt="" />
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Cupiditate iusto, quas fugiat harum quos tempora inventore
+                tenetur odio officia totam itaque reiciendis eum numquam ut.
+              </p>
+            </div>
           </li>
         </ul>
       </div>

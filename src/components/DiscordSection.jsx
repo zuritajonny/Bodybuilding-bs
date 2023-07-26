@@ -9,20 +9,20 @@ function DiscordSection() {
       </div>
       <div className="discord--text">
         <h2>
-          Join our discord
-          <br />
-          server, <span className="primary-color-accent">hard workers</span>
+          <span className="primary-color-accent">hard workers</span> have <br />
+          a discord server
         </h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-          molestie lectus mi. Proin cursus facilisis erat vitae accumsan.
-          Integer id lacus eget diam maximus lobortis et sit amet ante through:
+          <strong>Join the community</strong> that will help you in your journey
+          of reaching your fitness goals.
+          <br />
+          <br />
+          What you will find in our server:
         </p>
         <ul className="list">
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-          <li>Lorem ipsum dolor sit.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
+          <li>More people like you with all their experience.</li>
+          <li>More information to focus on what works for you.</li>
+          <li>A positive environment for daily motivation.</li>
         </ul>
         <a href="" className="button button--yellow button__robinson">
           Join The Server

@@ -1,4 +1,5 @@
 import React from "react";
+import AffirmLogo from "../media/affirm-logo.webp";
 
 function CustomPlans() {
   return (
@@ -26,7 +27,8 @@ function CustomPlans() {
           </ul>
           <div className="buttons--wrapper buttons--wrapper__horizontal">
             <a href="" className="button button--affirm">
-              Pay With Affirm
+              Pay with
+              <img src={AffirmLogo} alt="Affirm Logo" className="img--afirm" />
             </a>
             <a href="" className="button button--cta">
               Purchase
@@ -50,7 +52,8 @@ function CustomPlans() {
           </ul>
           <div className="buttons--wrapper buttons--wrapper__horizontal">
             <a href="" className="button button--affirm">
-              Pay With Affirm
+              Pay with
+              <img src={AffirmLogo} alt="Affirm Logo" className="img--afirm" />
             </a>
             <a href="" className="button button--cta">
               Purchase
@@ -73,7 +76,8 @@ function CustomPlans() {
           </ul>
           <div className="buttons--wrapper buttons--wrapper__horizontal">
             <a href="" className="button button--affirm">
-              Pay With Affirm
+              Pay with
+              <img src={AffirmLogo} alt="Affirm Logo" className="img--afirm" />
             </a>
             <a href="" className="button button--cta">
               Purchase
@@ -96,7 +100,8 @@ function CustomPlans() {
           </ul>
           <div className="buttons--wrapper buttons--wrapper__horizontal">
             <a href="" className="button button--affirm">
-              Pay With Affirm
+              Pay with
+              <img src={AffirmLogo} alt="Affirm Logo" className="img--afirm" />
             </a>
             <a href="" className="button button--cta">
               Purchase

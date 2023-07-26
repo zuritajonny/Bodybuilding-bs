@@ -1,4 +1,5 @@
-import React from "react";
+import TopLayer from "../media/top-layer.png";
+import BottomLayer from "../media/bottom-layer.png";
 import { FiArrowUpRight } from "react-icons/fi";
 
 function InquiryMessage() {
@@ -9,7 +10,7 @@ function InquiryMessage() {
         <p>
           I know you can have a lot of questions even before beginning your
           fitness journey. However, I’m here to answer all of them quickly, at
-          no additional cost.
+          no <strong>additional cost.</strong>
         </p>
 
         <span></span>

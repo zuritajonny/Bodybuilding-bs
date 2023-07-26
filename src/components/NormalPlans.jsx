@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FiChevronDown } from "react-icons/fi";
+import AffirmLogo from "../media/affirm-logo.webp";
 
 const NormalPlans = ({ TypeOfPlan }) => {
   const [FaqActiveA, setFaqActiveA] = useState(false);
@@ -69,9 +70,13 @@ const NormalPlans = ({ TypeOfPlan }) => {
           </span>
         </h4>
         <ul>
-          <li className="card-list">Custom workout regimen and diet</li>
-          <li className="card-list">Bi-weekly programming tweaks</li>
-          <li className="card-list">E-mail and text me directly</li>
+          <li className="card-list">Unlimited check-ins</li>
+          <li className="card-list">
+            Personalized training and nutritional programs
+          </li>
+          <li className="card-list">
+            PED programming for monitors with reading bloodwork
+          </li>
         </ul>
         <a
           target="_blank"
@@ -109,7 +114,10 @@ const NormalPlans = ({ TypeOfPlan }) => {
             }
           })()}
         >
-          <button className="button button--affirm">Pay with Affirm</button>
+          <button className="button button--affirm">
+            Pay with
+            <img src={AffirmLogo} alt="Affirm Logo" className="img--afirm" />
+          </button>
         </a>
       </div>
       <div className="faq--block">
@@ -156,9 +164,9 @@ const NormalPlans = ({ TypeOfPlan }) => {
                 : "faq--descrition faq--descrition--hidden"
             }
           >
-            Your well-being is my main priority. I will help you make the
-            necessary adjustments to achieve peak form and stay as healthy as
-            you can be.
+            Strength and physique competitions demand rigorous preparation,
+            including specific goal setting, targeted training, precision
+            nutrition, and caloric manipulation.
           </p>
         </div>
         <div className="faq--item">
@@ -180,9 +188,9 @@ const NormalPlans = ({ TypeOfPlan }) => {
                 : "faq--descrition faq--descrition--hidden"
             }
           >
-            Your well-being is my main priority. I will help you make the
-            necessary adjustments to achieve peak form and stay as healthy as
-            you can be.
+            The off season is critical to prepare between competitions, so we
+            will focus on recovery, muscle building, strength training, and
+            nutritional adjustments.
           </p>
         </div>
         <div className="faq--item">
@@ -204,9 +212,9 @@ const NormalPlans = ({ TypeOfPlan }) => {
                 : "faq--descrition faq--descrition--hidden"
             }
           >
-            Your well-being is my main priority. I will help you make the
-            necessary adjustments to achieve peak form and stay as healthy as
-            you can be.
+            Whatever we set out to do, I can help you achieve it. From aesthetic
+            progress to lifestyle improvements, I will provide support to help
+            you stay focused.
           </p>
         </div>
       </div>
