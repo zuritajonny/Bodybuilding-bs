@@ -26,7 +26,7 @@ function Bloodwork() {
         </p>
         <button
           className="button button--robinson button__black"
-          onClick={() => navigate("/bloodwork")}
+          onClick={() => navigate("/gutservice")}
         >
           Call to Action
         </button>

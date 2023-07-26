@@ -1,4 +1,7 @@
 import { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Nick from "../media/nick.png";
+import BBLogo from "../media/BBLogo.png";
 import USflag from "../media/usflag.png";
 import IFBB from "../media/ifbb.png";
 import Lift from "../media/lift.svg";
@@ -7,8 +10,6 @@ import Protein from "../media/protein.svg";
 
 import PaintStroke from "../media/PaintStroke.png";
 
-import BBLogo from "../media/BBLogo.png";
-import Nick from "../media/nick.png";
 import NormalPlans from "../components/NormalPlans";
 import CustomPlans from "../components/CustomPlans";
 import DiscordSection from "../components/DiscordSection";
@@ -22,6 +23,7 @@ function HomeScreen() {
   const handleCTA = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
+  const navigate = useNavigate();
   return (
     <>
       <main className="hero-section">
@@ -30,7 +32,12 @@ function HomeScreen() {
         {/*  <img src={maskGroup} className="maskImg" alt="" /> */}
         <div className="hero-container">
           <div className="hero-text">
-            <img src={BBLogo} className="bbs--logo" alt="" />
+            <img
+              src={BBLogo}
+              className="bbs--logo"
+              alt=""
+              onClick={() => navigate("/")}
+            />
             <h1 className="heading-text">
               Become The Best <br />
               Version Of You
