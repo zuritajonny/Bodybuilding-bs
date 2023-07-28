@@ -971,7 +971,7 @@ a {
   cursor: pointer;
 }
 .pricing-container,
-.gut--service__block {
+.gut-service__wrapper {
   padding: 3rem 0 2rem 0;
   background: url("media/lg--bg.jpg");
   background-size: 100%;
@@ -1588,6 +1588,15 @@ option {
   }
 }
 @media only screen and (min-width: 980px) {
+  .gut--service__block {
+    padding-inline: 1rem;
+    max-width: var(--width-wrapper);
+    margin-inline: auto;
+  }
+  .gut--service__block > p {
+    max-width: 47rem;
+    text-align: left;
+  }
   .button.button--affirm .img--afirm {
     transform: translateY(-4px) translateX(-7px);
   }
@@ -1846,10 +1855,6 @@ option {
     border: 2px solid var(--primary-color);
   }
 
-  .nick-crop {
-    transform: translate(0, 0);
-  }
-
   .presentation-item {
     width: 50%;
   }
@@ -1965,6 +1970,12 @@ option {
 }
 
 @media screen and (min-width: 1440px) {
+  .nick-crop {
+    transform: translate(20%, 0);
+  }
+  .gut--service__block {
+    max-width: 100%;
+  }
   .bkCRoC {
     max-width: 1019px !important;
   }
@@ -1981,10 +1992,13 @@ option {
 }
 
 @media screen and (min-width: 1840px) {
+  .nick-crop {
+    transform: translate(0, 0);
+  }
   .presentation-wrapper,
   .hero-container,
   .header-wrapper {
-    max-width: 46rem;
+    max-width: 90%;
     margin: 0 auto;
   }
   html {
