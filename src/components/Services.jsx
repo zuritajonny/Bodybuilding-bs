@@ -4,7 +4,7 @@ import CPrep from "../media/services/competition-prep-min.png";
 import MProgram from "../media/services/mass-program-min.png";
 import SProgram from "../media/services/shred-program-min.png";
 import NPlans from "../media/services/nutrition-plan-min.png";
-import Protocols from "../media/services/protocols-min.png";
+import Protocols from "../media/services/protocols-minB.png";
 
 function Services() {
   const [ActiveImage, setActiveImage] = useState("a");
