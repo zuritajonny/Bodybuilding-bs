@@ -245,10 +245,6 @@ ul {
   letter-spacing: 1px;
 }
 
-.paragraph-text {
-  font-size: 1.15rem;
-}
-
 .txt-lnks {
   font-weight: 600;
   letter-spacing: 1px;
@@ -1603,6 +1599,15 @@ option {
   }
 }
 @media only screen and (min-width: 980px) {
+  #eapps-instagram-feed-1 .eapps-instagram-feed-header {
+    max-width: 1000px !important;
+    border-radius: 8px;
+    margin-inline: auto !important;
+  }
+  .eapps-instagram-feed-posts-grid .eapps-instagram-feed-posts-inner {
+    margin-inline: auto !important;
+    max-width: 1015px !important;
+  }
   .gut--service__block {
     padding-inline: 1rem;
     max-width: var(--width-wrapper);
