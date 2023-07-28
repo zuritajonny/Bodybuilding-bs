@@ -465,7 +465,7 @@ a {
 
 .discord--block .button {
   max-width: 12.06rem;
-  margin: 0 auto;
+  margin: 1rem auto 0 auto;
 }
 
 .discord--text {

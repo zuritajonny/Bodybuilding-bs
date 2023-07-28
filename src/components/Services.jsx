@@ -13,7 +13,7 @@ function Services() {
   }, [ActiveImage]);
 
   return (
-    <div className="mn services--block">
+    <div className="mn services--block mn">
       <h2 className="mn--title">This is What I Do</h2>
       <p>
         As a certified nutritionist with more than{" "}
