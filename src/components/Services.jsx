@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import LSCoaching from "../media/services/lifestyle-coaching-min.png";
 import CPrep from "../media/services/competition-prep-min.png";
 import MProgram from "../media/services/mass-program-min.png";
@@ -82,8 +82,8 @@ function Services() {
             <img src={SProgram} alt="" />
             <div>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Fugiat, maxime!
+                Get lean and ripped. We will work on lowering your body fat
+                while preserving your muscle mass.
               </p>
             </div>
           </li>
@@ -91,8 +91,8 @@ function Services() {
             <img src={CPrep} alt="" />
             <div>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Fugiat, maxime!
+                Get in peak form. With intensive training and customized
+                nutrition, I will prepare you for elite competition.
               </p>
             </div>
           </li>
@@ -100,8 +100,8 @@ function Services() {
             <img src={NPlans} alt="" />
             <div>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Fugiat, maxime!
+                Different physiques and specific goals require tailored
+                nutrition plans to optimize your health goals.
               </p>
             </div>
           </li>
@@ -109,9 +109,8 @@ function Services() {
             <img src={MProgram} alt="" />
             <div>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Cupiditate iusto, quas fugiat harum quos tempora inventore
-                tenetur odio officia totam itaque reiciendis eum numquam ut.
+                Gain muscle and size. We will increase high volume training and
+                I will recommend supplementation.
               </p>
             </div>
           </li>

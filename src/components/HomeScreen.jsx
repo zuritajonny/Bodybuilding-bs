@@ -17,6 +17,7 @@ import Bloodwork from "../components/Bloodwork";
 import InquiryMessage from "../components/InquiryMessage";
 import Services from "../components/Services";
 import GoogleReviews from "./GoogleReviews";
+import InstagramWidget from "./InstagramWidget";
 
 function HomeScreen() {
   const [TypeOfPlan, setTypeOfPlan] = useState("a");
@@ -164,6 +165,7 @@ function HomeScreen() {
         <Services />
         <DiscordSection />
         <GoogleReviews />
+        <InstagramWidget />
       </section>
     </>
   );
