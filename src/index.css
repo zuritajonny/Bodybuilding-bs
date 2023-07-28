@@ -71,6 +71,13 @@ li {
 }
 
 /* Google Reviews */
+#eapps-instagram-feed-1 .eapps-instagram-feed-header,
+#eapps-instagram-feed-1
+  .eapps-instagram-feed-header
+  a:not(.es-header-follow-button) {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: var(--white-color) !important;
+}
 
 .RootLayout__RootComponent-sc-1doisyz-0 {
   height: 580px;
@@ -87,6 +94,9 @@ li {
   max-width: 1015px !important;
   padding-inline: 1rem;
   margin: 2rem auto !important;
+}
+.IG--block__wrapper {
+  margin: 2rem 0 !important;
 }
 /*  */
 
@@ -563,6 +573,7 @@ a {
 .hero-section {
   background: url(media/background-gradient.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   min-height: 100svh;
   min-height: 100vh;
