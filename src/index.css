@@ -72,6 +72,11 @@ li {
 }
 
 /* Google Reviews */
+
+body .eapps-instagram-feed-posts-grid-load-more-container {
+  display: none !important;
+}
+
 #eapps-instagram-feed-1 .eapps-instagram-feed-header,
 #eapps-instagram-feed-1
   .eapps-instagram-feed-header
