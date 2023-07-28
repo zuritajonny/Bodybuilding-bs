@@ -28,7 +28,7 @@ function Bloodwork() {
           className="button button--robinson button__black"
           onClick={() => navigate("/gutservice")}
         >
-          Call to Action
+          Learn More
         </button>
       </div>
     </div>

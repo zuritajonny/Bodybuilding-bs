@@ -61,6 +61,7 @@ p,
 li {
   font-family: Big Shoulders Light;
   letter-spacing: 0.5px;
+  font-size: 1.1rem;
 }
 .mn {
   margin: 2rem 0;
@@ -502,6 +503,9 @@ a {
   display: grid;
   gap: 1rem;
 }
+.work--block__text h3 {
+  white-space: nowrap;
+}
 .work--block__text p {
   font-family: Big Shoulders Regular;
 }
@@ -517,6 +521,14 @@ a {
 }
 
 /*  */
+/* #eapps-instagram-feed-1 .eapps-instagram-feed-header {
+  width: 100%;
+}
+.eapps-instagram-feed-posts-grid .eapps-instagram-feed-posts-inner {
+  box-sizing: bord;
+  max-width: 100%;
+  margin-inline: 1rem !important;
+} */
 
 /* Inquiry Message */
 .inquiry--wrapper {
@@ -1595,18 +1607,18 @@ option {
     font-size: clamp(1rem, 12vw, 5rem) !important;
   }
   .bg__text--background img {
-    height: 225px;
+    height: 263px;
   }
 }
 @media only screen and (min-width: 980px) {
-  #eapps-instagram-feed-1 .eapps-instagram-feed-header {
-    max-width: 1000px !important;
+  body #eapps-instagram-feed-1 .eapps-instagram-feed-header {
+    max-width: 983px !important;
     border-radius: 8px;
     margin-inline: auto !important;
   }
   .eapps-instagram-feed-posts-grid .eapps-instagram-feed-posts-inner {
     margin-inline: auto !important;
-    max-width: 1015px !important;
+    max-width: 994px !important;
   }
   .gut--service__block {
     padding-inline: 1rem;

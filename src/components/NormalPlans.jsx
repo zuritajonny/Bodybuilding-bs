@@ -79,9 +79,9 @@ const NormalPlans = ({ TypeOfPlan }) => {
           </li>
           <li
             className={
-              TypeOfPlan == "e"
-                ? " card-list card-list-line card-list--noL"
-                : "card-list card-list-line"
+              TypeOfPlan == "a"
+                ? " card-list card-list-line "
+                : "card-list card-list-line card-list--noL"
             }
           >
             Text & phone support
