@@ -9,8 +9,8 @@ function DiscordSection() {
       </div>
       <div className="discord--text">
         <h2>
-          <span className="primary-color-accent">hard workers</span> have <br />
-          a discord server
+          <span className="primary-color-accent">hard workers</span> have a
+          discord server
         </h2>
         <p>
           <strong>Join the community</strong> that will help you in your journey

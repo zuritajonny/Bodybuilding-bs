@@ -4,6 +4,7 @@ import CPrep from "../media/services/competition-prep-min.png";
 import MProgram from "../media/services/mass-program-min.png";
 import SProgram from "../media/services/shred-program-min.png";
 import NPlans from "../media/services/nutrition-plan-min.png";
+import Protocols from "../media/services/protocols-min.png";
 
 function Services() {
   const [ActiveImage, setActiveImage] = useState("a");
@@ -67,6 +68,7 @@ function Services() {
             onClick={() => setActiveImage("f")}
           >
             <span>Protocols and more</span>
+            <img src={Protocols} alt="" />
           </li>
         </ul>
         <ul className="services--img">
@@ -108,6 +110,16 @@ function Services() {
           </li>
           <li className={ActiveImage == "e" && "span--img-active"}>
             <img src={MProgram} alt="" />
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Cupiditate iusto, quas fugiat harum quos tempora inventore
+                tenetur odio officia totam itaque reiciendis eum numquam ut.
+              </p>
+            </div>
+          </li>
+          <li className={ActiveImage == "f" && "span--img-active"}>
+            <img src={Protocols} alt="" />
             <div>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.

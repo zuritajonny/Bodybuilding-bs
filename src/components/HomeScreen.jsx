@@ -16,6 +16,7 @@ import DiscordSection from "../components/DiscordSection";
 import Bloodwork from "../components/Bloodwork";
 import InquiryMessage from "../components/InquiryMessage";
 import Services from "../components/Services";
+import GoogleReviews from "./GoogleReviews";
 
 function HomeScreen() {
   const [TypeOfPlan, setTypeOfPlan] = useState("a");
@@ -40,7 +41,7 @@ function HomeScreen() {
             />
             <h1 className="heading-text">
               Become The Best <br />
-              Version Of You
+              Version Of Yourself
             </h1>
             <button onClick={handleCTA} className="button button--robinson">
               Get started
@@ -102,7 +103,7 @@ function HomeScreen() {
         </h2>
         {/*       <h2 className="big-text">Purchase now, start whenever you want!</h2> */}
         <div className="plan-toggle">
-          <div
+          <button
             className={
               TypeOfPlan === "a"
                 ? "plan-type-container color-accent"
@@ -111,8 +112,8 @@ function HomeScreen() {
             onClick={() => setTypeOfPlan("a")}
           >
             <h6 className="medium-text">Monthly</h6>
-          </div>
-          <div
+          </button>
+          <button
             className={
               TypeOfPlan === "b"
                 ? "plan-type-container color-accent"
@@ -121,9 +122,9 @@ function HomeScreen() {
             onClick={() => setTypeOfPlan("b")}
           >
             <h6 className="medium-text">3 Months</h6>
-          </div>
+          </button>
 
-          <div
+          <button
             className={
               TypeOfPlan === "d"
                 ? "plan-type-container color-accent"
@@ -132,9 +133,9 @@ function HomeScreen() {
             onClick={() => setTypeOfPlan("d")}
           >
             <h6 className="medium-text">6 Months</h6>
-          </div>
+          </button>
 
-          <div
+          <button
             className={
               TypeOfPlan === "e"
                 ? "plan-type-container color-accent"
@@ -143,7 +144,7 @@ function HomeScreen() {
             onClick={() => setTypeOfPlan("e")}
           >
             <h6 className="medium-text">Annual</h6>
-          </div>
+          </button>
           {/*     <div
         className={
           TypeOfPlan === "c"
@@ -162,6 +163,7 @@ function HomeScreen() {
         <Bloodwork />
         <Services />
         <DiscordSection />
+        <GoogleReviews />
       </section>
     </>
   );

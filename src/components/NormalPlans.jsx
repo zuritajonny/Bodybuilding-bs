@@ -77,6 +77,16 @@ const NormalPlans = ({ TypeOfPlan }) => {
           <li className="card-list">
             PED programming for monitors with reading bloodwork
           </li>
+          <li
+            className={
+              TypeOfPlan == "e"
+                ? " card-list card-list-line card-list--noL"
+                : "card-list card-list-line"
+            }
+          >
+            Text & phone support
+            <span></span>
+          </li>
         </ul>
         <a
           target="_blank"

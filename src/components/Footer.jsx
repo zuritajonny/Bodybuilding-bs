@@ -1,8 +1,8 @@
 import React from "react";
-import instragramIcon from "../media/Icons/instagram.png";
-import gmaiIcon from "../media/Icons/gmail.png";
-import { AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
+
+import { AiOutlineInstagram } from "react-icons/ai";
 import { TbBrandTiktok } from "react-icons/tb";
+import RumbleLogo from "../media/rumble-logo.png";
 
 const Footer = () => {
   return (
@@ -29,6 +29,14 @@ const Footer = () => {
               <TbBrandTiktok className="icon-svg" />
             </div>
           </a>
+          <a
+            href="https://www.tiktok.com/@johneffer?_t=8XbYgUfs5cT&_r=1"
+            target="_blank"
+          >
+            <div className="icon-sm-container">
+              <img src={RumbleLogo} className="icon-svg" alt="" />
+            </div>
+          </a>
         </div>
         <h4 className="medium-text">
           Stop wasting your time. Join the program…
@@ -40,7 +48,7 @@ const Footer = () => {
           Borsos Media
         </a>
       </p>
-      <p className="paragraph-text">Effer Coaching - All rights reserved</p>
+      <p className="paragraph-text">Bodybuilding & BS - All rights reserved</p>
     </footer>
   );
 };
