@@ -8,9 +8,6 @@ import Protocols from "../media/services/protocols-min.png";
 
 function Services() {
   const [ActiveImage, setActiveImage] = useState("a");
-  useEffect(() => {
-    console.log(ActiveImage);
-  }, [ActiveImage]);
 
   return (
     <div className="mn services--block mn">

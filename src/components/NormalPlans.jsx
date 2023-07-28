@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+import { TbShoppingCart } from "react-icons/tb";
 import { FiChevronDown } from "react-icons/fi";
 import AffirmLogo from "../media/affirm-logo.webp";
 
@@ -41,15 +41,15 @@ const NormalPlans = ({ TypeOfPlan }) => {
           {(() => {
             switch (TypeOfPlan) {
               case "a":
-                return "$100 ";
+                return "$399 ";
               case "b":
-                return "$240 ";
+                return "$799 ";
               case "c":
-                return "$600 ";
+                return "$1499 ";
               case "d":
-                return "$600 ";
+                return "$1499 ";
               case "e":
-                return "$1200 ";
+                return "$2399 ";
               default:
                 return "$100 ";
             }
@@ -105,7 +105,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
           })()}
         >
           <button className="button">
-            <AiOutlineShoppingCart className="icon" /> Purchase
+            <TbShoppingCart className="icon" /> Purchase
           </button>
         </a>
         <a
