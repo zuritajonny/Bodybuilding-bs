@@ -1,4 +1,4 @@
-var affirm_config = {
+/* var affirm_config = {
   public_api_key: "VGOCPKS82RVITC0M",
   script: "https://sandbox.affirm.com/js/v2/affirm.js",
 };
@@ -51,3 +51,4 @@ var affirm_config = {
   "ready",
   "jsReady"
 );
+ */

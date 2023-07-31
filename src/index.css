@@ -883,7 +883,20 @@ a {
   padding: 0 1rem;
   width: 100%;
 }
-
+.hero-section.hero-section__gutwork .hero-text {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+}
+.hero-section__gutwork .hero-container {
+  top: 45%;
+}
+.hero-section.hero-section__gutwork h1 {
+  text-align: center;
+}
+.hero-section.hero-section__gutwork .bbs--logo {
+  margin-right: initial;
+}
 .description-text {
   color: var(--black-color);
   text-transform: uppercase;
@@ -1626,6 +1639,10 @@ option {
   }
 }
 @media only screen and (min-width: 807px) {
+  .hero-section,
+  .hero-section.hero-section__gutwork {
+    min-height: max(650px, 80svh) !important;
+  }
   .bg__text--background .big-text {
     font-size: clamp(1rem, 12vw, 5rem) !important;
   }

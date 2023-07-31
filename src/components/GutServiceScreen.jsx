@@ -22,9 +22,9 @@ function GutServiceScreen() {
 
   return (
     <>
-      <main className="hero-section">
+      <main className="hero-section hero-section__gutwork">
         <div className="heroImg"></div>
-        <img src={Nick} className="nick-crop" alt="" />
+        {/*  <img src={Nick} className="nick-crop" alt="" /> */}
         {/*  <img src={maskGroup} className="maskImg" alt="" /> */}
         <div className="hero-container">
           <div className="hero-text">
@@ -35,8 +35,8 @@ function GutServiceScreen() {
               alt=""
             />
             <h1 className="heading-text">
-              Become The Best <br />
-              Version Of Yourself
+              Boost your <br />
+              wellness game
             </h1>
             <button onClick={handleCTA} className="button button--robinson">
               Get started
