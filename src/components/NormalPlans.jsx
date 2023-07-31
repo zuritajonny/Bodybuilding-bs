@@ -9,48 +9,84 @@ const NormalPlans = ({ TypeOfPlan }) => {
   const [FaqActiveC, setFaqActiveC] = useState(false);
   const [FaqActiveD, setFaqActiveD] = useState(false);
 
-  var stripe = Stripe(
-    "pk_live_51MkxIDIF3yNgTFjlIw7dArN2FF6S6xNUf0F1kD8ShpYCAbHC1aqj8ubim0FT2UPFMpmYLj84pQQZdkHvQVMCFmeo00pwTEe3Jg"
-  );
-
   function HandleAffirmButton() {
-    stripe
-      .confirmAffirmPayment("{{PAYMENT_INTENT_CLIENT_SECRET}}", {
-        payment_method: {
-          // Billing information is optional but recommended to pass in.
-          billing_details: {
-            email: "jenny@rosen.com",
-            name: "Jenny Rosen",
-            address: {
-              line1: "1234 Main Street",
-              city: "San Francisco",
-              state: "CA",
-              country: "US",
-              postal_code: "94111",
-            },
-          },
-        },
+    affirm.checkout({
+      merchant: {
+        user_confirmation_url: "https://merchantsite.com/confirm",
+        user_cancel_url: "https://merchantsite.com/cancel",
+        public_api_key: "VGOCPKS82RVITC0M",
+        user_confirmation_url_action: "POST",
+        name: "Bodybuilding & BS",
+      },
 
-        // Shipping information is optional but recommended to pass in.
-        shipping: {
-          name: "Jenny Rosen",
-          address: {
-            line1: "1234 Main Street",
-            city: "San Francisco",
-            state: "CA",
-            country: "US",
-            postal_code: "94111",
-          },
+      shipping: {
+        name: {
+          first: "Joe",
+          last: "Doe",
         },
-        // Return URL where the customer should be redirected after the authorization.
-        return_url: "https://example.com/checkout/complete",
-      })
-      .then(function (result) {
-        if (result.error) {
-          // Inform the customer that there was an error.
-          console.log(result.error.message);
-        }
-      });
+        address: {
+          line1: "633 Folsom St",
+          line2: "Floor 7",
+          city: "San Francisco",
+          state: "CA",
+          zipcode: "94107",
+          country: "USA",
+        },
+        phone_number: "4153334567",
+        email: "joedoe@123fakestreet.com",
+      },
+      billing: {
+        name: {
+          first: "Joe",
+          last: "Doe",
+        },
+        address: {
+          line1: "633 Folsom St",
+          line2: "Floor 7",
+          city: "San Francisco",
+          state: "CA",
+          zipcode: "94107",
+          country: "USA",
+        },
+        phone_number: "4153334567",
+        email: "joedoe@123fakestreet.com",
+      },
+      items: [
+        {
+          display_name: "Awesome Pants",
+          sku: "ABC-123",
+          unit_price: 10000,
+          qty: 3,
+          item_image_url: "http://merchantsite.com/images/awesome-pants.jpg",
+          item_url: "http://merchantsite.com/products/awesome-pants.html",
+          categories: [
+            ["Home", "Bedroom"],
+            ["Home", "Furniture", "Bed"],
+          ],
+        },
+      ],
+      discounts: {
+        RETURN5: {
+          discount_amount: 500,
+          discount_display_name: "Returning customer 5% discount",
+        },
+        PRESDAY10: {
+          discount_amount: 1000,
+          discount_display_name: "President's Day 10% off",
+        },
+      },
+      metadata: {
+        shipping_type: "UPS Ground",
+        mode: "modal",
+      },
+      order_id: "JKLMO4321",
+      currency: "USD",
+      financing_program: "flyus_3z6r12r",
+      shipping_amount: 0,
+      tax_amount: 0,
+      total: 440400,
+    });
+    affirm.checkout.open();
   }
 
   return (

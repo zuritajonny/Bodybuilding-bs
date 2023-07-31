@@ -1,5 +1,5 @@
 var affirm_config = {
-  public_api_key: "Y88RIGNFL9FMHB4I",
+  public_api_key: "VGOCPKS82RVITC0M",
   script: "https://sandbox.affirm.com/js/v2/affirm.js",
 };
 
