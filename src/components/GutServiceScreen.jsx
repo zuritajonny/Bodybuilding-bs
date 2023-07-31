@@ -1,11 +1,11 @@
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { AiOutlineArrowLeft } from "react-icons/ai";
 import Nick from "../media/nick.png";
 import BBLogo from "../media/BBLogo.png";
 import USflag from "../media/usflag.png";
 import IFBB from "../media/ifbb.png";
 import AffirmLogo from "../media/affirm-logo.webp";
-import Blood from "../media/blood.png";
 
 function GutServiceScreen() {
   const navigate = useNavigate();
@@ -109,7 +109,7 @@ function GutServiceScreen() {
                 can arrange a new blood work test at a trusted clinic for an
                 extra fee.
               </p>
-              <img src={Blood} alt="" />
+              {/*  <img src={Blood} alt="" /> */}
             </div>
           </div>
           <div className="card-wrapper card-wrapper--gut mn">
@@ -148,6 +148,10 @@ function GutServiceScreen() {
             </div>
           </div>
         </div>
+        <button className="button button--return" onClick={() => navigate("/")}>
+          <AiOutlineArrowLeft className="icon" />
+          Go Back to the Homepage
+        </button>
       </div>
     </>
   );

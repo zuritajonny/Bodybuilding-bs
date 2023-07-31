@@ -9,6 +9,50 @@ const NormalPlans = ({ TypeOfPlan }) => {
   const [FaqActiveC, setFaqActiveC] = useState(false);
   const [FaqActiveD, setFaqActiveD] = useState(false);
 
+  var stripe = Stripe(
+    "pk_live_51MkxIDIF3yNgTFjlIw7dArN2FF6S6xNUf0F1kD8ShpYCAbHC1aqj8ubim0FT2UPFMpmYLj84pQQZdkHvQVMCFmeo00pwTEe3Jg"
+  );
+
+  function HandleAffirmButton() {
+    stripe
+      .confirmAffirmPayment("{{PAYMENT_INTENT_CLIENT_SECRET}}", {
+        payment_method: {
+          // Billing information is optional but recommended to pass in.
+          billing_details: {
+            email: "jenny@rosen.com",
+            name: "Jenny Rosen",
+            address: {
+              line1: "1234 Main Street",
+              city: "San Francisco",
+              state: "CA",
+              country: "US",
+              postal_code: "94111",
+            },
+          },
+        },
+
+        // Shipping information is optional but recommended to pass in.
+        shipping: {
+          name: "Jenny Rosen",
+          address: {
+            line1: "1234 Main Street",
+            city: "San Francisco",
+            state: "CA",
+            country: "US",
+            postal_code: "94111",
+          },
+        },
+        // Return URL where the customer should be redirected after the authorization.
+        return_url: "https://example.com/checkout/complete",
+      })
+      .then(function (result) {
+        if (result.error) {
+          // Inform the customer that there was an error.
+          console.log(result.error.message);
+        }
+      });
+  }
+
   return (
     <div className="card-wrapper mn">
       <div className={TypeOfPlan === "c" ? "card-hidden" : "card-container"}>
@@ -108,23 +152,11 @@ const NormalPlans = ({ TypeOfPlan }) => {
             <TbShoppingCart className="icon" /> Purchase
           </button>
         </a>
-        <a
-          target="_blank"
-          className="purchase-button-link"
-          href={(() => {
-            switch (TypeOfPlan) {
-              case "a":
-                return "https://effercoaching.com/normie-monthly";
-              case "b":
-                return "https://effercoaching.com/normie-3-months-ss";
-              case "d":
-                return "https://effercoaching.com/normie-6-months";
-              case "e":
-                return "https://effercoaching.com/normie-annual";
-            }
-          })()}
-        >
-          <button className="button button--affirm">
+        <a className="purchase-button-link">
+          <button
+            className="button button--affirm"
+            onClick={HandleAffirmButton}
+          >
             Pay with
             <img src={AffirmLogo} alt="Affirm Logo" className="img--afirm" />
           </button>

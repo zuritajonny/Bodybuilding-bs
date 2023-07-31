@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Nick from "../media/nick.png";
 import BBLogo from "../media/BBLogo.png";
@@ -7,9 +7,7 @@ import IFBB from "../media/ifbb.png";
 import Lift from "../media/lift.svg";
 import Health from "../media/health.svg";
 import Protein from "../media/protein.svg";
-
 import PaintStroke from "../media/PaintStroke.png";
-
 import NormalPlans from "../components/NormalPlans";
 import CustomPlans from "../components/CustomPlans";
 import DiscordSection from "../components/DiscordSection";
@@ -26,6 +24,12 @@ function HomeScreen() {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
   const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <main className="hero-section">

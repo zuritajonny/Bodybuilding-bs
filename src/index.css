@@ -76,12 +76,13 @@ li {
 body .eapps-instagram-feed-posts-grid-load-more-container {
   display: none !important;
 }
-
-#eapps-instagram-feed-1 .eapps-instagram-feed-header,
-#eapps-instagram-feed-1
+#eapps-instagram-feed-4 .eapps-instagram-feed-header,
+body #eapps-instagram-feed-1 .eapps-instagram-feed-header,
+body
+  #eapps-instagram-feed-1
   .eapps-instagram-feed-header
   a:not(.es-header-follow-button) {
-  background-color: rgba(255, 255, 255, 0.2) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
   color: var(--white-color) !important;
 }
 
@@ -183,7 +184,21 @@ ul {
   transition: var(--transition);
   font-family: Robinson Rough;
 }
+.button--return {
+  max-width: 18.06rem;
+  margin-inline: auto;
+}
 
+.button--return:hover,
+.button--yellow:hover,
+.button--secondary:hover {
+  gap: 1.5rem;
+}
+
+.button--secondary:hover .icon,
+.discord--block .button:hover .icon {
+  transform: rotate(45deg);
+}
 .button.button__black {
   background-color: var(--black-color);
   color: var(--primary-color);
@@ -847,6 +862,7 @@ a {
   width: var(--icon-width);
   height: var(--icon-height);
   cursor: pointer;
+  transition: 300ms ease;
 }
 
 .hero-container {
@@ -1616,6 +1632,9 @@ option {
   }
 }
 @media only screen and (min-width: 980px) {
+  .blood-gut-text p {
+    font-size: 1.5rem;
+  }
   body #eapps-instagram-feed-1 .eapps-instagram-feed-header {
     max-width: 983px !important;
     border-radius: 8px;
@@ -1827,9 +1846,10 @@ option {
     margin-top: 0;
   }
   .work--block__text .button {
-    max-width: 193px;
+    max-width: 12.06rem;
     margin: 0;
   }
+
   .discord--block {
     grid-template-columns: 1fr 1fr;
     max-width: 1440px;

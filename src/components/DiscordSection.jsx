@@ -24,7 +24,11 @@ function DiscordSection() {
           <li>More information to focus on what works for you.</li>
           <li>A positive environment for daily motivation.</li>
         </ul>
-        <a href="" className="button button--yellow button__robinson">
+        <a
+          href="https://discord.com/invite/2K7m4mPJH2"
+          target="_blank"
+          className="button button--yellow button__robinson"
+        >
           Join The Server
           <FiArrowUpRight className="icon" />
         </a>
