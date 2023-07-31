@@ -326,7 +326,7 @@ a {
 }
 .services--block h2,
 .services--block p {
-  max-width: 500px;
+  max-width: 28.25rem;
   margin-inline: auto;
   text-align: center;
 }
@@ -374,6 +374,7 @@ a {
   margin-bottom: 2rem;
   text-align: center;
   max-width: 28rem;
+  margin-inline: auto;
 }
 
 .plan--block-wrapper {

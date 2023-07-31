@@ -8,7 +8,11 @@ const NormalPlans = ({ TypeOfPlan }) => {
   const [FaqActiveB, setFaqActiveB] = useState(false);
   const [FaqActiveC, setFaqActiveC] = useState(false);
   const [FaqActiveD, setFaqActiveD] = useState(false);
-
+  affirm.ui.ready(function () {
+    affirm.ui.error.on("close", function () {
+      alert("Please check your contact information for accuracy.");
+    });
+  });
   function HandleAffirmButton() {
     affirm.checkout({
       merchant: {
