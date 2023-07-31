@@ -605,8 +605,8 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 100svh;
-  min-height: 100vh;
+  min-height: 90svh;
+  min-height: 90vh;
   max-height: max(800px, 90svh);
   overflow: hidden;
   position: relative;
