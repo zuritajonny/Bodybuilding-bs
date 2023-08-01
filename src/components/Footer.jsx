@@ -32,9 +32,7 @@ const Footer = () => {
             </div>
           </a>
         </div>
-        <h4 className="medium-text">
-          Stop wasting your time. Join the program…
-        </h4>
+        <h4 className="medium-text">Become the best version of yourself</h4>
       </div>
       <p className="paragraph-text txt-lnks">
         Website designed and developed by{" "}
