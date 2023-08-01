@@ -883,6 +883,11 @@ a {
   padding: 0 1rem;
   width: 100%;
 }
+.hero-section.hero-section__gutwork {
+  min-height: 70svh;
+  min-height: 70vh;
+  max-height: max(550px, 65svh);
+}
 .hero-section.hero-section__gutwork .hero-text {
   display: grid;
   justify-items: center;

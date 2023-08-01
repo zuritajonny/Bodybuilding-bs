@@ -2,27 +2,33 @@ import { useState } from "react";
 import { TbShoppingCart } from "react-icons/tb";
 import { FiChevronDown } from "react-icons/fi";
 import AffirmLogo from "../media/affirm-logo.webp";
+import {
+  Elements,
+  PaymentMethodMessagingElement,
+} from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
 
 const NormalPlans = ({ TypeOfPlan }) => {
   const [FaqActiveA, setFaqActiveA] = useState(false);
   const [FaqActiveB, setFaqActiveB] = useState(false);
   const [FaqActiveC, setFaqActiveC] = useState(false);
   const [FaqActiveD, setFaqActiveD] = useState(false);
-  affirm.ui.ready(function () {
-    affirm.ui.error.on("close", function () {
-      alert("Please check your contact information for accuracy.");
-    });
-  });
+  var stripe = Stripe(
+    "pk_live_51MkxIDIF3yNgTFjlIw7dArN2FF6S6xNUf0F1kD8ShpYCAbHC1aqj8ubim0FT2UPFMpmYLj84pQQZdkHvQVMCFmeo00pwTEe3Jg"
+  );
+  var stripePromise = loadStripe(
+    "pk_live_51MkxIDIF3yNgTFjlIw7dArN2FF6S6xNUf0F1kD8ShpYCAbHC1aqj8ubim0FT2UPFMpmYLj84pQQZdkHvQVMCFmeo00pwTEe3Jg"
+  );
+
   function HandleAffirmButton() {
     affirm.checkout({
       merchant: {
-        user_confirmation_url: "http://192.168.1.4:5173/",
-        user_cancel_url: "http://192.168.1.4:5173/",
+        user_confirmation_url: "https://merchantsite.com/confirm",
+        user_cancel_url: "https://merchantsite.com/cancel",
         public_api_key: "VGOCPKS82RVITC0M",
         user_confirmation_url_action: "POST",
-        name: "Bodybuilding & BS",
+        name: "Your Customer-Facing Merchant Name",
       },
-
       shipping: {
         name: {
           first: "Joe",
@@ -86,10 +92,11 @@ const NormalPlans = ({ TypeOfPlan }) => {
       order_id: "JKLMO4321",
       currency: "USD",
       financing_program: "flyus_3z6r12r",
-      shipping_amount: 0,
-      tax_amount: 0,
-      total: 440400,
+      shipping_amount: 1000,
+      tax_amount: 600,
+      total: 30100,
     });
+
     affirm.checkout.open();
   }
 
@@ -192,6 +199,16 @@ const NormalPlans = ({ TypeOfPlan }) => {
             <TbShoppingCart className="icon" /> Purchase
           </button>
         </a>
+        <Elements stripe={stripePromise}>
+          <PaymentMethodMessagingElement
+            options={{
+              amount: 9900,
+              currency: "USD",
+              paymentMethodTypes: ["affirm"],
+              countryCode: "US",
+            }}
+          />
+        </Elements>
         <a className="purchase-button-link">
           <button
             className="button button--affirm"
