@@ -4,6 +4,7 @@ import HomeScreen from "./components/HomeScreen";
 import Footer from "./components/Footer";
 import GutServiceScreen from "./components/GutServiceScreen";
 import Checkout from "./components/Checkout";
+import Canceled from "./components/Canceled";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<HomeScreen />} />
         <Route path="/gutservice" element={<GutServiceScreen />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/canceled" element={<Canceled />} />
       </Routes>
       <Footer />
     </div>

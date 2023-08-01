@@ -14,7 +14,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
       merchant: {
         user_confirmation_url:
           "http://development.bodybuildingandbs.com/checkout",
-        user_cancel_url: "https://merchantsite.com/cancel",
+        user_cancel_url: "http://development.bodybuildingandbs.com/canceled",
         public_api_key: "VGOCPKS82RVITC0M",
         user_confirmation_url_action: "POST",
         name: "Bodybuilding & BS",

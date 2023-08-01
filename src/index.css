@@ -2043,6 +2043,9 @@ option {
   .pricing-container:nth-of-type(2) .paragraph-text {
     text-align: center;
   }
+  .results--page {
+    color: var(--white-color);
+  }
   .card-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
