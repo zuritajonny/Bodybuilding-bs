@@ -439,6 +439,7 @@ a {
   color: var(--white-color);
   text-align: center;
   margin-inline: auto;
+  padding-inline: 1rem;
 }
 
 .blood-gut-text {
@@ -1670,7 +1671,7 @@ option {
   }
   .gut--service__block {
     padding-inline: 1rem;
-    max-width: var(--width-wrapper);
+    max-width: calc(var(--width-wrapper) + 5rem);
     margin-inline: auto;
   }
   .gut--service__block > p {
@@ -2052,6 +2053,10 @@ option {
 }
 
 @media screen and (min-width: 1440px) {
+  .gut--service__block {
+    max-width: var(--width-wrapper);
+  }
+
   .nick-crop {
     transform: translate(20%, 0);
   }

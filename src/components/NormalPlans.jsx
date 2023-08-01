@@ -54,7 +54,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
         {
           display_name: "Awesome Pants",
           sku: "ABC-123",
-          unit_price: 10000,
+          unit_price: 399,
           qty: 3,
           item_image_url: "http://merchantsite.com/images/awesome-pants.jpg",
           item_url: "http://merchantsite.com/products/awesome-pants.html",
@@ -81,9 +81,9 @@ const NormalPlans = ({ TypeOfPlan }) => {
       order_id: "JKLMO4321",
       currency: "USD",
       financing_program: "flyus_3z6r12r",
-      shipping_amount: 1000,
-      tax_amount: 600,
-      total: 30100,
+      shipping_amount: 0,
+      tax_amount: 0,
+      total: 39900,
     });
 
     affirm.checkout.open();
@@ -109,14 +109,6 @@ const NormalPlans = ({ TypeOfPlan }) => {
           Coaching Plan
         </h2>
 
-        {/*  <p className="paragraph-text">
-          Custom programming in the most affordable way possible
-        </p> */}
-        {/* {TypeOfPlan == "b" && (
-          <p className="summer-prg">
-            Before <span className="summer-offer">$300</span>
-          </p>
-        )} */}
         <h4 className="card-text-price">
           {(() => {
             switch (TypeOfPlan) {
