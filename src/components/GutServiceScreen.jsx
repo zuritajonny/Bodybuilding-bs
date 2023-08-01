@@ -80,7 +80,11 @@ function GutServiceScreen() {
                 <li className="card-list">Advice of lifestyle habits</li>
                 <li className="card-list">Training if needed</li>
               </ul>
-              <a target="_blank" className="purchase-button-link" href="">
+              <a
+                target="_blank"
+                className="purchase-button-link"
+                href="https://payments.bodybuildingandbs.com/bloodwork"
+              >
                 <button className="button">Purchase</button>
               </a>
               <a target="_blank" className="purchase-button-link" href="">
@@ -132,7 +136,11 @@ function GutServiceScreen() {
                   Follow up consultation to act on findings
                 </li>
               </ul>
-              <a target="_blank" className="purchase-button-link" href="">
+              <a
+                target="_blank"
+                className="purchase-button-link"
+                href="https://payments.bodybuildingandbs.com/gut-service"
+              >
                 <button className="button">Purchase</button>
               </a>
               <a target="_blank" className="purchase-button-link" href="">

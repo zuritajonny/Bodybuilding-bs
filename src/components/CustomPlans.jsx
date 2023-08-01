@@ -30,7 +30,11 @@ function CustomPlans() {
               Pay with
               <img src={AffirmLogo} alt="Affirm Logo" className="img--afirm" />
             </a>
-            <a href="" className="button button--cta">
+            <a
+              href="https://payments.bodybuildingandbs.com/3-months-bulking-plan"
+              target="_blank"
+              className="button button--cta"
+            >
               Purchase
             </a>
           </div>
@@ -55,7 +59,11 @@ function CustomPlans() {
               Pay with
               <img src={AffirmLogo} alt="Affirm Logo" className="img--afirm" />
             </a>
-            <a href="" className="button button--cta">
+            <a
+              href="https://payments.bodybuildingandbs.com/3-months-sherdding-plan"
+              target="_blank"
+              className="button button--cta"
+            >
               Purchase
             </a>
           </div>
@@ -79,7 +87,11 @@ function CustomPlans() {
               Pay with
               <img src={AffirmLogo} alt="Affirm Logo" className="img--afirm" />
             </a>
-            <a href="" className="button button--cta">
+            <a
+              href="https://payments.bodybuildingandbs.com/3-months-body-recomposition-plan"
+              target="_blank"
+              className="button button--cta"
+            >
               Purchase
             </a>
           </div>
@@ -103,7 +115,11 @@ function CustomPlans() {
               Pay with
               <img src={AffirmLogo} alt="Affirm Logo" className="img--afirm" />
             </a>
-            <a href="" className="button button--cta">
+            <a
+              href="https://payments.bodybuildingandbs.com/6-week-revers-diet-plan"
+              target="_blank"
+              className="button button--cta"
+            >
               Purchase
             </a>
           </div>

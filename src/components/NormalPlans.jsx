@@ -74,10 +74,10 @@ const NormalPlans = ({ TypeOfPlan }) => {
           discount_display_name: "President's Day 10% off",
         },
       },
-      metadata: {
+      /*   metadata: {
         shipping_type: "UPS Ground",
         mode: "modal",
-      },
+      }, */
       order_id: "JKLMO4321",
       currency: "USD",
       financing_program: "flyus_3z6r12r",
@@ -166,13 +166,13 @@ const NormalPlans = ({ TypeOfPlan }) => {
           href={(() => {
             switch (TypeOfPlan) {
               case "a":
-                return "https://effercoaching.com/normie-monthly";
+                return "https://payments.bodybuildingandbs.com/full-time-coaching-monthly";
               case "b":
-                return "https://effercoaching.com/normie-3-months-ss";
+                return "https://payments.bodybuildingandbs.com/full-time-coaching-3-months";
               case "d":
-                return "https://effercoaching.com/normie-6-months";
+                return "https://payments.bodybuildingandbs.com/full-time-coaching-6-months";
               case "e":
-                return "https://effercoaching.com/normie-annual";
+                return "https://payments.bodybuildingandbs.com/full-time-coaching-annual";
             }
           })()}
         >
