@@ -1,8 +1,7 @@
-var affirm_config = {
+_affirm_config = {
   public_api_key: "VGOCPKS82RVITC0M",
-  script: "https://sandbox.affirm.com/js/v2/affirm.js",
+  script: "https://cdn1-sandbox.affirm.com/js/v2/affirm.js",
 };
-
 (function (m, g, n, d, a, e, h, c) {
   var b = m[n] || {},
     k = document.createElement(e),
@@ -43,7 +42,7 @@ var affirm_config = {
   m[n] = b;
 })(
   window,
-  affirm_config,
+  _affirm_config,
   "affirm",
   "checkout",
   "ui",

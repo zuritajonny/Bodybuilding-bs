@@ -15,7 +15,6 @@ const NormalPlans = ({ TypeOfPlan }) => {
         user_confirmation_url:
           "http://development.bodybuildingandbs.com/checkout",
         user_cancel_url: "http://development.bodybuildingandbs.com/canceled",
-        public_api_key: "VGOCPKS82RVITC0M",
         user_confirmation_url_action: "POST",
         name: "Bodybuilding & BS",
       },
@@ -55,7 +54,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
         {
           display_name: "Awesome Pants",
           sku: "ABC-123",
-          unit_price: 399,
+          unit_price: 1999,
           qty: 3,
           item_image_url: "http://merchantsite.com/images/awesome-pants.jpg",
           item_url: "http://merchantsite.com/products/awesome-pants.html",
@@ -75,10 +74,10 @@ const NormalPlans = ({ TypeOfPlan }) => {
           discount_display_name: "President's Day 10% off",
         },
       },
-      /* metadata: {
+      metadata: {
         shipping_type: "UPS Ground",
-        mode: "",
-      }, */
+        mode: "modal",
+      },
       order_id: "JKLMO4321",
       currency: "USD",
       financing_program: "flyus_3z6r12r",
