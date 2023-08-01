@@ -90,7 +90,13 @@ body
   height: 580px;
   overflow: hidden;
 }
-
+.IG--block__wrapper {
+  height: 40.93rem;
+  overflow: hidden;
+}
+.eapps-instagram-feed-posts-view {
+  margin-bottom: 100vh !important;
+}
 .RootLayout__RootComponent-sc-1doisyz-0 * {
   font-family: Roboto, Arial, Helvetica, sans-serif !important;
 }
@@ -275,6 +281,7 @@ ul {
 .paragraph-text a {
   color: inherit;
   font-weight: 600;
+  text-decoration: underline;
 }
 
 .subtitle-text {
@@ -958,6 +965,7 @@ a {
   font-size: 1.2rem;
   margin-top: 0.5rem;
   font-family: Robinson Rough;
+  display: none;
 }
 
 .footer-container .paragraph-text {
@@ -1636,7 +1644,17 @@ option {
     top: -21px;
   }
 }
+@media only screen and (min-width: 560px) {
+  .IG--block__wrapper {
+    height: 50.93rem;
+    overflow: hidden;
+  }
+}
 @media only screen and (min-width: 750px) {
+  .IG--block__wrapper {
+    height: 63.93rem;
+    overflow: hidden;
+  }
   .bullet--block_wrapper {
     grid-template-columns: 1fr 1fr 1fr;
     width: var(--width-wrapper);
@@ -1657,6 +1675,9 @@ option {
   }
 }
 @media only screen and (min-width: 980px) {
+  .IG--block__wrapper {
+    height: 70.93rem;
+  }
   .blood-gut-text p {
     font-size: 1.5rem;
   }
@@ -2056,6 +2077,9 @@ option {
 }
 
 @media screen and (min-width: 1440px) {
+  .IG--block__wrapper {
+    height: 59.93rem;
+  }
   .gut--service__block {
     max-width: var(--width-wrapper);
   }
