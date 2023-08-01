@@ -12,7 +12,8 @@ const NormalPlans = ({ TypeOfPlan }) => {
   function HandleAffirmButton() {
     affirm.checkout({
       merchant: {
-        user_confirmation_url: "https://merchantsite.com/confirm",
+        user_confirmation_url:
+          "http://development.bodybuildingandbs.com/checkout",
         user_cancel_url: "https://merchantsite.com/cancel",
         public_api_key: "VGOCPKS82RVITC0M",
         user_confirmation_url_action: "POST",
