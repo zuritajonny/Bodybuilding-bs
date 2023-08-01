@@ -2066,6 +2066,11 @@ option {
   }
   .results--page {
     color: var(--white-color);
+    height: calc(100vh - 154px);
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-family: Big Shoulders Display;
   }
   .card-wrapper {
     display: grid;
