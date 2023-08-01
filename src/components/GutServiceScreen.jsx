@@ -20,6 +20,86 @@ function GutServiceScreen() {
     });
   }, []);
 
+  function HandleAffirmButton(name, price) {
+    affirm.checkout({
+      merchant: {
+        user_confirmation_url:
+          "http://development.bodybuildingandbs.com/checkout",
+        user_cancel_url: "http://development.bodybuildingandbs.com/canceled",
+        user_confirmation_url_action: "POST",
+        name: "Bodybuilding & BS",
+      },
+      shipping: {
+        name: {
+          first: "Joe",
+          last: "Doe",
+        },
+        address: {
+          line1: "633 Folsom St",
+          line2: "Floor 7",
+          city: "San Francisco",
+          state: "CA",
+          zipcode: "94107",
+          country: "USA",
+        },
+        phone_number: "4153334567",
+        email: "joedoe@123fakestreet.com",
+      },
+      billing: {
+        name: {
+          first: "Joe",
+          last: "Doe",
+        },
+        address: {
+          line1: "633 Folsom St",
+          line2: "Floor 7",
+          city: "San Francisco",
+          state: "CA",
+          zipcode: "94107",
+          country: "USA",
+        },
+        phone_number: "4153334567",
+        email: "joedoe@123fakestreet.com",
+      },
+      items: [
+        {
+          display_name: name,
+          sku: "ABC-123",
+          unit_price: price,
+          qty: 1,
+          // item_image_url: "http://merchantsite.com/images/awesome-pants.jpg",
+          // item_url: "http://merchantsite.com/products/awesome-pants.html",
+          // categories: [
+          //   ["Home", "Bedroom"],
+          //   ["Home", "Furniture", "Bed"],
+          // ],
+        },
+      ],
+      // discounts: {
+      //   RETURN5: {
+      //     discount_amount: 500,
+      //     discount_display_name: "Returning customer 5% discount",
+      //   },
+      //   PRESDAY10: {
+      //     discount_amount: 1000,
+      //     discount_display_name: "President's Day 10% off",
+      //   },
+      // },
+      /*   metadata: {
+        shipping_type: "UPS Ground",
+        mode: "modal",
+      }, */
+      order_id: "JKLMO4321",
+      currency: "USD",
+      financing_program: "flyus_3z6r12r",
+      shipping_amount: 0,
+      tax_amount: 0,
+      total: price,
+    });
+
+    affirm.checkout.open();
+  }
+
   return (
     <>
       <main className="hero-section hero-section__gutwork">
@@ -87,8 +167,11 @@ function GutServiceScreen() {
               >
                 <button className="button">Purchase</button>
               </a>
-              <a target="_blank" className="purchase-button-link" href="">
-                <button className="button button--affirm">
+              <a className="purchase-button-link">
+                <button
+                  className="button button--affirm"
+                  onClick={() => HandleAffirmButton("Bloodwork", 24900)}
+                >
                   Pay with
                   <img
                     src={AffirmLogo}
@@ -143,8 +226,11 @@ function GutServiceScreen() {
               >
                 <button className="button">Purchase</button>
               </a>
-              <a target="_blank" className="purchase-button-link" href="">
-                <button className="button button--affirm">
+              <a className="purchase-button-link">
+                <button
+                  className="button button--affirm"
+                  onClick={() => HandleAffirmButton("Gut Health Test", 34900)}
+                >
                   Pay with
                   <img
                     src={AffirmLogo}
