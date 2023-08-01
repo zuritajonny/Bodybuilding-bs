@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 
 function Canceled() {
+  const navigate = useNavigate();
   return (
     <div className="results--page">
       You canceled your order
