@@ -52,28 +52,54 @@ const NormalPlans = ({ TypeOfPlan }) => {
       },
       items: [
         {
-          display_name: "Awesome Pants",
+          display_name: (() => {
+            switch (TypeOfPlan) {
+              case "a":
+                return "Monthly";
+              case "b":
+                return "3-month";
+              case "d":
+                return "6-Month";
+              case "e":
+                return "Annual";
+            }
+          })(),
           sku: "ABC-123",
-          unit_price: 1999,
-          qty: 3,
-          item_image_url: "http://merchantsite.com/images/awesome-pants.jpg",
-          item_url: "http://merchantsite.com/products/awesome-pants.html",
-          categories: [
-            ["Home", "Bedroom"],
-            ["Home", "Furniture", "Bed"],
-          ],
+          unit_price: (() => {
+            switch (TypeOfPlan) {
+              case "a":
+                return 39900;
+              case "b":
+                return 79900;
+              case "c":
+                return 149900;
+              case "d":
+                return 149900;
+              case "e":
+                return 239900;
+              default:
+                return 10000;
+            }
+          })(),
+          qty: 1,
+          // item_image_url: "http://merchantsite.com/images/awesome-pants.jpg",
+          // item_url: "http://merchantsite.com/products/awesome-pants.html",
+          // categories: [
+          //   ["Home", "Bedroom"],
+          //   ["Home", "Furniture", "Bed"],
+          // ],
         },
       ],
-      discounts: {
-        RETURN5: {
-          discount_amount: 500,
-          discount_display_name: "Returning customer 5% discount",
-        },
-        PRESDAY10: {
-          discount_amount: 1000,
-          discount_display_name: "President's Day 10% off",
-        },
-      },
+      // discounts: {
+      //   RETURN5: {
+      //     discount_amount: 500,
+      //     discount_display_name: "Returning customer 5% discount",
+      //   },
+      //   PRESDAY10: {
+      //     discount_amount: 1000,
+      //     discount_display_name: "President's Day 10% off",
+      //   },
+      // },
       /*   metadata: {
         shipping_type: "UPS Ground",
         mode: "modal",
@@ -83,7 +109,22 @@ const NormalPlans = ({ TypeOfPlan }) => {
       financing_program: "flyus_3z6r12r",
       shipping_amount: 0,
       tax_amount: 0,
-      total: 39900,
+      total: (() => {
+        switch (TypeOfPlan) {
+          case "a":
+            return 39900;
+          case "b":
+            return 79900;
+          case "c":
+            return 149900;
+          case "d":
+            return 149900;
+          case "e":
+            return 239900;
+          default:
+            return 10000;
+        }
+      })(),
     });
 
     affirm.checkout.open();
