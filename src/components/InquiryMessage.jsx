@@ -15,7 +15,10 @@ function InquiryMessage() {
 
         <span></span>
 
-        <a href="" className="button button--secondary">
+        <a
+          href="https://bodybuildingandbs.com/coaching-intake-form/"
+          className="button button--secondary"
+        >
           Start Now
           <FiArrowUpRight className="icon" />
         </a>
