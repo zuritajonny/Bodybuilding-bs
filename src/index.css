@@ -2071,6 +2071,10 @@ option {
     place-content: center;
     text-align: center;
     font-family: Big Shoulders Display;
+    gap: 1rem;
+  }
+  .results--page .button {
+    margin-top: 0;
   }
   .card-wrapper {
     display: grid;
