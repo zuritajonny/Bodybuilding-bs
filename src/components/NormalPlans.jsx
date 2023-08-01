@@ -2,23 +2,12 @@ import { useState } from "react";
 import { TbShoppingCart } from "react-icons/tb";
 import { FiChevronDown } from "react-icons/fi";
 import AffirmLogo from "../media/affirm-logo.webp";
-import {
-  Elements,
-  PaymentMethodMessagingElement,
-} from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
 
 const NormalPlans = ({ TypeOfPlan }) => {
   const [FaqActiveA, setFaqActiveA] = useState(false);
   const [FaqActiveB, setFaqActiveB] = useState(false);
   const [FaqActiveC, setFaqActiveC] = useState(false);
   const [FaqActiveD, setFaqActiveD] = useState(false);
-  var stripe = Stripe(
-    "pk_live_51MkxIDIF3yNgTFjlIw7dArN2FF6S6xNUf0F1kD8ShpYCAbHC1aqj8ubim0FT2UPFMpmYLj84pQQZdkHvQVMCFmeo00pwTEe3Jg"
-  );
-  var stripePromise = loadStripe(
-    "pk_live_51MkxIDIF3yNgTFjlIw7dArN2FF6S6xNUf0F1kD8ShpYCAbHC1aqj8ubim0FT2UPFMpmYLj84pQQZdkHvQVMCFmeo00pwTEe3Jg"
-  );
 
   function HandleAffirmButton() {
     affirm.checkout({
@@ -27,7 +16,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
         user_cancel_url: "https://merchantsite.com/cancel",
         public_api_key: "VGOCPKS82RVITC0M",
         user_confirmation_url_action: "POST",
-        name: "Your Customer-Facing Merchant Name",
+        name: "Bodybuilding & BS",
       },
       shipping: {
         name: {
@@ -199,7 +188,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
             <TbShoppingCart className="icon" /> Purchase
           </button>
         </a>
-        <Elements stripe={stripePromise}>
+        {/*  <Elements stripe={stripePromise}>
           <PaymentMethodMessagingElement
             options={{
               amount: 9900,
@@ -208,7 +197,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
               countryCode: "US",
             }}
           />
-        </Elements>
+        </Elements> */}
         <a className="purchase-button-link">
           <button
             className="button button--affirm"
