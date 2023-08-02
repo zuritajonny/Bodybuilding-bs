@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { TbShoppingCart } from "react-icons/tb";
 import { FiChevronDown } from "react-icons/fi";
 import AffirmLogo from "../media/affirm-logo.webp";
@@ -10,6 +10,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
   const [FaqActiveD, setFaqActiveD] = useState(false);
 
   function HandleAffirmButton() {
+    useEffect;
     affirm.checkout({
       merchant: {
         user_confirmation_url:
@@ -132,8 +133,67 @@ const NormalPlans = ({ TypeOfPlan }) => {
 
   return (
     <div className="card-wrapper mn">
-      <div className={TypeOfPlan === "c" ? "card-hidden" : "card-container"}>
-        <h2 className={TypeOfPlan == "b" ? "medium-text " : "medium-text"}>
+      <div
+        className={
+          TypeOfPlan === "a"
+            ? "card-container"
+            : "card-container card-container__offer"
+        }
+      >
+        {(() => {
+          switch (TypeOfPlan) {
+            case "a":
+              return (
+                <div
+                  className={
+                    TypeOfPlan === "a"
+                      ? "discount__offer discount__offer_hidden"
+                      : "discount__offer discount__offer_active"
+                  }
+                >
+                  <span>10% OFF!</span>
+                </div>
+              );
+            case "b":
+              return (
+                <div
+                  className={
+                    TypeOfPlan === "a"
+                      ? "discount__offer "
+                      : "discount__offer discount__offer_active"
+                  }
+                >
+                  <span>10% OFF!</span>
+                </div>
+              );
+            case "d":
+              return (
+                <div
+                  className={
+                    TypeOfPlan === "a"
+                      ? "discount__offer "
+                      : "discount__offer discount__offer_active"
+                  }
+                >
+                  <span>15% OFF!</span>
+                </div>
+              );
+            case "e":
+              return (
+                <div
+                  className={
+                    TypeOfPlan === "a"
+                      ? "discount__offer "
+                      : "discount__offer discount__offer_active"
+                  }
+                >
+                  <span>20% OFF!</span>
+                </div>
+              );
+          }
+        })()}
+
+        <h2 className="medium-text">
           {(() => {
             switch (TypeOfPlan) {
               case "a":
@@ -150,21 +210,60 @@ const NormalPlans = ({ TypeOfPlan }) => {
           Coaching Plan
         </h2>
 
+        {(() => {
+          switch (TypeOfPlan) {
+            case "a":
+              return null;
+            case "b":
+              return (
+                <p className="discount__total">
+                  <span>Before $975.00</span>
+                </p>
+              );
+
+            case "d":
+              return (
+                <p className="discount__total">
+                  <span>Before $1950.00</span>
+                </p>
+              );
+            case "e":
+              return (
+                <p className="discount__total">
+                  <span>Before $3900.00</span>
+                </p>
+              );
+          }
+        })()}
+
         <h4 className="card-text-price">
           {(() => {
             switch (TypeOfPlan) {
               case "a":
-                return "$399 ";
+                return (
+                  <span>
+                    $325.<span>00</span>
+                  </span>
+                );
               case "b":
-                return "$799 ";
-              case "c":
-                return "$1499 ";
+                return (
+                  <span>
+                    $877.<span>50</span>
+                  </span>
+                );
+
               case "d":
-                return "$1499 ";
+                return (
+                  <span>
+                    $1657.<span>50</span>
+                  </span>
+                );
               case "e":
-                return "$2399 ";
-              default:
-                return "$100 ";
+                return (
+                  <span>
+                    $3120.<span>00</span>
+                  </span>
+                );
             }
           })()}
           <span className="price-description">
@@ -183,13 +282,10 @@ const NormalPlans = ({ TypeOfPlan }) => {
           </span>
         </h4>
         <ul>
-          <li className="card-list">Unlimited check-ins</li>
-          <li className="card-list">
-            Personalized training and nutritional programs
-          </li>
-          <li className="card-list">
-            PED programming for monitors with reading bloodwork
-          </li>
+          <li className="card-list">Flexible and Frequent Check-Ins</li>
+          <li className="card-list">Tailored Training and Nutrition Plans</li>
+          <li className="card-list">Cutting-Edge PED Programming</li>
+          <li className="card-list">Health Monitoring Through PEDs</li>
           <li
             className={
               TypeOfPlan == "a"
@@ -243,96 +339,32 @@ const NormalPlans = ({ TypeOfPlan }) => {
       </div>
       <div className="faq--block">
         <div className="faq--item">
-          <button
-            className={FaqActiveA ? "button faq--button-active" : " button"}
-            onClick={() => setFaqActiveA(!FaqActiveA)}
-          >
-            Lifestyle
-            <FiChevronDown
-              className={
-                FaqActiveA ? "faq--icon faq--icon-active" : "faq--icon "
-              }
-            />
-          </button>
-          <p
-            className={
-              FaqActiveA
-                ? "faq--descrition "
-                : "faq--descrition faq--descrition--hidden"
-            }
-          >
+          <h5 className="faq--heading">Lifestyle</h5>
+          <p className="faq--description">
             Your well-being is my main priority. I will help you make the
             necessary adjustments to achieve peak form and stay as healthy as
             you can be.
           </p>
         </div>
         <div className="faq--item">
-          <button
-            className={FaqActiveB ? "button faq--button-active" : " button"}
-            onClick={() => setFaqActiveB(!FaqActiveB)}
-          >
-            Contest Prep
-            <FiChevronDown
-              className={
-                FaqActiveB ? "faq--icon faq--icon-active" : "faq--icon "
-              }
-            />
-          </button>
-          <p
-            className={
-              FaqActiveB
-                ? "faq--descrition "
-                : "faq--descrition faq--descrition--hidden"
-            }
-          >
+          <h5 className="faq--heading">Contest Prep</h5>
+          <p className="faq--description">
             Strength and physique competitions demand rigorous preparation,
             including specific goal setting, targeted training, precision
             nutrition, and caloric manipulation.
           </p>
         </div>
         <div className="faq--item">
-          <button
-            className={FaqActiveC ? "button faq--button-active" : " button"}
-            onClick={() => setFaqActiveC(!FaqActiveC)}
-          >
-            Off-Season
-            <FiChevronDown
-              className={
-                FaqActiveC ? "faq--icon faq--icon-active" : "faq--icon "
-              }
-            />
-          </button>
-          <p
-            className={
-              FaqActiveC
-                ? "faq--descrition "
-                : "faq--descrition faq--descrition--hidden"
-            }
-          >
+          <h5 className="faq--heading">Off-Season</h5>
+          <p className="faq--description">
             The off season is critical to prepare between competitions, so we
             will focus on recovery, muscle building, strength training, and
             nutritional adjustments.
           </p>
         </div>
         <div className="faq--item">
-          <button
-            className={FaqActiveD ? "button faq--button-active" : " button"}
-            onClick={() => setFaqActiveD(!FaqActiveD)}
-          >
-            Custom Goals
-            <FiChevronDown
-              className={
-                FaqActiveD ? "faq--icon faq--icon-active" : "faq--icon "
-              }
-            />
-          </button>
-          <p
-            className={
-              FaqActiveD
-                ? "faq--descrition "
-                : "faq--descrition faq--descrition--hidden"
-            }
-          >
+          <h5 className="faq--heading">Custom Goals</h5>
+          <p className="faq--description">
             Whatever we set out to do, I can help you achieve it. From aesthetic
             progress to lifestyle improvements, I will provide support to help
             you stay focused.

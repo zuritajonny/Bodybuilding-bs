@@ -12,16 +12,33 @@ function InquiryMessage() {
           fitness journey. However, I’m here to answer all of them quickly, at
           no <strong>additional cost.</strong>
         </p>
-
-        <span></span>
-
-        <a
+        <div className="inquiry-email">
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/form/ACSZJwg3R1pHmXny3sFM"
+            styles={"width:100%;height:100%;border:none;border-radius:4px"}
+            id="inline-ACSZJwg3R1pHmXny3sFM"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Inquiry Box"
+            data-height="400"
+            data-layout-iframe-id="inline-ACSZJwg3R1pHmXny3sFM"
+            data-form-id="ACSZJwg3R1pHmXny3sFM"
+            title="Inquiry Box"
+          ></iframe>
+          <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+        </div>
+        {/*  <a
           href="https://bodybuildingandbs.com/coaching-intake-form/"
           className="button button--secondary"
         >
           Start Now
           <FiArrowUpRight className="icon" />
-        </a>
+        </a> */}
       </div>
     </div>
   );
