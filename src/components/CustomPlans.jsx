@@ -5,10 +5,9 @@ function CustomPlans() {
   function HandleAffirmButton(name, price) {
     affirm.checkout({
       merchant: {
-        user_confirmation_url:
-          "http://development.bodybuildingandbs.com/checkout",
-        user_cancel_url: "http://development.bodybuildingandbs.com/canceled",
-        user_confirmation_url_action: "POST",
+        user_confirmation_url: "https://bodybuilding-bs.vercel.app/checkout",
+        user_cancel_url: "https://bodybuilding-bs.vercel.app/canceled",
+        user_confirmation_url_action: "GET",
         name: "Bodybuilding & BS",
       },
       shipping: {
