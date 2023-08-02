@@ -19,8 +19,9 @@ function InquiryMessage() {
               width: "100%",
               height: "316px",
               border: "none",
-              borderRadius: "4px",
             }}
+            marginheight="0"
+            marginwidth="0"
             id="inline-ACSZJwg3R1pHmXny3sFM"
             data-layout="{'id':'INLINE'}"
             data-trigger-type="alwaysShow"
