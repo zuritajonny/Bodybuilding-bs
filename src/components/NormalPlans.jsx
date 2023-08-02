@@ -99,10 +99,10 @@ const NormalPlans = ({ TypeOfPlan }) => {
       //     discount_display_name: "President's Day 10% off",
       //   },
       // },
-      metadata: {
-        // shipping_type: "UPS Ground",
-        mode: "modal",
-      },
+      // metadata: {
+      //   // shipping_type: "UPS Ground",
+      //   mode: "modal",
+      // },
       order_id: "JKLMO4321",
       currency: "USD",
       financing_program: "flyus_3z6r12r",
