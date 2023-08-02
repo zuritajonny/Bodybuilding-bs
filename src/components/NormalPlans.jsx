@@ -14,10 +14,9 @@ const NormalPlans = ({ TypeOfPlan }) => {
       merchant: {
         user_confirmation_url:
           // "http://development.bodybuildingandbs.com/checkout",
-          // "https://bodybuilding-bs.vercel.app/checkout",
-          "https://stalwart-biscotti-64cc74.netlify.app/checkout",
-        user_cancel_url:
-          "https://stalwart-biscotti-64cc74.netlify.app/canceled",
+          "https://bodybuilding-bs.vercel.app/checkout",
+        // "https://stalwart-biscotti-64cc74.netlify.app/checkout",
+        user_cancel_url: "https://bodybuilding-bs.vercel.app/canceled",
         user_confirmation_url_action: "POST",
         name: "Bodybuilding & BS",
       },
