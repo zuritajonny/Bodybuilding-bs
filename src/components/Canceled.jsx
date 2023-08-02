@@ -7,7 +7,10 @@ function Canceled() {
   return (
     <div className="results--page">
       You canceled your order
-      <button className="button button--return" onClick={() => navigate("/")}>
+      <button
+        className="button button--return"
+        onClick={() => navigate("/coaching")}
+      >
         <AiOutlineArrowLeft className="icon" />
         Go Back to the Homepage
       </button>
