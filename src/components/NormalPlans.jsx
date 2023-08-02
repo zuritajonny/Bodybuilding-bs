@@ -13,7 +13,8 @@ const NormalPlans = ({ TypeOfPlan }) => {
     affirm.checkout({
       merchant: {
         user_confirmation_url:
-          "http://development.bodybuildingandbs.com/checkout",
+          // "http://development.bodybuildingandbs.com/checkout",
+          "https://bodybuilding-bs.vercel.app/checkout",
         user_cancel_url: "http://development.bodybuildingandbs.com/canceled",
         user_confirmation_url_action: "POST",
         name: "Bodybuilding & BS",
