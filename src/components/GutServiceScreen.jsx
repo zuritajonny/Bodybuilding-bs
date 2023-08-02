@@ -166,7 +166,7 @@ function GutServiceScreen() {
               >
                 <button className="button">Purchase</button>
               </a>
-              <a className="purchase-button-link">
+              {/* <a className="purchase-button-link">
                 <button
                   className="button button--affirm"
                   onClick={() => HandleAffirmButton("Bloodwork", 24900)}
@@ -178,7 +178,7 @@ function GutServiceScreen() {
                     className="img--afirm"
                   />
                 </button>
-              </a>
+              </a> */}
             </div>
 
             <div className="blood-gut-text">
@@ -225,7 +225,7 @@ function GutServiceScreen() {
               >
                 <button className="button">Purchase</button>
               </a>
-              <a className="purchase-button-link">
+              {/* <a className="purchase-button-link">
                 <button
                   className="button button--affirm"
                   onClick={() => HandleAffirmButton("Gut Health Test", 34900)}
@@ -237,7 +237,7 @@ function GutServiceScreen() {
                     className="img--afirm"
                   />
                 </button>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
