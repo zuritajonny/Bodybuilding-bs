@@ -9,13 +9,17 @@ function InquiryMessage() {
         <h5>Answers for all your questions, right away</h5>
         <p>
           I know you can have a lot of questions even before beginning your
-          fitness journey. However, I’m here to answer all of them quickly, at
+          fitness journey. However, I'm here to answer all of them quickly, at
           no <strong>additional cost.</strong>
         </p>
         <div className="inquiry-email">
           <iframe
             src="https://api.leadconnectorhq.com/widget/form/ACSZJwg3R1pHmXny3sFM"
-            styles={"width:100%;height:100%;border:none;border-radius:4px"}
+            style={{
+              width: "100%",
+              height: "320px",
+              border: "none",
+            }}
             id="inline-ACSZJwg3R1pHmXny3sFM"
             data-layout="{'id':'INLINE'}"
             data-trigger-type="alwaysShow"
