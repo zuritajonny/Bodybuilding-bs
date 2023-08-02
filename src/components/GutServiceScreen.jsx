@@ -23,10 +23,9 @@ function GutServiceScreen() {
   function HandleAffirmButton(name, price) {
     affirm.checkout({
       merchant: {
-        user_confirmation_url:
-          "http://development.bodybuildingandbs.com/checkout",
-        user_cancel_url: "http://development.bodybuildingandbs.com/canceled",
-        user_confirmation_url_action: "POST",
+        user_confirmation_url: "https://bodybuilding-bs.vercel.app/checkout",
+        user_cancel_url: "https://bodybuilding-bs.vercel.app/canceled",
+        user_confirmation_url_action: "GET",
         name: "Bodybuilding & BS",
       },
       shipping: {
@@ -167,7 +166,7 @@ function GutServiceScreen() {
               >
                 <button className="button">Purchase</button>
               </a>
-              <a className="purchase-button-link">
+              {/* <a className="purchase-button-link">
                 <button
                   className="button button--affirm"
                   onClick={() => HandleAffirmButton("Bloodwork", 24900)}
@@ -179,7 +178,7 @@ function GutServiceScreen() {
                     className="img--afirm"
                   />
                 </button>
-              </a>
+              </a> */}
             </div>
 
             <div className="blood-gut-text">
@@ -226,7 +225,7 @@ function GutServiceScreen() {
               >
                 <button className="button">Purchase</button>
               </a>
-              <a className="purchase-button-link">
+              {/* <a className="purchase-button-link">
                 <button
                   className="button button--affirm"
                   onClick={() => HandleAffirmButton("Gut Health Test", 34900)}
@@ -238,7 +237,7 @@ function GutServiceScreen() {
                     className="img--afirm"
                   />
                 </button>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

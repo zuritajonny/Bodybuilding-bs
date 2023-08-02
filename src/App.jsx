@@ -10,10 +10,10 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<HomeScreen />} />
-        <Route path="/gutservice" element={<GutServiceScreen />} />
-        <Route path="/checkout" element={<Checkout />} />
-        <Route path="/canceled" element={<Canceled />} />
+        <Route path="/coaching" element={<HomeScreen />} />
+        <Route path="/coaching/gutservice" element={<GutServiceScreen />} />
+        <Route path="/coaching/checkout" element={<Checkout />} />
+        <Route path="/coaching/canceled" element={<Canceled />} />
       </Routes>
       <Footer />
     </div>

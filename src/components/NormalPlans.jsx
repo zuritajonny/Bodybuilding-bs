@@ -13,10 +13,9 @@ const NormalPlans = ({ TypeOfPlan }) => {
     useEffect;
     affirm.checkout({
       merchant: {
-        user_confirmation_url:
-          "http://development.bodybuildingandbs.com/checkout",
-        user_cancel_url: "http://development.bodybuildingandbs.com/canceled",
-        user_confirmation_url_action: "POST",
+        user_confirmation_url: "https://bodybuilding-bs.vercel.app/checkout",
+        user_cancel_url: "https://bodybuilding-bs.vercel.app/canceled",
+        user_confirmation_url_action: "GET",
         name: "Bodybuilding & BS",
       },
       shipping: {
@@ -101,10 +100,10 @@ const NormalPlans = ({ TypeOfPlan }) => {
       //     discount_display_name: "President's Day 10% off",
       //   },
       // },
-      metadata: {
-        // shipping_type: "UPS Ground",
-        mode: "modal",
-      },
+      // metadata: {
+      //   // shipping_type: "UPS Ground",
+      //   mode: "modal",
+      // },
       order_id: "JKLMO4321",
       currency: "USD",
       financing_program: "flyus_3z6r12r",
@@ -327,7 +326,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
             }}
           />
         </Elements> */}
-        <a className="purchase-button-link">
+        {/* <a className="purchase-button-link">
           <button
             className="button button--affirm"
             onClick={HandleAffirmButton}
@@ -335,7 +334,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
             Pay with
             <img src={AffirmLogo} alt="Affirm Logo" className="img--afirm" />
           </button>
-        </a>
+        </a> */}
       </div>
       <div className="faq--block">
         <div className="faq--item">

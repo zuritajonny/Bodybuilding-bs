@@ -5,10 +5,9 @@ function CustomPlans() {
   function HandleAffirmButton(name, price) {
     affirm.checkout({
       merchant: {
-        user_confirmation_url:
-          "http://development.bodybuildingandbs.com/checkout",
-        user_cancel_url: "http://development.bodybuildingandbs.com/canceled",
-        user_confirmation_url_action: "POST",
+        user_confirmation_url: "https://bodybuilding-bs.vercel.app/checkout",
+        user_cancel_url: "https://bodybuilding-bs.vercel.app/canceled",
+        user_confirmation_url_action: "GET",
         name: "Bodybuilding & BS",
       },
       shipping: {
@@ -106,7 +105,7 @@ function CustomPlans() {
             <li>Fast Delivery</li>
           </ul>
           <div className="buttons--wrapper buttons--wrapper__horizontal">
-            <a className="purchase-button-link">
+            {/* <a className="purchase-button-link">
               <button
                 className="button button--affirm"
                 onClick={() =>
@@ -120,7 +119,7 @@ function CustomPlans() {
                   className="img--afirm"
                 />
               </button>
-            </a>
+            </a> */}
             <a
               href="https://payments.bodybuildingandbs.com/3-months-bulking-plan"
               target="_blank"
@@ -146,7 +145,7 @@ function CustomPlans() {
             <li>Fast Delivery</li>
           </ul>
           <div className="buttons--wrapper buttons--wrapper__horizontal">
-            <a className="purchase-button-link">
+            {/* <a className="purchase-button-link">
               <button
                 className="button button--affirm"
                 onClick={() =>
@@ -160,7 +159,7 @@ function CustomPlans() {
                   className="img--afirm"
                 />
               </button>
-            </a>
+            </a> */}
             <a
               href="https://payments.bodybuildingandbs.com/3-months-sherdding-plan"
               target="_blank"
@@ -185,7 +184,7 @@ function CustomPlans() {
             <li>Fast Delivery</li>
           </ul>
           <div className="buttons--wrapper buttons--wrapper__horizontal">
-            <a className="purchase-button-link">
+            {/* <a className="purchase-button-link">
               <button
                 className="button button--affirm"
                 onClick={() =>
@@ -199,7 +198,7 @@ function CustomPlans() {
                   className="img--afirm"
                 />
               </button>
-            </a>
+            </a> */}
             <a
               href="https://payments.bodybuildingandbs.com/3-months-body-recomposition-plan"
               target="_blank"
@@ -224,7 +223,7 @@ function CustomPlans() {
             <li>Fast Delivery</li>
           </ul>
           <div className="buttons--wrapper buttons--wrapper__horizontal">
-            <a className="purchase-button-link">
+            {/* <a className="purchase-button-link">
               <button
                 className="button button--affirm"
                 onClick={() => {
@@ -238,7 +237,7 @@ function CustomPlans() {
                   className="img--afirm"
                 />
               </button>
-            </a>
+            </a> */}
             <a
               href="https://payments.bodybuildingandbs.com/6-week-revers-diet-plan"
               target="_blank"
