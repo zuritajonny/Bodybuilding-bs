@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import GutServiceScreen from "./components/GutServiceScreen";
 import Checkout from "./components/Checkout";
 import Canceled from "./components/Canceled";
+import RedirectPage from "./components/RedirectPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/coaching/gutservice" element={<GutServiceScreen />} />
         <Route path="/coaching/checkout" element={<Checkout />} />
         <Route path="/coaching/canceled" element={<Canceled />} />
+        <Route path="*" element={<RedirectPage />} />
       </Routes>
       <Footer />
     </div>

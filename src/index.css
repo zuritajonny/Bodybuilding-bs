@@ -600,6 +600,15 @@ a {
   background-size: contain;
   background-repeat: repeat-x;
 }
+
+.redirect--block {
+  height: calc(100% - 154px);
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  color: var(--white-color);
+}
+
 .inquiry--block {
   padding: 2rem 1rem;
   display: flex;
@@ -612,7 +621,7 @@ a {
 }
 #inline-ACSZJwg3R1pHmXny3sFM::-webkit-scrollbar {
   display: none;
-} 
+}
 
 body .hl-app .ghl-form-wrap,
 body .hl-app .form-builder--wrap {
@@ -2172,6 +2181,10 @@ option {
 }
 
 @media screen and (min-width: 1440px) {
+  .redirect--block,
+  .results--page {
+    height: calc(100% - 172px);
+  }
   .IG--block__wrapper {
     height: 59.93rem;
   }
@@ -2201,6 +2214,10 @@ option {
 }
 
 @media screen and (min-width: 1840px) {
+  .redirect--block,
+  .results--page {
+    height: calc(100% - 194px);
+  }
   .nick-crop {
     transform: translate(0, 0);
   }
