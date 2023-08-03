@@ -1,6 +1,21 @@
 html {
   font-size: 16px;
 }
+body::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--black-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #eded00;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #eded00;
+}
 :root {
   --black-color: #222222;
   --primary-color: #eded00;
@@ -286,6 +301,10 @@ ul {
   color: inherit;
   font-weight: 600;
   text-decoration: underline;
+  transition: var(--transition);
+}
+.paragraph-text a:hover {
+  color: var(--primary-color);
 }
 
 .subtitle-text {
