@@ -42,7 +42,7 @@ function HomeScreen() {
               src={BBLogo}
               className="bbs--logo"
               alt=""
-              onClick={() => navigate("/coaching")}
+              onClick={() => navigate("/onlinecoaching")}
             />
             <h1 className="heading-text">
               Become The Best <br />
