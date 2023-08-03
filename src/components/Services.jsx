@@ -117,11 +117,11 @@ function Services() {
           <li className={ActiveImage == "f" && "span--img-active"}>
             <img src={Protocols} alt="" />
             <div>
-              <p>
+              {/* <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Cupiditate iusto, quas fugiat harum quos tempora inventore
                 tenetur odio officia totam itaque reiciendis eum numquam ut.
-              </p>
+              </p> */}
             </div>
           </li>
         </ul>
