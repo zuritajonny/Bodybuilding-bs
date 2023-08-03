@@ -100,7 +100,8 @@ body
   background-color: rgba(255, 255, 255, 0.1) !important;
   color: var(--white-color) !important;
 }
-.WidgetTitle__Header-sc-ruy1gu-2.DZBVr {
+.WidgetTitle__Header-sc-ruy1gu-2.DZBVr,
+.WidgetTitle__Container-sc-173f1y-0 {
   display: none !important;
 }
 .RootLayout__RootComponent-sc-1doisyz-0 * {
