@@ -471,6 +471,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 22.5rem;
+  margin-inline: auto;
 }
 
 .blood-gut-text img {
@@ -627,6 +629,9 @@ a {
   flex-direction: column;
   gap: 1rem;
   justify-items: center;
+}
+#inline-ACSZJwg3R1pHmXny3sFM > html {
+  overflow: hidden !important;
 }
 #inline-ACSZJwg3R1pHmXny3sFM {
   width: 100%;
@@ -1097,6 +1102,9 @@ body .hl-app .form-builder--wrap {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+.gut--service__block .card-wrapper:nth-of-type(1) {
+  margin-bottom: 4rem !important;
 }
 
 .pricing-container:nth-of-type(2) {
