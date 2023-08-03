@@ -109,7 +109,7 @@ function GutServiceScreen() {
           <div className="hero-text">
             <img
               src={BBLogo}
-              onClick={() => navigate("/onlinecoaching")}
+              onClick={() => navigate("/")}
               className="bbs--logo"
               alt=""
             />
@@ -241,10 +241,7 @@ function GutServiceScreen() {
             </div>
           </div>
         </div>
-        <button
-          className="button button--return"
-          onClick={() => navigate("/onlinecoaching")}
-        >
+        <button className="button button--return" onClick={() => navigate("/")}>
           <AiOutlineArrowLeft className="icon" />
           Go Back to the Homepage
         </button>

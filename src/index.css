@@ -100,32 +100,24 @@ body
   background-color: rgba(255, 255, 255, 0.1) !important;
   color: var(--white-color) !important;
 }
-
-.RootLayout__RootComponent-sc-1doisyz-0 {
-  height: 580px;
-  overflow: hidden;
-}
-.IG--block__wrapper {
-  height: 40.93rem;
-  overflow: hidden;
-}
-.eapps-instagram-feed-posts-view {
-  margin-bottom: 100vh !important;
+.WidgetTitle__Header-sc-ruy1gu-2.DZBVr {
+  display: none !important;
 }
 .RootLayout__RootComponent-sc-1doisyz-0 * {
   font-family: Roboto, Arial, Helvetica, sans-serif !important;
 }
-.Carousel__CarouselOuter-sc-f2ox7y-1 {
-  margin-bottom: 10rem;
+.fdfanp {
+  margin-bottom: 4rem;
 }
-.bkCRoC {
+/* .Carousel__CarouselOuter-sc-f2ox7y-1 {
+  margin-bottom: 10rem;
+} */
+.dgxbhS {
   max-width: 1015px !important;
   padding-inline: 1rem;
   margin: 2rem auto !important;
 }
-.IG--block__wrapper {
-  margin: 2rem 0 !important;
-}
+
 /*  */
 
 .pricing-container .paragraph-text,
@@ -1631,6 +1623,8 @@ option {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 22.5rem;
+  margin-inline: auto;
 }
 
 .faq--icon {
@@ -1754,17 +1748,8 @@ option {
     top: -21px;
   }
 }
-@media only screen and (min-width: 560px) {
-  .IG--block__wrapper {
-    height: 50.93rem;
-    overflow: hidden;
-  }
-}
+
 @media only screen and (min-width: 750px) {
-  .IG--block__wrapper {
-    height: 63.93rem;
-    overflow: hidden;
-  }
   .bullet--block_wrapper {
     grid-template-columns: 1fr 1fr 1fr;
     width: var(--width-wrapper);
@@ -1785,12 +1770,14 @@ option {
   }
 }
 @media only screen and (min-width: 980px) {
+  .faq--block {
+    max-width: 100%;
+    margin-inline: initial;
+  }
   .card-container {
     margin-inline: initial;
   }
-  .IG--block__wrapper {
-    height: 70.93rem;
-  }
+
   .blood-gut-text p {
     font-size: 1.5rem;
   }
@@ -2204,9 +2191,7 @@ option {
   .results--page {
     height: calc(100% - 172px);
   }
-  .IG--block__wrapper {
-    height: 59.93rem;
-  }
+
   .gut--service__block {
     max-width: var(--width-wrapper);
   }
@@ -2217,7 +2202,7 @@ option {
   .gut--service__block {
     max-width: 100%;
   }
-  .bkCRoC {
+  .dgxbhS {
     max-width: 1019px !important;
   }
 
