@@ -117,11 +117,11 @@ function Services() {
           <li className={ActiveImage == "f" && "span--img-active"}>
             <img src={Protocols} alt="" />
             <div>
-              {/* <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Cupiditate iusto, quas fugiat harum quos tempora inventore
-                tenetur odio officia totam itaque reiciendis eum numquam ut.
-              </p> */}
+              <p>
+                I have procedures in place to support our training plan and I
+                will guide you through proper use of supplements to boost
+                results.
+              </p>
             </div>
           </li>
         </ul>
