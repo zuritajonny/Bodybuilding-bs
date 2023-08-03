@@ -1239,7 +1239,7 @@ body .hl-app .form-builder--wrap {
 .discount__offer_active {
   opacity: 1;
   right: -1.5rem;
-  transition: right 200ms ease-in-out, opacity 1200ms ease !important;
+  transition: right 200ms ease-in-out, opacity 800ms ease !important;
 }
 .discount__offer span {
   transform: rotate(2.86deg);
