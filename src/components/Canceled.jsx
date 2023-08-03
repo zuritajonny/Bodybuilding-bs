@@ -9,7 +9,7 @@ function Canceled() {
       You canceled your order
       <button
         className="button button--return"
-        onClick={() => navigate("/coaching")}
+        onClick={() => navigate("/onlinecoaching")}
       >
         <AiOutlineArrowLeft className="icon" />
         Go Back to the Homepage

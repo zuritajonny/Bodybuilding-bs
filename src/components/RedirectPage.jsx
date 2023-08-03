@@ -8,7 +8,7 @@ function RedirectPage() {
       <h1>Looks like you're lost</h1>
       <button
         className="button button--return"
-        onClick={() => navigate("/coaching")}
+        onClick={() => navigate("/onlinecoaching")}
       >
         <AiOutlineArrowLeft className="icon" />
         Go Back to the Homepage

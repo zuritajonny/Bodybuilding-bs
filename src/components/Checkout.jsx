@@ -11,7 +11,7 @@ function Checkout() {
       <h6>Your reference ID is: </h6>
       <button
         className="button button--return"
-        onClick={() => navigate("/coaching")}
+        onClick={() => navigate("/onlinecoaching")}
       >
         <AiOutlineArrowLeft className="icon" />
         Go Back to the Homepage

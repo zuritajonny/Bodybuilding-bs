@@ -11,10 +11,13 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/coaching" element={<HomeScreen />} />
-        <Route path="/coaching/gutservice" element={<GutServiceScreen />} />
-        <Route path="/coaching/checkout" element={<Checkout />} />
-        <Route path="/coaching/canceled" element={<Canceled />} />
+        <Route path="/onlinecoaching" element={<HomeScreen />} />
+        <Route
+          path="/onlinecoaching/gutservice"
+          element={<GutServiceScreen />}
+        />
+        <Route path="/onlinecoaching/checkout" element={<Checkout />} />
+        <Route path="/onlinecoaching/canceled" element={<Canceled />} />
         <Route path="*" element={<RedirectPage />} />
       </Routes>
       <Footer />

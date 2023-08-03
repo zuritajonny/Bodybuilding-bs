@@ -109,7 +109,7 @@ function GutServiceScreen() {
           <div className="hero-text">
             <img
               src={BBLogo}
-              onClick={() => navigate("/coaching")}
+              onClick={() => navigate("/onlinecoaching")}
               className="bbs--logo"
               alt=""
             />
