@@ -414,6 +414,9 @@ a {
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr 1fr;
+  max-width: 30.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 .plan--block__container p,
 .plan--block__container li {
@@ -553,9 +556,12 @@ a {
 }
 .work--block__text h3 {
   white-space: nowrap;
+  color: var(--black-color);
 }
+
 .work--block__text p {
   font-family: Big Shoulders Regular;
+  color: var(--black-color);
 }
 .work--block__text .button {
   margin-bottom: 7rem;
@@ -1796,6 +1802,7 @@ option {
   }
   .card-container {
     margin-inline: initial;
+    margin-bottom: 0;
   }
 
   .blood-gut-text p {
@@ -1962,10 +1969,6 @@ option {
   #inline-ACSZJwg3R1pHmXny3sFM * {
     width: 100% !important;
   }
-  .plan--block__container:nth-of-type(1),
-  .plan--block__container:nth-of-type(3) {
-    margin-left: auto;
-  }
 
   .inquiry--block span {
     display: block;
@@ -2037,8 +2040,17 @@ option {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
   }
-  .plan--block-wrapper .plan--block__container {
+  .plan--block__container {
     max-width: 30.62rem;
+  }
+  .plan--block__container:nth-of-type(1),
+  .plan--block__container:nth-of-type(3) {
+    margin-left: auto;
+    margin-right: initial;
+  }
+  .plan--block__container:nth-of-type(2),
+  .plan--block__container:nth-of-type(4) {
+    margin-inline: initial;
   }
   .plans--container__custom > h3,
   .plans--container__custom > p {
