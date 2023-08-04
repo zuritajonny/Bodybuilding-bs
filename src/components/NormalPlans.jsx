@@ -332,7 +332,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
             }}
           />
         </Elements> */}
-        <a className="purchase-button-link">
+        {/* <a className="purchase-button-link">
           <button
             className="button button--affirm"
             onClick={HandleAffirmButton}
@@ -340,7 +340,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
             Pay with
             <img src={AffirmLogo} alt="Affirm Logo" className="img--afirm" />
           </button>
-        </a>
+        </a> */}
       </div>
       <div className="faq--block">
         <div className="faq--item">
