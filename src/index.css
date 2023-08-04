@@ -1407,6 +1407,10 @@ black-friday-wrapper {
   text-align: center;
   transition: var(--transition);
 }
+.card-list.card-list-hidden {
+  opacity: 0;
+  display: none;
+}
 .card-list.card-list-line {
   position: relative;
   display: inline-block;
