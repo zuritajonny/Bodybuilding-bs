@@ -93,9 +93,7 @@ function CustomPlans() {
       <div className="plan--block-wrapper">
         <div className="plan--block__container">
           <h3>3-month bulking plan</h3>
-          <p>
-            Get stronger building your muscles as bigger as they have ever been.
-          </p>
+          <p>Get bigger, stronger, and more powerful than you ever have.</p>
           <h4>$499</h4>
           <ul>
             <li>Specialized Diet</li>

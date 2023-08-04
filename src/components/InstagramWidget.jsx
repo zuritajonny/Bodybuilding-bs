@@ -2,10 +2,9 @@ import React from "react";
 import { ElfsightWidget } from "react-elfsight-widget";
 
 function InstagramWidget() {
-
   return (
     <div className="IG--block__wrapper">
-      <ElfsightWidget widgetID="f0e3a281-00e6-490e-8d3d-9bfa866b7f78" />
+      <ElfsightWidget widgetID="58ddca7b-099f-424d-8b1d-f8900983fc7d" />
     </div>
   );
 }

@@ -6,10 +6,7 @@ function RedirectPage() {
   return (
     <div className="redirect--block">
       <h1>Looks like you're lost</h1>
-      <button
-        className="button button--return"
-        onClick={() => navigate("/onlinecoaching")}
-      >
+      <button className="button button--return" onClick={() => navigate("/")}>
         <AiOutlineArrowLeft className="icon" />
         Go Back to the Homepage
       </button>

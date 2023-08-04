@@ -11,13 +11,10 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/onlinecoaching" element={<HomeScreen />} />
-        <Route
-          path="/onlinecoaching/gutservice"
-          element={<GutServiceScreen />}
-        />
-        <Route path="/onlinecoaching/checkout" element={<Checkout />} />
-        <Route path="/onlinecoaching/canceled" element={<Canceled />} />
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="/blookworkandguttest" element={<GutServiceScreen />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/canceled" element={<Canceled />} />
         <Route path="*" element={<RedirectPage />} />
       </Routes>
       <Footer />

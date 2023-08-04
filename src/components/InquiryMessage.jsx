@@ -17,7 +17,6 @@ function InquiryMessage() {
             src="https://api.leadconnectorhq.com/widget/form/ACSZJwg3R1pHmXny3sFM"
             style={{
               width: "100%",
-              height: "316px",
               border: "none",
             }}
             marginHeight="0"

@@ -26,7 +26,7 @@ function Bloodwork() {
         </p>
         <button
           className="button button--robinson button__black"
-          onClick={() => navigate("/onlinecoaching/gutservice")}
+          onClick={() => navigate("/blookworkandguttest")}
         >
           Learn More
         </button>
