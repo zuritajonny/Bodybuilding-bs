@@ -4,7 +4,7 @@ const authorizeTransaction = async (req, res) => {
   const { checkout_token } = req.body;
   try {
     const transactionId = await axios.post(
-      "https://sandbox.affirm.com/api/v1/transactions",
+      process.env.API_URL,
       {
         checkout_token: checkout_token,
         order_id: "JKLM4321",
@@ -14,8 +14,8 @@ const authorizeTransaction = async (req, res) => {
           "Content-Type": "application/json",
         },
         auth: {
-          username: "VGOCPKS82RVITC0M",
-          password: "DIZP6Ry7QJFSxydNhBPivKOs43ie2PJV",
+          username: process.env.PUBLIC_API_KEY,
+          password: process.env.PRIVATE_API_KEY,
         },
       }
     );

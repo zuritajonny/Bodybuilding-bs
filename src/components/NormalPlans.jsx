@@ -15,9 +15,8 @@ const NormalPlans = ({ TypeOfPlan }) => {
     useEffect;
     affirm.checkout({
       merchant: {
-        user_confirmation_url: `${baseUrl}/checkout`,
+        user_confirmation_url: `${baseUrl}checkout`,
         user_cancel_url: `${baseUrl}/canceled`,
-        public_api_key: "VGOCPKS82RVITC0M",
         user_confirmation_url_action: "GET",
         name: "Bodybuilding & BS",
       },

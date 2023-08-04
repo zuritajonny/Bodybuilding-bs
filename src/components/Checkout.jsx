@@ -24,10 +24,7 @@ function Checkout() {
     <div className="results--page">
       <h5>Your payment was {CheckoutToken}</h5>
       <h6>Your reference ID is: {transactionId}</h6>
-      <button
-        className="button button--return"
-        onClick={() => navigate("/onlinecoaching")}
-      >
+      <button className="button button--return" onClick={() => navigate("/")}>
         <AiOutlineArrowLeft className="icon" />
         Go Back to the Homepage
       </button>
