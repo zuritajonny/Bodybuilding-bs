@@ -586,8 +586,15 @@ a {
   background-size: cover;
   margin: 4rem 0;
 }
+.inquiry--block h5,
+.inquiry--block p {
+  text-align: center;
+  width: 100%;
+}
 .inquiry--block p {
   font-family: Big Shoulders Regular;
+  max-width: 30rem;
+  margin-inline: auto;
 }
 .inquiry--wrapper::before {
   content: "";
@@ -1950,11 +1957,6 @@ option {
     max-width: calc(var(--width-wrapper) + 16rem);
     margin: 0 auto;
     column-gap: 2rem;
-  }
-  .inquiry--block h5,
-  .inquiry--block p {
-    text-align: center;
-    width: 100%;
   }
 
   #inline-ACSZJwg3R1pHmXny3sFM * {
