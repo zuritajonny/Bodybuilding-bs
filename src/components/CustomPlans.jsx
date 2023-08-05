@@ -159,7 +159,7 @@ function CustomPlans() {
               </button>
             </a> */}
             <a
-              href="https://payments.bodybuildingandbs.com/3-months-sherdding-plan"
+              href="https://payments.bodybuildingandbs.com/3-months-shredding-plan"
               target="_blank"
               className="button button--cta"
             >
