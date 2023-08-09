@@ -24,7 +24,7 @@ const Footer = () => {
           </a>
           <a href="https://www.tiktok.com/@bodybuildingandbs" target="_blank">
             <div className="icon-sm-container">
-              <FaTiktok className="icon-svg" />
+              <FaTiktok className="icon-svg"/>
             </div>
           </a>
           <a href="https://rumble.com/user/bodybuildingandbs" target="_blank">

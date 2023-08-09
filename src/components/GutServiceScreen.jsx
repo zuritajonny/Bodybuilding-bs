@@ -158,7 +158,7 @@ function GutServiceScreen({ IsGutActive, setIsGutActive }) {
             <div className="card-container card-container--bloodwork">
               <h2 className="medium-text">Bloodwork</h2>
 
-              <h4 className="card-text-price">$599</h4>
+              <h4 className="card-text-price">$299</h4>
               <ul>
                 <li className="card-list">
                   One Time Plan to improve condition
@@ -229,7 +229,7 @@ function GutServiceScreen({ IsGutActive, setIsGutActive }) {
             >
               <h2 className="medium-text">Gut Health Test</h2>
 
-              <h4 className="card-text-price">$499</h4>
+              <h4 className="card-text-price">$599</h4>
               <ul>
                 <li className="card-list">Test Analysis</li>
                 <li className="card-list">Full Report</li>
