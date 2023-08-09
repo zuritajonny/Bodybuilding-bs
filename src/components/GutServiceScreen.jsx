@@ -1,22 +1,31 @@
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineArrowLeft } from "react-icons/ai";
-import Nick from "../media/nick.png";
 import BBLogo from "../media/BBLogo.png";
 import USflag from "../media/usflag.png";
 import IFBB from "../media/ifbb.png";
-import AffirmLogo from "../media/affirm-logo.webp";
+import { useLayoutEffect } from "react";
 
-function GutServiceScreen() {
+function GutServiceScreen({ IsGutActive, setIsGutActive }) {
+  const GutSection = useRef();
   const navigate = useNavigate();
   const GutRef = useRef();
   const handleCTA = () => {
     GutRef.current?.scrollIntoView({ behavior: "smooth" });
   };
+
   useEffect(() => {
+    if (IsGutActive === true) {
+      GutSection.current?.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsGutActive(false);
+  }, []);
+
+  /*  */
+
+  useLayoutEffect(() => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
     });
   }, []);
 
@@ -149,15 +158,15 @@ function GutServiceScreen() {
             <div className="card-container card-container--bloodwork">
               <h2 className="medium-text">Bloodwork</h2>
 
-              <h4 className="card-text-price">$249</h4>
+              <h4 className="card-text-price">$599</h4>
               <ul>
                 <li className="card-list">
                   One Time Plan to improve condition
                 </li>
-                <li className="card-list">Supplements and remedy protocols</li>
-                <li className="card-list">Dietary adjustments</li>
-                <li className="card-list">Advice of lifestyle habits</li>
-                <li className="card-list">Training if needed</li>
+                <li className="card-list">Supplements and Remedy Protocols</li>
+                <li className="card-list">Dietary Adjustments</li>
+                <li className="card-list">Advice of Lifestyle Habits</li>
+                <li className="card-list">Training if Needed</li>
               </ul>
               <a
                 target="_blank"
@@ -191,9 +200,10 @@ function GutServiceScreen() {
               <br />
               <br />
               <p>
-                You can bring your most recent blood work to be evaluated or we
-                can arrange a new blood work test at a trusted clinic for an
-                extra fee.
+                *If you do not have blood work to provide, no problem! I work
+                with Aspire Rejuvenation Clinic and we can service anyone living
+                in the United States. This service is available at an additional
+                fee.
               </p>
               {/*  <img src={Blood} alt="" /> */}
             </div>
@@ -206,17 +216,28 @@ function GutServiceScreen() {
                 problems. These tests help me make dietary adjustments and
                 recommendations to promote better digestion.
               </p>
+              <br />
+              <br />
+              <p>
+                *Any additional tests or remedies needed will have an extra
+                cost.
+              </p>
             </div>
-            <div className="card-container card-container--gutcard-container--gut">
+            <div
+              className="card-container card-container--gutcard-container--gut"
+              ref={GutSection}
+            >
               <h2 className="medium-text">Gut Health Test</h2>
 
-              <h4 className="card-text-price">$349</h4>
+              <h4 className="card-text-price">$499</h4>
               <ul>
-                <li className="card-list">Test analysis</li>
-                <li className="card-list">Full report</li>
+                <li className="card-list">Test Analysis</li>
+                <li className="card-list">Full Report</li>
                 <li className="card-list">
-                  Follow up consultation to act on findings
+                  Follow Up Consultation to Act on Findings
                 </li>
+                <li className="card-list">Transparet DNA Test Analysis</li>
+                <li className="card-list">Training and Nutritional Guidance</li>
               </ul>
               <a
                 target="_blank"

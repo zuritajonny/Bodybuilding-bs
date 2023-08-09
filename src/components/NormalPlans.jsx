@@ -4,11 +4,6 @@ import { FiChevronDown } from "react-icons/fi";
 import AffirmLogo from "../media/affirm-logo.webp";
 
 const NormalPlans = ({ TypeOfPlan }) => {
-  const [FaqActiveA, setFaqActiveA] = useState(false);
-  const [FaqActiveB, setFaqActiveB] = useState(false);
-  const [FaqActiveC, setFaqActiveC] = useState(false);
-  const [FaqActiveD, setFaqActiveD] = useState(false);
-
   const baseUrl = window.location.href;
 
   function HandleAffirmButton() {

@@ -101,6 +101,7 @@ function CustomPlans() {
             <li>Tracking & Accountability App</li>
             <li>Customized</li>
             <li>Fast Delivery</li>
+            <li>No Check-ins</li>
           </ul>
           <div className="buttons--wrapper buttons--wrapper__horizontal">
             {/* <a className="purchase-button-link">
@@ -141,6 +142,7 @@ function CustomPlans() {
             <li>Tracking & Accountability App</li>
             <li>Customized</li>
             <li>Fast Delivery</li>
+            <li>Does not include check-ins</li>
           </ul>
           <div className="buttons--wrapper buttons--wrapper__horizontal">
             {/* <a className="purchase-button-link">
@@ -180,6 +182,7 @@ function CustomPlans() {
             <li>Tracking & Accountability App</li>
             <li>Customized</li>
             <li>Fast Delivery</li>
+            <li>No Check-ins Included</li>
           </ul>
           <div className="buttons--wrapper buttons--wrapper__horizontal">
             {/* <a className="purchase-button-link">
@@ -219,6 +222,7 @@ function CustomPlans() {
             <li>Tracking & Accountability App</li>
             <li>Customized</li>
             <li>Fast Delivery</li>
+            <li>No Check-ins</li>
           </ul>
           <div className="buttons--wrapper buttons--wrapper__horizontal">
             {/* <a className="purchase-button-link">

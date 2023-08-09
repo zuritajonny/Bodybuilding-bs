@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Nick from "../media/nick.png";
 import BBLogo from "../media/BBLogo.png";
@@ -16,18 +16,19 @@ import InquiryMessage from "../components/InquiryMessage";
 import Services from "../components/Services";
 import GoogleReviews from "./GoogleReviews";
 import InstagramWidget from "./InstagramWidget";
+import GutSection from "./GutSection";
+import { useLayoutEffect } from "react";
 
-function HomeScreen() {
+function HomeScreen({ IsGutActive, setIsGutActive }) {
   const [TypeOfPlan, setTypeOfPlan] = useState("a");
   const ref = useRef();
   const handleCTA = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
   const navigate = useNavigate();
-  useEffect(() => {
+  useLayoutEffect(() => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
     });
   }, []);
   return (
@@ -72,10 +73,11 @@ function HomeScreen() {
         </div>
         <p className="paragraph-text hero-paragraph">
           <span className="primary-color-accent">Get ready</span> to tear down
-          obstacles of the mind and body. As an IFBB Pro and Former Mr. USA I've
-          acquired the necessary knowledge to help you reach any health and
-          fitness goal you may have through:
+          any obstacles your body and mind will find. As an IFBB pro and former
+          Mr. USA, I’ve gained enough experience to help you achieve your
+          fitness goals and change your life through:
         </p>
+
         <div className="bullet--block_wrapper">
           <div className="bullet--facts">
             <img src={Lift} alt="" />
@@ -166,6 +168,7 @@ function HomeScreen() {
         <InquiryMessage />
         <CustomPlans />
         <Bloodwork />
+        <GutSection IsGutActive={IsGutActive} setIsGutActive={setIsGutActive} />
         <Services />
         <DiscordSection />
         <GoogleReviews />
