@@ -229,7 +229,7 @@ function GutServiceScreen({ IsGutActive, setIsGutActive }) {
             >
               <h2 className="medium-text">Gut Health Test</h2>
 
-              <h4 className="card-text-price">$599</h4>
+              <h4 className="card-text-price">$799</h4>
               <ul>
                 <li className="card-list">Test Analysis</li>
                 <li className="card-list">Full Report</li>
